@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TabbarViewController.h"
+#import "IQKeyboardManager.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.rootViewController = [[TabbarViewController alloc]init];
+    
+    [self.window makeKeyAndVisible];
+    
+    IQKeyboardManager* keyBoardManager = [IQKeyboardManager sharedManager];
+    keyBoardManager.enable = YES;
+    keyBoardManager.shouldResignOnTouchOutside = YES;
     // Override point for customization after application launch.
     return YES;
 }

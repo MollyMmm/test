@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="KGk-i7-Jjw" customClass="InterviewCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="208"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="207"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwJ-eB-Rch">
+                        <rect key="frame" x="155" y="33" width="90" height="21"/>
+                        <color key="backgroundColor" red="0.58427483974358974" green="0.58427483974358974" blue="0.58427483974358974" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="0rj-MG-ohc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kar-w3-WNT">
+                        <rect key="frame" x="8" y="68" width="384" height="131"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="161" id="Vpk-17-TQA"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="clickButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QNG-8j-qXx"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yt-2i-epX">
+                        <rect key="frame" x="13" y="161" width="374" height="27"/>
+                        <color key="backgroundColor" red="0.47145432692307687" green="0.47145432692307687" blue="0.47145432692307687" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="8sg-HG-lC3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wwJ-eB-Rch" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="27" id="05Z-MX-m3E"/>
+                    <constraint firstItem="1yt-2i-epX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="Enf-7V-KkJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1yt-2i-epX" secondAttribute="trailing" constant="5" id="JON-KM-R8T"/>
+                    <constraint firstItem="Kar-w3-WNT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="RZ8-u3-ZTT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1yt-2i-epX" secondAttribute="bottom" constant="11" id="T86-c6-Srg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wwJ-eB-Rch" secondAttribute="trailing" constant="140" id="Yy7-bH-WMZ"/>
+                    <constraint firstItem="wwJ-eB-Rch" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="140" id="bOs-bg-uDJ"/>
+                    <constraint firstItem="Kar-w3-WNT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="4" id="cQR-aV-Yn6"/>
+                    <constraint firstItem="Kar-w3-WNT" firstAttribute="top" secondItem="wwJ-eB-Rch" secondAttribute="bottom" constant="16" id="iXs-vb-p26"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellLabel" destination="1yt-2i-epX" id="Rs0-32-Nd2"/>
+                <outlet property="iamgeButton" destination="Kar-w3-WNT" id="e73-ab-1iA"/>
+                <outlet property="timeLabel" destination="wwJ-eB-Rch" id="foW-yE-bwQ"/>
+            </connections>
+            <point key="canvasLocation" x="228" y="164"/>
+        </tableViewCell>
+    </objects>
+</document>
