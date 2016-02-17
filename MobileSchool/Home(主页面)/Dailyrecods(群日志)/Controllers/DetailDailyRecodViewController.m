@@ -42,6 +42,8 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.rowHeight = 250 * H;
+    
+    self.tabBarController.tabBar.hidden = YES;
 
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

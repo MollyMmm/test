@@ -31,6 +31,8 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"返回按钮"] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
     self.navigationItem.leftBarButtonItem = backItem;
     
+    self.tabBarController.tabBar.hidden = YES;
+    
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(10 * W, 0, kScreenWidth - 20 * W, kScreenHeight) style:UITableViewStyleGrouped];
     _tableView.backgroundColor = [UIColor grayColor];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
