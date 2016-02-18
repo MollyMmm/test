@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ReadTableViewCell : UITableViewCell
+@interface ReadTableViewCell : UITableViewCell<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic, strong) UIImageView *readImageView;
+@property (nonatomic, strong) UICollectionView *collectionView;
 
 + (ReadTableViewCell *)tableViewCell:(UITableView *)tableView;
+
+- (void)getCollection:(int)ReadOrSupport;
 
 
 @end
