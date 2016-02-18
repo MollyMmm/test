@@ -47,6 +47,8 @@
 }
 - (void)getNumber:(int)number {
     DetailDailyRecodViewController *detailrecod = [[DetailDailyRecodViewController alloc] init];
+    detailrecod.numberButton = number;
+    detailrecod.wide = YES;
     [self.navigationController pushViewController:detailrecod animated:YES];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -65,6 +67,8 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DetailDailyRecodViewController *detailrecod = [[DetailDailyRecodViewController alloc] init];
+    detailrecod.numberButton = 2;
+    detailrecod.wide = NO;
     [self.navigationController pushViewController:detailrecod animated:YES];
 }
 - (void)backAction {

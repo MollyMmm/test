@@ -37,7 +37,7 @@
     [self.contentView addSubview:_passButton];
     
     _commentButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [_commentButton setTitle:@"评价" forState:UIControlStateNormal];
+    [_commentButton setTitle:@"评论" forState:UIControlStateNormal];
     [_commentButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [_commentButton addTarget:self action:@selector(commentAction) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:_commentButton];

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE21C744FB00003AD39 /* HeaderView.m */; };
+		184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */; };
+		184EEDE91C75547D0003AD39 /* RelayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */; };
+		184EEDEC1C755AD10003AD39 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDEB1C755AD10003AD39 /* CommentTableViewCell.m */; };
+		184EEDEF1C7560DA0003AD39 /* ReadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDEE1C7560DA0003AD39 /* ReadTableViewCell.m */; };
 		332D8AB724C974AA1031C258 /* libPods-MobileSchool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */; };
 		E544CF631C744087003B22BC /* AchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CEF41C744087003B22BC /* AchievementViewController.m */; };
 		E544CF641C744087003B22BC /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CEF81C744087003B22BC /* AboutMeViewController.m */; };
@@ -138,6 +143,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184EEDE11C744FB00003AD39 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		184EEDE21C744FB00003AD39 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		184EEDE41C7464740003AD39 /* HeaderDailyRecodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderDailyRecodView.h; sourceTree = "<group>"; };
+		184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderDailyRecodView.m; sourceTree = "<group>"; };
+		184EEDE71C75547D0003AD39 /* RelayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelayTableViewCell.h; sourceTree = "<group>"; };
+		184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelayTableViewCell.m; sourceTree = "<group>"; };
+		184EEDEA1C755AD10003AD39 /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		184EEDEB1C755AD10003AD39 /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		184EEDED1C7560DA0003AD39 /* ReadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadTableViewCell.h; sourceTree = "<group>"; };
+		184EEDEE1C7560DA0003AD39 /* ReadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadTableViewCell.m; sourceTree = "<group>"; };
 		3091111A346374AA942EF064 /* Pods-MobileSchool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.release.xcconfig"; sourceTree = "<group>"; };
 		89753E9BA9172F279BEEF726 /* Pods-MobileSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.debug.xcconfig"; sourceTree = "<group>"; };
 		E544CEA01C744055003B22BC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -555,6 +570,14 @@
 			children = (
 				E544CF131C744087003B22BC /* dailyRecodTableViewCell.h */,
 				E544CF141C744087003B22BC /* dailyRecodTableViewCell.m */,
+				184EEDE41C7464740003AD39 /* HeaderDailyRecodView.h */,
+				184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */,
+				184EEDE71C75547D0003AD39 /* RelayTableViewCell.h */,
+				184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */,
+				184EEDEA1C755AD10003AD39 /* CommentTableViewCell.h */,
+				184EEDEB1C755AD10003AD39 /* CommentTableViewCell.m */,
+				184EEDED1C7560DA0003AD39 /* ReadTableViewCell.h */,
+				184EEDEE1C7560DA0003AD39 /* ReadTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -666,6 +689,8 @@
 				E544CF321C744087003B22BC /* RecodesTableViewCell.m */,
 				E544CF331C744087003B22BC /* RTLabel.h */,
 				E544CF341C744087003B22BC /* RTLabel.m */,
+				184EEDE11C744FB00003AD39 /* HeaderView.h */,
+				184EEDE21C744FB00003AD39 /* HeaderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1521,6 +1546,7 @@
 				E55BC9FA1C74351B009A9AAA /* ViewController.m in Sources */,
 				E544D0641C744345003B22BC /* LongReadingCell.m in Sources */,
 				E544CFEF1C7441FA003B22BC /* IQUIView+Hierarchy.m in Sources */,
+				184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */,
 				E544D0081C74430D003B22BC /* DailyViewController.m in Sources */,
 				E544CF6A1C744087003B22BC /* DailyRecodViewController.m in Sources */,
 				E544D0661C744345003B22BC /* LongTableViewCell.m in Sources */,
@@ -1528,11 +1554,14 @@
 				E544CF761C744087003B22BC /* RTLabel.m in Sources */,
 				E544CF721C744087003B22BC /* HomeCollectionViewCell.m in Sources */,
 				E544CF6B1C744087003B22BC /* DetailDailyRecodViewController.m in Sources */,
+				184EEDEC1C755AD10003AD39 /* CommentTableViewCell.m in Sources */,
 				E544CF661C744087003B22BC /* AddTableViewCell.m in Sources */,
 				E544D00B1C74430D003B22BC /* GroupViewController.m in Sources */,
 				E55BC9F71C74351B009A9AAA /* AppDelegate.m in Sources */,
 				E544CF801C744087003B22BC /* NotificationAndRecodsViewController.m in Sources */,
+				184EEDEF1C7560DA0003AD39 /* ReadTableViewCell.m in Sources */,
 				E544CFBD1C744099003B22BC /* MyViewController.m in Sources */,
+				184EEDE91C75547D0003AD39 /* RelayTableViewCell.m in Sources */,
 				E544CF651C744087003B22BC /* AddViewController.m in Sources */,
 				E544CFF21C7441FA003B22BC /* IQKeyboardManager.m in Sources */,
 				E544CFA31C744094003B22BC /* MessageTableViewCell.m in Sources */,
@@ -1576,6 +1605,7 @@
 				E544CF781C744087003B22BC /* MyDailyRecodViewController.m in Sources */,
 				E544CF811C744087003B22BC /* ReceivePeopleViewController.m in Sources */,
 				E544D04E1C744345003B22BC /* FriendsCircleViewController.m in Sources */,
+				184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */,
 				E544CF951C74408E003B22BC /* NavigationViewController.m in Sources */,
 				E544CF671C744087003B22BC /* AddressBookViewController.m in Sources */,
 				E544D0681C744345003B22BC /* ReadingCell.m in Sources */,

@@ -34,7 +34,7 @@
 }
 - (void)layoutSubviews {
     _nameLabel.frame = CGRectMake(40 * H + 20 * W, 0, 100 * W, 40 * H);
-    _headerImageView.frame = CGRectMake(10 * W, 0 * H, 40 * H, 40 * H);
+    _headerImageView.frame = CGRectMake(10 * W, 5 * H, 40 * H, 40 * H);
     _headerImageView.layer.cornerRadius = 20 * H;
     _headerImageView.layer.masksToBounds = YES;
     
