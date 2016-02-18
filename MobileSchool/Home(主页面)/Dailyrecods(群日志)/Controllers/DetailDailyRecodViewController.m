@@ -67,19 +67,20 @@
     } else if (_numberButton == 2) {
         return 120 * H;
     } else if (_numberButton == 3) {
-        return 300 * H;
+        return kScreenHeight;
     } else {
-        return 10 * H;
+        return kScreenHeight;
     }
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (_numberButton == 3) {
+    if (_numberButton == 3 || _numberButton == 4) {
         return 1;
     }
-    return 5;
+    
+    return 10;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 60 * H;
+    return 50 * H;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *headerView = [[UIView alloc] init];
@@ -175,6 +176,7 @@
     [_passButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [_readButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     _numberButton = 4;
+    
     [_tableView reloadData];
     
 }
