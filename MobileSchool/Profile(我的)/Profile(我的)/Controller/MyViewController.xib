@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyViewController">
             <connections>
+                <outlet property="tableview" destination="k3E-cO-Jjc" id="TWq-cb-WxU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,16 +16,64 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzX-PP-M1V">
-                    <rect key="frame" x="113" y="162" width="45" height="30"/>
-                    <state key="normal" title="通讯录"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="k3E-cO-Jjc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="Ur1-lJ-uHa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv7-4u-eUa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+                                <color key="backgroundColor" white="0.45598259228187921" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="pressContactBtn:" destination="-1" eventType="touchUpInside" id="bO4-mR-fUZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AdO-nR-mO3">
+                                <rect key="frame" x="124" y="27" width="72" height="72"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="BBw-h4-R69"/>
+                                    <constraint firstAttribute="height" constant="72" id="hiQ-18-RWT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李公博" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ4-m0-lTh">
+                                <rect key="frame" x="0.0" y="114" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sv7-4u-eUa" firstAttribute="top" secondItem="Ur1-lJ-uHa" secondAttribute="top" id="EDD-PB-qlY"/>
+                            <constraint firstItem="OQ4-m0-lTh" firstAttribute="leading" secondItem="Ur1-lJ-uHa" secondAttribute="leading" id="H0T-WG-0bZ"/>
+                            <constraint firstAttribute="trailing" secondItem="sv7-4u-eUa" secondAttribute="trailing" id="HLu-vu-WCh"/>
+                            <constraint firstAttribute="trailing" secondItem="OQ4-m0-lTh" secondAttribute="trailing" id="J8U-DU-sOU"/>
+                            <constraint firstItem="OQ4-m0-lTh" firstAttribute="top" secondItem="AdO-nR-mO3" secondAttribute="bottom" constant="15" id="ND6-7i-EmG"/>
+                            <constraint firstItem="AdO-nR-mO3" firstAttribute="centerX" secondItem="OQ4-m0-lTh" secondAttribute="centerX" id="Ohj-Hs-gPN"/>
+                            <constraint firstItem="AdO-nR-mO3" firstAttribute="top" secondItem="Ur1-lJ-uHa" secondAttribute="top" constant="27" id="afQ-jX-PSE"/>
+                            <constraint firstAttribute="bottom" secondItem="sv7-4u-eUa" secondAttribute="bottom" id="eLl-WW-wcR"/>
+                            <constraint firstItem="OQ4-m0-lTh" firstAttribute="top" secondItem="AdO-nR-mO3" secondAttribute="bottom" constant="15" id="mbY-ZA-qaR"/>
+                            <constraint firstAttribute="bottom" secondItem="OQ4-m0-lTh" secondAttribute="bottom" constant="13" id="moe-Zo-vga"/>
+                            <constraint firstItem="sv7-4u-eUa" firstAttribute="leading" secondItem="Ur1-lJ-uHa" secondAttribute="leading" id="rVY-MC-LTa"/>
+                        </constraints>
+                    </view>
                     <connections>
-                        <action selector="pressContactBtn:" destination="-1" eventType="touchUpInside" id="4nV-vR-KV3"/>
+                        <outlet property="dataSource" destination="-1" id="2Dz-0y-GmU"/>
+                        <outlet property="delegate" destination="-1" id="H0K-dg-LhG"/>
                     </connections>
-                </button>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="255" y="292"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="k3E-cO-Jjc" secondAttribute="bottom" id="CTC-7o-ymt"/>
+                <constraint firstAttribute="trailing" secondItem="k3E-cO-Jjc" secondAttribute="trailing" id="MrU-e7-bfj"/>
+                <constraint firstItem="k3E-cO-Jjc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fEC-p6-Sfy"/>
+                <constraint firstItem="k3E-cO-Jjc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g7B-lR-91o"/>
+            </constraints>
+            <point key="canvasLocation" x="523" y="204"/>
         </view>
     </objects>
 </document>
