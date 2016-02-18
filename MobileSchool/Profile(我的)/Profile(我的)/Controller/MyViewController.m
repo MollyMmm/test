@@ -22,10 +22,14 @@
     [super viewDidLoad];
     self.title = @"你的";
     //[self setNavigationBarHidden:YES];
-    self.navigationController.navigationBarHidden = YES;
     
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
