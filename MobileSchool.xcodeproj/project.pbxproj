@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE21C744FB00003AD39 /* HeaderView.m */; };
+		184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */; };
+		184EEDE91C75547D0003AD39 /* RelayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */; };
+		184EEDEC1C755AD10003AD39 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDEB1C755AD10003AD39 /* CommentTableViewCell.m */; };
+		184EEDEF1C7560DA0003AD39 /* ReadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDEE1C7560DA0003AD39 /* ReadTableViewCell.m */; };
+		184EEDF21C756E860003AD39 /* ReadCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDF11C756E860003AD39 /* ReadCollectionViewCell.m */; };
 		332D8AB724C974AA1031C258 /* libPods-MobileSchool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */; };
 		E528E5691C759420003C18BC /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E528E5671C759420003C18BC /* ChatViewController.m */; };
 		E528E56A1C759420003C18BC /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E528E5681C759420003C18BC /* ChatViewController.xib */; };
@@ -140,6 +146,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184EEDE11C744FB00003AD39 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		184EEDE21C744FB00003AD39 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		184EEDE41C7464740003AD39 /* HeaderDailyRecodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderDailyRecodView.h; sourceTree = "<group>"; };
+		184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderDailyRecodView.m; sourceTree = "<group>"; };
+		184EEDE71C75547D0003AD39 /* RelayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelayTableViewCell.h; sourceTree = "<group>"; };
+		184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelayTableViewCell.m; sourceTree = "<group>"; };
+		184EEDEA1C755AD10003AD39 /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		184EEDEB1C755AD10003AD39 /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		184EEDED1C7560DA0003AD39 /* ReadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadTableViewCell.h; sourceTree = "<group>"; };
+		184EEDEE1C7560DA0003AD39 /* ReadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadTableViewCell.m; sourceTree = "<group>"; };
+		184EEDF01C756E860003AD39 /* ReadCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadCollectionViewCell.h; sourceTree = "<group>"; };
+		184EEDF11C756E860003AD39 /* ReadCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadCollectionViewCell.m; sourceTree = "<group>"; };
 		3091111A346374AA942EF064 /* Pods-MobileSchool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.release.xcconfig"; sourceTree = "<group>"; };
 		89753E9BA9172F279BEEF726 /* Pods-MobileSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.debug.xcconfig"; sourceTree = "<group>"; };
 		E528E5661C759420003C18BC /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
@@ -332,8 +350,8 @@
 		E544D06C1C744372003B22BC /* JSDropmenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDropmenuView.m; sourceTree = "<group>"; };
 		E55BC9EF1C74351B009A9AAA /* MobileSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55BC9F31C74351B009A9AAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E55BC9F51C74351B009A9AAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E55BC9F61C74351B009A9AAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E55BC9F51C74351B009A9AAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		E55BC9F61C74351B009A9AAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		E55BC9F81C74351B009A9AAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E55BC9F91C74351B009A9AAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E55BC9FC1C74351B009A9AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -560,6 +578,16 @@
 			children = (
 				E544CF131C744087003B22BC /* dailyRecodTableViewCell.h */,
 				E544CF141C744087003B22BC /* dailyRecodTableViewCell.m */,
+				184EEDE41C7464740003AD39 /* HeaderDailyRecodView.h */,
+				184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */,
+				184EEDE71C75547D0003AD39 /* RelayTableViewCell.h */,
+				184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */,
+				184EEDEA1C755AD10003AD39 /* CommentTableViewCell.h */,
+				184EEDEB1C755AD10003AD39 /* CommentTableViewCell.m */,
+				184EEDED1C7560DA0003AD39 /* ReadTableViewCell.h */,
+				184EEDEE1C7560DA0003AD39 /* ReadTableViewCell.m */,
+				184EEDF01C756E860003AD39 /* ReadCollectionViewCell.h */,
+				184EEDF11C756E860003AD39 /* ReadCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -671,6 +699,8 @@
 				E544CF321C744087003B22BC /* RecodesTableViewCell.m */,
 				E544CF331C744087003B22BC /* RTLabel.h */,
 				E544CF341C744087003B22BC /* RTLabel.m */,
+				184EEDE11C744FB00003AD39 /* HeaderView.h */,
+				184EEDE21C744FB00003AD39 /* HeaderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -804,6 +834,8 @@
 		E544CF881C74408E003B22BC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E55BC9F51C74351B009A9AAA /* AppDelegate.h */,
+				E55BC9F61C74351B009A9AAA /* AppDelegate.m */,
 				E544CF8B1C74408E003B22BC /* LCTabbar.h */,
 				E544CF8C1C74408E003B22BC /* LCTabbar.m */,
 				E544CF8E1C74408E003B22BC /* NavigationViewController.h */,
@@ -1275,8 +1307,6 @@
 				E544CF881C74408E003B22BC /* Main */,
 				E544CEF01C744087003B22BC /* Home(主页面) */,
 				E544CEE21C744077003B22BC /* Library */,
-				E55BC9F51C74351B009A9AAA /* AppDelegate.h */,
-				E55BC9F61C74351B009A9AAA /* AppDelegate.m */,
 				E55BC9F81C74351B009A9AAA /* ViewController.h */,
 				E55BC9F91C74351B009A9AAA /* ViewController.m */,
 				E55BC9FB1C74351B009A9AAA /* Main.storyboard */,
@@ -1531,19 +1561,24 @@
 				E55BC9FA1C74351B009A9AAA /* ViewController.m in Sources */,
 				E544D0641C744345003B22BC /* LongReadingCell.m in Sources */,
 				E544CFEF1C7441FA003B22BC /* IQUIView+Hierarchy.m in Sources */,
+				184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */,
 				E544D0081C74430D003B22BC /* DailyViewController.m in Sources */,
 				E544CF6A1C744087003B22BC /* DailyRecodViewController.m in Sources */,
+				184EEDF21C756E860003AD39 /* ReadCollectionViewCell.m in Sources */,
 				E544D0661C744345003B22BC /* LongTableViewCell.m in Sources */,
 				E544CF831C744087003B22BC /* NotificationTableViewCell.m in Sources */,
 				E544CF761C744087003B22BC /* RTLabel.m in Sources */,
 				E544CF721C744087003B22BC /* HomeCollectionViewCell.m in Sources */,
 				E528E5691C759420003C18BC /* ChatViewController.m in Sources */,
 				E544CF6B1C744087003B22BC /* DetailDailyRecodViewController.m in Sources */,
+				184EEDEC1C755AD10003AD39 /* CommentTableViewCell.m in Sources */,
 				E544CF661C744087003B22BC /* AddTableViewCell.m in Sources */,
 				E544D00B1C74430D003B22BC /* GroupViewController.m in Sources */,
 				E55BC9F71C74351B009A9AAA /* AppDelegate.m in Sources */,
 				E544CF801C744087003B22BC /* NotificationAndRecodsViewController.m in Sources */,
+				184EEDEF1C7560DA0003AD39 /* ReadTableViewCell.m in Sources */,
 				E544CFBD1C744099003B22BC /* MyViewController.m in Sources */,
+				184EEDE91C75547D0003AD39 /* RelayTableViewCell.m in Sources */,
 				E544CF651C744087003B22BC /* AddViewController.m in Sources */,
 				E544CFF21C7441FA003B22BC /* IQKeyboardManager.m in Sources */,
 				E544CFA31C744094003B22BC /* MessageTableViewCell.m in Sources */,
@@ -1587,6 +1622,7 @@
 				E544CF781C744087003B22BC /* MyDailyRecodViewController.m in Sources */,
 				E544CF811C744087003B22BC /* ReceivePeopleViewController.m in Sources */,
 				E544D04E1C744345003B22BC /* FriendsCircleViewController.m in Sources */,
+				184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */,
 				E544CF951C74408E003B22BC /* NavigationViewController.m in Sources */,
 				E544CF671C744087003B22BC /* AddressBookViewController.m in Sources */,
 				E544D0681C744345003B22BC /* ReadingCell.m in Sources */,

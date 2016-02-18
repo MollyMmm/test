@@ -144,7 +144,7 @@
     [headerView addSubview:passLineLabel];
     passLineLabel.backgroundColor = [UIColor grayColor];
     
-    UILabel *grayLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 30 * H, kScreenWidth, 10 * H)];
+    UILabel *grayLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 40 * H, kScreenWidth, 10 * H)];
     grayLabel.backgroundColor = [UIColor grayColor];
     [headerView addSubview:grayLabel];
     

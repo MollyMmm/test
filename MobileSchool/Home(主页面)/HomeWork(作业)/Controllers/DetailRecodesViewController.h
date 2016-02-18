@@ -10,5 +10,6 @@
 
 @interface DetailRecodesViewController : UIViewController
 @property (nonatomic, assign) int numberButton;
+@property (nonatomic, assign) BOOL wide;
 
 @end

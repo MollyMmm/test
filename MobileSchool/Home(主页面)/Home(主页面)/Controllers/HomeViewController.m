@@ -55,6 +55,7 @@
 
     self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
     self.hidesBottomBarWhenPushed = YES;
+    self.tabBarController.tabBar.hidden = NO;
 }
 - (void)viewWillDisappear:(BOOL)animated {
     self.hidesBottomBarWhenPushed = NO;

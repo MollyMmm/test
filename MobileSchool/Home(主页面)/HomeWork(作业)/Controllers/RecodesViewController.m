@@ -14,6 +14,7 @@
 @interface RecodesViewController ()<UITableViewDataSource,UITableViewDelegate,recodesDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 
+
 @end
 
 @implementation RecodesViewController
@@ -42,6 +43,7 @@
 - (void)getNumber:(int)number {
     DetailRecodesViewController *detail = [[DetailRecodesViewController alloc] init];
     detail.numberButton = number;
+    detail.wide = YES;
     [self.navigationController pushViewController:detail animated:YES];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailDailyRecodViewController : UIViewController
+@property (nonatomic, assign) int numberButton;
+@property (nonatomic, assign) BOOL wide;
 
 @end
