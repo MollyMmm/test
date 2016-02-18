@@ -11,6 +11,12 @@
 - (void)getNumber:(int)number;
 
 @end
+
+@protocol ToGroupDelegate <NSObject>
+
+- (void)pushToGroup:(NSString *)group;
+
+@end
 @interface RecodesTableViewCell : UITableViewCell
 @property (nonatomic, strong) UIImageView *peopleImageView;
 @property (nonatomic, strong) UILabel *peopleLabel;
@@ -29,6 +35,7 @@
 @property (nonatomic, strong) UIButton *supportButton;
 
 @property (nonatomic, strong) id<recodesDelegate>delegate;
+@property (nonatomic, strong) id<ToGroupDelegate>groupDelegate;
 
 
 @end

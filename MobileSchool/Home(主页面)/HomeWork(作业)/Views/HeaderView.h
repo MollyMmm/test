@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface HeaderView : UIView
 @property (nonatomic, strong) UIImageView *peopleImageView;
 @property (nonatomic, strong) UILabel *peopleLabel;

@@ -10,6 +10,7 @@
 #import "RelayTableViewCell.h"
 #import "CommentTableViewCell.h"
 #import "ReadTableViewCell.h"
+#import "SupportTableViewCell.h"
 #import "HeaderDailyRecodView.h"
 
 @interface DetailDailyRecodViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -37,7 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"日志详情";
     
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"返回按钮"] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
@@ -59,6 +60,31 @@
     }
     
     self.tabBarController.tabBar.hidden = YES;
+#pragma mark 功能
+    UIView *functionView = [[UIView alloc] initWithFrame:CGRectMake(0, kScreenHeight - 49, kScreenWidth, 49)];
+    [self.view addSubview:functionView];
+    functionView.backgroundColor = [UIColor grayColor];
+    
+    UIImageView *relayImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20 * W, 10 * H, 30 * W, 30 * H)];
+    relayImageView.image = [UIImage imageNamed:@"转发"];
+    [functionView addSubview:relayImageView];
+    
+    UIImageView *commentImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth / 5 + 20 * W, 10 * H, 30 * W, 30 * H)];
+    commentImageView.image = [UIImage imageNamed:@"评论"];
+    [functionView addSubview:commentImageView];
+    
+    UIImageView *collectImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth * 2 / 5 + 20 * W, 10 * H, 30 * W, 30 * H)];
+    collectImageView.image = [UIImage imageNamed:@"未收藏"];
+    [functionView addSubview:collectImageView];
+    
+    UIImageView *supportImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth * 3 / 5 + 20 * W, 10 * H, 30 * W, 30 * H)];
+    supportImageView.image = [UIImage imageNamed:@"未赞"];
+    [functionView addSubview:supportImageView];
+
+    UIImageView *moreImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth * 4 / 5 + 20 * W, 10 * H, 30 * W, 30 * H)];
+    moreImageView.image = [UIImage imageNamed:@"更多"];
+    [functionView addSubview:moreImageView];
+
 
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -201,7 +227,7 @@
         ReadTableViewCell *cell = [ReadTableViewCell tableViewCell:tableView];
         return cell;
     } else {
-        ReadTableViewCell *cell = [ReadTableViewCell tableViewCell:tableView];
+        SupportTableViewCell *cell = [SupportTableViewCell tableViewCell:tableView];
         return cell;
 
     }

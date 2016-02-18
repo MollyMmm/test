@@ -10,8 +10,9 @@
 #import "RecodesTableViewCell.h"
 #import "HomeworkViewController.h"
 #import "DetailRecodesViewController.h"
+#import "GroupInformationViewController.h"
 
-@interface RecodesViewController ()<UITableViewDataSource,UITableViewDelegate,recodesDelegate>
+@interface RecodesViewController ()<UITableViewDataSource,UITableViewDelegate,recodesDelegate,ToGroupDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 
 
@@ -46,6 +47,10 @@
     detail.wide = YES;
     [self.navigationController pushViewController:detail animated:YES];
 }
+- (void)pushToGroup:(NSString *)group {
+    GroupInformationViewController *Group = [[GroupInformationViewController alloc] init];
+    [self.navigationController pushViewController:Group animated:YES];
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;
 }
@@ -57,6 +62,7 @@
     };
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.delegate = self;
+    cell.groupDelegate = self;
     return cell;
     
 }

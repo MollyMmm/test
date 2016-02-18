@@ -9,10 +9,14 @@
 #import "NotificationAndRecodsViewController.h"
 #import "SendInfomationViewController.h"
 #import "NotificationTableViewCell.h"
+#import "OtherPeopleNotificationTableViewCell.h"
 #import "DetailNotificationViewController.h"
+#import "DetailInformationViewController.h"
+#import "GroupInformationViewController.h"
+#import "DetailOtherNotificationViewController.h"
 
 
-@interface NotificationAndRecodsViewController ()<UITableViewDataSource,UITableViewDelegate,notificationDelegate>
+@interface NotificationAndRecodsViewController ()<UITableViewDataSource,UITableViewDelegate,notificationDelegate,OtherPeopleDetailInformationDelegate,ToGroupDelegate,MyselfToGroupDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
@@ -37,7 +41,6 @@
     [self.view addSubview:_tableView];
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    _tableView.rowHeight = 250 * H;
     
     
 }
@@ -48,24 +51,47 @@
 
     [self.navigationController pushViewController:detail animated:YES];
 }
+- (void)pushToDetail:(NSString *)name {
+    DetailInformationViewController *detail = [[DetailInformationViewController alloc] init];
+    [self.navigationController pushViewController:detail animated:YES];
+}
+- (void)pushToGroup:(NSString *)group {
+    GroupInformationViewController *toGroup = [[GroupInformationViewController alloc] init];
+    [self.navigationController pushViewController:toGroup animated:YES];
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        return 200 *  H;
+    } else {
+        return 250 * H;
+    }
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *reuse = @"reuse";
-    NotificationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuse];
-    if (!cell) {
-        cell = [[NotificationTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuse];
-    };
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (indexPath.row == 0) {
+        OtherPeopleNotificationTableViewCell *cell = [OtherPeopleNotificationTableViewCell otherPeopleNotificationTableViewCell:tableView];
+        cell.delegate = self;
+        cell.groupDelegate = self;
+        return cell;
+    } else {
+    NotificationTableViewCell *cell = [NotificationTableViewCell notificationTableViewCell:tableView];
     cell.Delegate = self;
+        cell.MyselfDelegate = self;
     return cell;
+    }
     
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        DetailOtherNotificationViewController *detail = [[DetailOtherNotificationViewController alloc] init];
+        [self.navigationController pushViewController:detail animated:YES];
+    } else {
     DetailNotificationViewController *detail = [[DetailNotificationViewController alloc] init];
     detail.YESORNO = NO;
     [self.navigationController pushViewController:detail animated:YES];
+    }
 }
 - (void)backAction {
     [self.navigationController popViewControllerAnimated:YES];
