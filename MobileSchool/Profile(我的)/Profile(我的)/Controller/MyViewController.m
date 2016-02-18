@@ -9,7 +9,7 @@
 #import "MyViewController.h"
 #import "ContactsViewController.h"
 #import "NavigationViewController.h"
-
+#import "MyViewTableViewCell.h"
 #import "MMDrawerController.h"
 #import "LeftSideDrawerViewController.h"
 @interface MyViewController ()
@@ -17,14 +17,90 @@
 @end
 
 @implementation MyViewController
-
+{
+    NSArray *_dataSource;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"你的";
-    //[self setNavigationBarHidden:YES];
-    
+    [self getData];
+    _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+-(void)getData
+{
+    _dataSource = @[@[@"我的二维码"],@[@"发送队列",@"回收站",@"黑名单"],@[@"设置"],@[@"学校认证"]];
 }
 
+
+#pragma mark - UItableViewDelegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return [_dataSource count];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    NSInteger rowCount = [(NSArray*)[_dataSource objectAtIndex:section] count];
+    return rowCount;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString* cellIdentifier = @"cell";
+    
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    NSString* text = [[_dataSource objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+    cell.textLabel.text = text;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.imageView.image = [UIImage imageNamed:@"tabbar_home_selected"];
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        return (UITableViewCell*)[[[NSBundle mainBundle] loadNibNamed:@"MyViewTableViewCell" owner:nil options:nil] lastObject];
+    }
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    NSString* text = [[_dataSource objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+//    
+//    if ([text isEqualToString:@"系统设置"]||[text isEqualToString:@"我的订单"]||[text isEqualToString:@"地址管理"]||[text isEqualToString:@"我的账号"]) {
+//        
+//        
+//    }
+//    
+//    
+//    if ([text isEqualToString:@"系统设置"]) {
+//        
+//    }
+//    
+//    if ([text isEqualToString:@"我的订单"]) {
+//        
+//    }
+//    if ([text isEqualToString:@"地址管理"]) {
+//        
+//    }
+//    if ([text isEqualToString:@"我的账号"]) {
+//        
+//    }
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        return 200.f;
+    }
+    return 44.f;
+}
+
+- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    return nil;
+}
+
+
+
+
+
+//隐藏导航栏
 -(void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBarHidden = YES;
