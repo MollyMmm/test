@@ -16,6 +16,11 @@
 		184EEDEC1C755AD10003AD39 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDEB1C755AD10003AD39 /* CommentTableViewCell.m */; };
 		184EEDEF1C7560DA0003AD39 /* ReadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDEE1C7560DA0003AD39 /* ReadTableViewCell.m */; };
 		184EEDF21C756E860003AD39 /* ReadCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDF11C756E860003AD39 /* ReadCollectionViewCell.m */; };
+		184EEDF51C75A4F70003AD39 /* SupportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDF41C75A4F70003AD39 /* SupportTableViewCell.m */; };
+		184EEDF81C75A7D20003AD39 /* OtherPeopleNotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDF71C75A7D20003AD39 /* OtherPeopleNotificationTableViewCell.m */; };
+		184EEDFB1C75B04D0003AD39 /* DetailInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDFA1C75B04D0003AD39 /* DetailInformationViewController.m */; };
+		184EEDFE1C75B5D00003AD39 /* GroupInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDFD1C75B5D00003AD39 /* GroupInformationViewController.m */; };
+		184EEE011C75B7DC0003AD39 /* DetailOtherNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEE001C75B7DC0003AD39 /* DetailOtherNotificationViewController.m */; };
 		332D8AB724C974AA1031C258 /* libPods-MobileSchool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */; };
 		E528E5691C759420003C18BC /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E528E5671C759420003C18BC /* ChatViewController.m */; };
 		E528E56A1C759420003C18BC /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E528E5681C759420003C18BC /* ChatViewController.xib */; };
@@ -164,6 +169,16 @@
 		184EEDEE1C7560DA0003AD39 /* ReadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadTableViewCell.m; sourceTree = "<group>"; };
 		184EEDF01C756E860003AD39 /* ReadCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadCollectionViewCell.h; sourceTree = "<group>"; };
 		184EEDF11C756E860003AD39 /* ReadCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadCollectionViewCell.m; sourceTree = "<group>"; };
+		184EEDF31C75A4F70003AD39 /* SupportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupportTableViewCell.h; sourceTree = "<group>"; };
+		184EEDF41C75A4F70003AD39 /* SupportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupportTableViewCell.m; sourceTree = "<group>"; };
+		184EEDF61C75A7D20003AD39 /* OtherPeopleNotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherPeopleNotificationTableViewCell.h; sourceTree = "<group>"; };
+		184EEDF71C75A7D20003AD39 /* OtherPeopleNotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherPeopleNotificationTableViewCell.m; sourceTree = "<group>"; };
+		184EEDF91C75B04D0003AD39 /* DetailInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailInformationViewController.h; sourceTree = "<group>"; };
+		184EEDFA1C75B04D0003AD39 /* DetailInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailInformationViewController.m; sourceTree = "<group>"; };
+		184EEDFC1C75B5D00003AD39 /* GroupInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupInformationViewController.h; sourceTree = "<group>"; };
+		184EEDFD1C75B5D00003AD39 /* GroupInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupInformationViewController.m; sourceTree = "<group>"; };
+		184EEDFF1C75B7DC0003AD39 /* DetailOtherNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailOtherNotificationViewController.h; sourceTree = "<group>"; };
+		184EEE001C75B7DC0003AD39 /* DetailOtherNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailOtherNotificationViewController.m; sourceTree = "<group>"; };
 		3091111A346374AA942EF064 /* Pods-MobileSchool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.release.xcconfig"; sourceTree = "<group>"; };
 		89753E9BA9172F279BEEF726 /* Pods-MobileSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.debug.xcconfig"; sourceTree = "<group>"; };
 		E528E5661C759420003C18BC /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
@@ -618,6 +633,8 @@
 				184EEDEE1C7560DA0003AD39 /* ReadTableViewCell.m */,
 				184EEDF01C756E860003AD39 /* ReadCollectionViewCell.h */,
 				184EEDF11C756E860003AD39 /* ReadCollectionViewCell.m */,
+				184EEDF31C75A4F70003AD39 /* SupportTableViewCell.h */,
+				184EEDF41C75A4F70003AD39 /* SupportTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -817,6 +834,12 @@
 				E544CF521C744087003B22BC /* ReceivePeopleViewController.m */,
 				E544CF531C744087003B22BC /* SendInfomationViewController.h */,
 				E544CF541C744087003B22BC /* SendInfomationViewController.m */,
+				184EEDF91C75B04D0003AD39 /* DetailInformationViewController.h */,
+				184EEDFA1C75B04D0003AD39 /* DetailInformationViewController.m */,
+				184EEDFC1C75B5D00003AD39 /* GroupInformationViewController.h */,
+				184EEDFD1C75B5D00003AD39 /* GroupInformationViewController.m */,
+				184EEDFF1C75B7DC0003AD39 /* DetailOtherNotificationViewController.h */,
+				184EEE001C75B7DC0003AD39 /* DetailOtherNotificationViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -830,6 +853,8 @@
 				E544CF591C744087003B22BC /* NotReadTableViewCell.m */,
 				E544CF5A1C744087003B22BC /* SendTableViewCell.h */,
 				E544CF5B1C744087003B22BC /* SendTableViewCell.m */,
+				184EEDF61C75A7D20003AD39 /* OtherPeopleNotificationTableViewCell.h */,
+				184EEDF71C75A7D20003AD39 /* OtherPeopleNotificationTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1584,6 +1609,7 @@
 				E544D05C1C744345003B22BC /* InterviewCell.m in Sources */,
 				E544D05A1C744345003B22BC /* InterviewViewController.m in Sources */,
 				E544CFF31C7441FA003B22BC /* IQKeyboardReturnKeyHandler.m in Sources */,
+				184EEDFB1C75B04D0003AD39 /* DetailInformationViewController.m in Sources */,
 				E544CFB71C744099003B22BC /* ContactsViewController.m in Sources */,
 				E544CF7E1C744087003B22BC /* PhoneViewController.m in Sources */,
 				E544D0581C744345003B22BC /* MoreTableViewCell.m in Sources */,
@@ -1596,6 +1622,7 @@
 				E544D0661C744345003B22BC /* LongTableViewCell.m in Sources */,
 				E544CF831C744087003B22BC /* NotificationTableViewCell.m in Sources */,
 				E544CF761C744087003B22BC /* RTLabel.m in Sources */,
+				184EEDF51C75A4F70003AD39 /* SupportTableViewCell.m in Sources */,
 				E544CF721C744087003B22BC /* HomeCollectionViewCell.m in Sources */,
 				E528E5691C759420003C18BC /* ChatViewController.m in Sources */,
 				E544CF6B1C744087003B22BC /* DetailDailyRecodViewController.m in Sources */,
@@ -1627,11 +1654,13 @@
 				E544CFF71C7441FA003B22BC /* IQTitleBarButtonItem.m in Sources */,
 				E544CF861C744087003B22BC /* RemindViewController.m in Sources */,
 				E544CF7F1C744087003B22BC /* DetailNotificationViewController.m in Sources */,
+				184EEDF81C75A7D20003AD39 /* OtherPeopleNotificationTableViewCell.m in Sources */,
 				E544CF701C744087003B22BC /* HomeViewController.m in Sources */,
 				E544D0621C744345003B22BC /* ReadingViewController.m in Sources */,
 				E544CF731C744087003B22BC /* DetailRecodesViewController.m in Sources */,
 				E544CF961C74408E003B22BC /* TabbarViewController.m in Sources */,
 				E544D05E1C744345003B22BC /* LongInterviewCell.m in Sources */,
+				184EEDFE1C75B5D00003AD39 /* GroupInformationViewController.m in Sources */,
 				E544CFEE1C7441FA003B22BC /* IQUITextFieldView+Additions.m in Sources */,
 				E544D0601C744345003B22BC /* LongInterviewTableViewCell.m in Sources */,
 				E544CF7A1C744087003B22BC /* EmailViewController.m in Sources */,
@@ -1643,6 +1672,7 @@
 				E55BC9F41C74351B009A9AAA /* main.m in Sources */,
 				E544CFA11C744094003B22BC /* MessageViewController.m in Sources */,
 				E544CF771C744087003B22BC /* DetailMyDailyRecodsViewController.m in Sources */,
+				184EEE011C75B7DC0003AD39 /* DetailOtherNotificationViewController.m in Sources */,
 				E544CFBB1C744099003B22BC /* BottomTableView.m in Sources */,
 				E544CF871C744087003B22BC /* RemindTableViewCell.m in Sources */,
 				E544D00A1C74430D003B22BC /* GroupSpaceViewController.m in Sources */,

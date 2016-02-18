@@ -11,6 +11,11 @@
 - (void)readOrNot:(int)sender;
 
 @end
+@protocol MyselfToGroupDelegate <NSObject>
+
+- (void)pushToGroup:(NSString *)group;
+
+@end
 @interface NotificationTableViewCell : UITableViewCell
 @property (nonatomic, strong) UIImageView *peopleImageView;
 @property (nonatomic, strong) UILabel *peopleLabel;
@@ -21,5 +26,8 @@
 @property (nonatomic, strong) UIButton *haveReadedButton;
 @property (nonatomic, strong) UIButton *notReadButton;
 @property (nonatomic, assign) id<notificationDelegate> Delegate;
+@property (nonatomic, assign) id<MyselfToGroupDelegate>MyselfDelegate;
+
++ (NotificationTableViewCell *)notificationTableViewCell:(UITableView *)tableView;
 
 @end

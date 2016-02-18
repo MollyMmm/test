@@ -47,6 +47,12 @@
     _peopleLabel.text = @"尹直富";
     _fromLabel.frame = CGRectMake(70 * W, 30 * H, 200 * W, 30 * H);
     _fromLabel.text = @"发表于开心乐园";
+    
+    _fromLabel.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(ToGroupAction)];
+    [_fromLabel addGestureRecognizer:tap];
+
     _fromLabel.textColor = [UIColor redColor];
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:_fromLabel.text];
     [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:NSMakeRange(0, 3)];
@@ -65,7 +71,9 @@
     _timeLabel.textColor = [UIColor grayColor];
     
 }
-
+- (void)ToGroupAction {
+    
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

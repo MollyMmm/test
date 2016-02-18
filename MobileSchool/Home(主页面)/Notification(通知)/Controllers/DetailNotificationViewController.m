@@ -8,6 +8,7 @@
 
 #import "DetailNotificationViewController.h"
 #import "NotReadTableViewCell.h"
+#import "GroupInformationViewController.h"
 
 @interface DetailNotificationViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *notReadTableView;
@@ -65,6 +66,11 @@
     _peopleLabel.text = @"尹直富";
     _fromLabel.frame = CGRectMake(70 * W, 30 * H, 200 * W, 30 * H);
     _fromLabel.text = @"发表于开心乐园";
+    
+    _fromLabel.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(ToGroupAction)];
+    [_fromLabel addGestureRecognizer:tap];
     _fromLabel.textColor = [UIColor redColor];
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:_fromLabel.text];
     [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:NSMakeRange(0, 3)];
@@ -103,6 +109,10 @@
     copyButton.backgroundColor = [UIColor grayColor];
     [copyButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 
+}
+- (void)ToGroupAction {
+    GroupInformationViewController *group  = [[GroupInformationViewController alloc] init];
+    [self.navigationController pushViewController:group animated:YES];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 2;
@@ -169,7 +179,6 @@
     
 }
 - (void)haveReadedAction {
-    NSLog(@"已读");
     [_notReadButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [_haveReadedButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 
@@ -178,7 +187,6 @@
     
 }
 - (void)notReadAction {
-    NSLog(@"未读");
     [_notReadButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_haveReadedButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     _YESORNO = NO;
