@@ -66,24 +66,7 @@
     [cell.imgView setImage:[UIImage imageNamed:imgStr]];
     cell.textLbl.text = textStr;
     cell.detailTextLbl.text = detailTextStr;
-//    cell.detailTextLabel.textColor = [UIColor grayColor];
     cell.timeLbl.text = timeStr;
-
-//    UILabel* timeLbl = [[UILabel alloc] initWithFrame:CGRectMake(kScreenWidth-78, 4, 70,21)];
-//    timeLbl.font = [UIFont systemFontOfSize:12.f];
-//    timeLbl.textColor = [UIColor grayColor];
-//    
-//    NSString* imgStr = [[_dataArr objectAtIndex:indexPath.row] objectAtIndex:0];
-//    NSString* textStr = [[_dataArr objectAtIndex:indexPath.row] objectAtIndex:1];
-//    NSString* detailTextStr = [[_dataArr objectAtIndex:indexPath.row] objectAtIndex:2];
-//    NSString* timeStr = [[_dataArr objectAtIndex:indexPath.row] objectAtIndex:3];
-//    [cell.imageView setImage:[UIImage imageNamed:imgStr]];
-//    cell.textLabel.text = textStr;
-//    cell.detailTextLabel.text = detailTextStr;
-//    cell.detailTextLabel.textColor = [UIColor grayColor];
-//    timeLbl.text = timeStr;
-//    [cell addSubview:timeLbl];
-
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

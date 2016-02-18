@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		332D8AB724C974AA1031C258 /* libPods-MobileSchool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */; };
+		E528E5691C759420003C18BC /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E528E5671C759420003C18BC /* ChatViewController.m */; };
+		E528E56A1C759420003C18BC /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E528E5681C759420003C18BC /* ChatViewController.xib */; };
 		E544CF631C744087003B22BC /* AchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CEF41C744087003B22BC /* AchievementViewController.m */; };
 		E544CF641C744087003B22BC /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CEF81C744087003B22BC /* AboutMeViewController.m */; };
 		E544CF651C744087003B22BC /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CEFC1C744087003B22BC /* AddViewController.m */; };
@@ -140,6 +142,9 @@
 /* Begin PBXFileReference section */
 		3091111A346374AA942EF064 /* Pods-MobileSchool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.release.xcconfig"; sourceTree = "<group>"; };
 		89753E9BA9172F279BEEF726 /* Pods-MobileSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.debug.xcconfig"; sourceTree = "<group>"; };
+		E528E5661C759420003C18BC /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		E528E5671C759420003C18BC /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		E528E5681C759420003C18BC /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		E544CEA01C744055003B22BC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E544CEF31C744087003B22BC /* AchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementViewController.h; sourceTree = "<group>"; };
 		E544CEF41C744087003B22BC /* AchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementViewController.m; sourceTree = "<group>"; };
@@ -821,7 +826,7 @@
 			isa = PBXGroup;
 			children = (
 				E544CF991C744094003B22BC /* Controllers */,
-				E544CF9D1C744094003B22BC /* Views */,
+				E544CF9D1C744094003B22BC /* subViews */,
 			);
 			path = "Message(消息)";
 			sourceTree = "<group>";
@@ -832,17 +837,21 @@
 				E544CF9A1C744094003B22BC /* MessageViewController.h */,
 				E544CF9B1C744094003B22BC /* MessageViewController.m */,
 				E544CF9C1C744094003B22BC /* MessageViewController.xib */,
+				E528E5661C759420003C18BC /* ChatViewController.h */,
+				E528E5671C759420003C18BC /* ChatViewController.m */,
+				E528E5681C759420003C18BC /* ChatViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		E544CF9D1C744094003B22BC /* Views */ = {
+		E544CF9D1C744094003B22BC /* subViews */ = {
 			isa = PBXGroup;
 			children = (
 				E544CF9E1C744094003B22BC /* MessageTableViewCell.h */,
 				E544CF9F1C744094003B22BC /* MessageTableViewCell.m */,
 				E544CFA01C744094003B22BC /* MessageTableViewCell.xib */,
 			);
+			name = subViews;
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -1414,6 +1423,7 @@
 			files = (
 				E544D00C1C74430D003B22BC /* GroupViewController.xib in Resources */,
 				E544CFFA1C7441FA003B22BC /* IQKeyboardManager.bundle in Resources */,
+				E528E56A1C759420003C18BC /* ChatViewController.xib in Resources */,
 				E544D0571C744345003B22BC /* HotViewCell.xib in Resources */,
 				E544CFBA1C744099003B22BC /* LeftSideDrawerViewController.xib in Resources */,
 				E544D0651C744345003B22BC /* LongReadingCell.xib in Resources */,
@@ -1527,6 +1537,7 @@
 				E544CF831C744087003B22BC /* NotificationTableViewCell.m in Sources */,
 				E544CF761C744087003B22BC /* RTLabel.m in Sources */,
 				E544CF721C744087003B22BC /* HomeCollectionViewCell.m in Sources */,
+				E528E5691C759420003C18BC /* ChatViewController.m in Sources */,
 				E544CF6B1C744087003B22BC /* DetailDailyRecodViewController.m in Sources */,
 				E544CF661C744087003B22BC /* AddTableViewCell.m in Sources */,
 				E544D00B1C74430D003B22BC /* GroupViewController.m in Sources */,
