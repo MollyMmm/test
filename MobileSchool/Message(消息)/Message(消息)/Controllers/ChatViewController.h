@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  ChatViewController.h
 //  MobileSchool
 //
-//  Created by Molly on 16/2/17.
+//  Created by Molly on 16/2/18.
 //  Copyright © 2016年 Molly. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ChatViewController : UIViewController
 
 @end
-
