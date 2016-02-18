@@ -342,8 +342,8 @@
 		E544D06C1C744372003B22BC /* JSDropmenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDropmenuView.m; sourceTree = "<group>"; };
 		E55BC9EF1C74351B009A9AAA /* MobileSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55BC9F31C74351B009A9AAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E55BC9F51C74351B009A9AAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E55BC9F61C74351B009A9AAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E55BC9F51C74351B009A9AAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		E55BC9F61C74351B009A9AAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		E55BC9F81C74351B009A9AAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E55BC9F91C74351B009A9AAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E55BC9FC1C74351B009A9AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -824,6 +824,8 @@
 		E544CF881C74408E003B22BC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E55BC9F51C74351B009A9AAA /* AppDelegate.h */,
+				E55BC9F61C74351B009A9AAA /* AppDelegate.m */,
 				E544CF8B1C74408E003B22BC /* LCTabbar.h */,
 				E544CF8C1C74408E003B22BC /* LCTabbar.m */,
 				E544CF8E1C74408E003B22BC /* NavigationViewController.h */,
@@ -1291,8 +1293,6 @@
 				E544CF881C74408E003B22BC /* Main */,
 				E544CEF01C744087003B22BC /* Home(主页面) */,
 				E544CEE21C744077003B22BC /* Library */,
-				E55BC9F51C74351B009A9AAA /* AppDelegate.h */,
-				E55BC9F61C74351B009A9AAA /* AppDelegate.m */,
 				E55BC9F81C74351B009A9AAA /* ViewController.h */,
 				E55BC9F91C74351B009A9AAA /* ViewController.m */,
 				E55BC9FB1C74351B009A9AAA /* Main.storyboard */,
