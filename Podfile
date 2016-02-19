@@ -5,6 +5,9 @@
 
 target 'MobileSchool' do
 	pod 'MMDrawerController', '~> 0.5.7'
+	pod 'AVOSCloud'
+	pod 'AVOSCloudIM'
+	pod 'AVOSCloudCrashReporting'
 end
 
 target 'MobileSchoolTests' do

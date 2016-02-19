@@ -1,4 +1,9 @@
 PODS:
+  - AVOSCloud (3.2.4.1)
+  - AVOSCloudCrashReporting (3.2.4.1):
+    - AVOSCloud
+  - AVOSCloudIM (3.2.4.1):
+    - AVOSCloud
   - MMDrawerController (0.5.7):
     - MMDrawerController/Core (= 0.5.7)
     - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
@@ -13,9 +18,15 @@ PODS:
     - MMDrawerController/Core
 
 DEPENDENCIES:
+  - AVOSCloud
+  - AVOSCloudCrashReporting
+  - AVOSCloudIM
   - MMDrawerController (~> 0.5.7)
 
 SPEC CHECKSUMS:
+  AVOSCloud: fc22102af00ddb84597495400262e0292da59af8
+  AVOSCloudCrashReporting: 1627863f0622268a7625545404b495021930b909
+  AVOSCloudIM: 70bc51383276a1de031f80759723576c632634dd
   MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
 
 COCOAPODS: 0.39.0

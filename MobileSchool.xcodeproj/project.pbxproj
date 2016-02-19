@@ -1469,6 +1469,7 @@
 				TargetAttributes = {
 					E55BC9EE1C74351B009A9AAA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = GB6KC3Z5N2;
 					};
 					E55BCA071C74351B009A9AAA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1829,7 +1830,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89753E9BA9172F279BEEF726 /* Pods-MobileSchool.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileSchool/PrefixHeader.pch";
 				INFOPLIST_FILE = MobileSchool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1842,7 +1845,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3091111A346374AA942EF064 /* Pods-MobileSchool.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileSchool/PrefixHeader.pch";
 				INFOPLIST_FILE = MobileSchool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

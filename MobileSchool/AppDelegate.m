@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TabbarViewController.h"
 #import "IQKeyboardManager.h"
+#import <AVOSCloud/AVOSCloud.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+
+
+    [AVOSCloud registerForRemoteNotification];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
