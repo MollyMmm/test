@@ -32,9 +32,9 @@
     self.navigationItem.leftBarButtonItem = leftBarBtnItem;
    
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    _tableView.backgroundColor = [[UIColor alloc] initWithRed:240/255.0 green:240/250.0 blue:240/250.0 alpha:1.0];
+    _tableView.backgroundColor = [[UIColor alloc] initWithRed:236/255.0 green:236/250.0 blue:236/250.0 alpha:1.0];
     
-    _position = 65;
+    _position = 60;
     _timeArr = [[NSArray alloc] init];
     _chatArr = [[NSMutableArray alloc] init];
     _timeArr = @[@"01-16 13:01",@"3分钟前"];
@@ -56,24 +56,27 @@
 
 #pragma mark - tableView
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     NSString* cellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    
+
     UIImageView *headImgView;
+    UIView* view;
+    bool fromSelf = true;
     NSString *idStr = [[[_chatArr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:@"id"];
     NSString *contentStr = [[[_chatArr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:@"content"];
     NSString *photoStr = [[[_chatArr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:@"photo"];
     
     if ([idStr isEqualToString:@"left"]) {
         headImgView = [[UIImageView alloc] initWithFrame:CGRectMake(8, 0, 40,40)];
-       
+        fromSelf = NO;
     }
     if ([idStr isEqualToString:@"right"]) {
         headImgView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth - 48, 0, 40,40)];
-        
+        fromSelf = YES;
     }
     
     [headImgView.layer setCornerRadius:20.f];
@@ -81,10 +84,15 @@
     headImgView.image = [UIImage imageNamed:photoStr];
     [cell addSubview:headImgView];
     
-    UIView* view = [self textView:contentStr from:YES withPosition:idStr];
+    if ([contentStr isEqualToString:@"0"]) {
+        view = [self videoVidew:3 from:fromSelf withIndexRow:indexPath.row];
+    }
+    else{
+        view = [self textView:contentStr from:fromSelf];
+    }
     [cell addSubview:view];
     
-    cell.backgroundColor = [[UIColor alloc] initWithRed:240.0/255.0 green:240.0/250.0 blue:240.0/250.0 alpha:1.0];
+    cell.backgroundColor = [[UIColor alloc] initWithRed:236/255.0 green:236/250.0 blue:236/250.0 alpha:1.0];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -95,7 +103,10 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     //根据文字长度计算
-    return 88.f;
+    NSString *contentStr = [[[_chatArr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:@"content"];
+     UIFont *font = [UIFont systemFontOfSize:14.f];
+    CGSize size = [contentStr sizeWithFont:font constrainedToSize:CGSizeMake(180.0f, 20000.0f) lineBreakMode:NSLineBreakByWordWrapping];
+    return (size.height + 50.f);
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
 
@@ -117,7 +128,15 @@
     return headerView;
 }
 #pragma mark - public 
-- (UIView *)textView:(NSString *)text from:(BOOL)fromSelf withPosition:(NSString *)idStr{
+/**
+ *  文字气泡
+ *
+ *  @param text     <#text description#>
+ *  @param fromSelf <#fromSelf description#>
+ *
+ *  @return <#return value description#>
+ */
+- (UIView *)textView:(NSString *)text from:(BOOL)fromSelf{
     
     UIFont *font = [UIFont systemFontOfSize:14.f];
     CGSize size = [text sizeWithFont:font constrainedToSize:CGSizeMake(180.0f, 20000.0f) lineBreakMode:NSLineBreakByWordWrapping];
@@ -125,40 +144,73 @@
     UIView *returnView = [[UIView alloc] initWithFrame:CGRectZero];
     returnView.backgroundColor = [UIColor clearColor];
     
-    UIImage* image;
-    if ([idStr isEqualToString:@"left"]) {
-        image = [UIImage imageNamed:@"msg_left"];
-
-    }
-    if ([idStr isEqualToString:@"right"]) {
-        image = [UIImage imageNamed:@"msg_right"];
-
-    }
+    UIImage* image = [UIImage imageNamed:(fromSelf?@"msg_right":@"msg_left")];
     UIImageView* textImgView = [[UIImageView alloc] initWithImage:[image stretchableImageWithLeftCapWidth:floorf(image.size.width/2) topCapHeight:floorf(image.size.height/2)]];
-    [returnView addSubview:textImgView];
     
     //添加文本信息
-    UILabel *bubbleText = [[UILabel alloc] initWithFrame:CGRectMake(fromSelf?15.0f:22.0f, 20.0f, size.width+10, size.height+10)];
-    bubbleText.backgroundColor = [UIColor clearColor];
-    bubbleText.font = font;
-    bubbleText.numberOfLines = 0;
-    bubbleText.lineBreakMode = NSLineBreakByWordWrapping;
-    bubbleText.text = text;
+    UILabel *textLbl = [[UILabel alloc] initWithFrame:CGRectMake(fromSelf?15.0f:22.0f, 20.0f, size.width+10, size.height+10)];
+    textLbl.backgroundColor = [UIColor clearColor];
+    textLbl.font = font;
+    textLbl.numberOfLines = 0;
+    textLbl.lineBreakMode = NSLineBreakByWordWrapping;
+    textLbl.text = text;
     
-    textImgView.frame = CGRectMake(0.0f, 14.0f, bubbleText.frame.size.width+30.0f, bubbleText.frame.size.height+20.0f);
+    textImgView.frame = CGRectMake(0.0f, 14.0f, textLbl.frame.size.width+30.0f, textLbl.frame.size.height+10.0f);
     
-    if(fromSelf)
-        returnView.frame = CGRectMake(kScreenWidth-_position-(bubbleText.frame.size.width+30.0f), 0.0f, bubbleText.frame.size.width+30.0f, bubbleText.frame.size.height+30.0f);
-    else
-        returnView.frame = CGRectMake(_position, 0.0f, bubbleText.frame.size.width+30.0f, bubbleText.frame.size.height+30.0f);
+    if(fromSelf){
+        returnView.frame = CGRectMake(kScreenWidth-_position-(textLbl.frame.size.width+30.0f), 0.0f, textLbl.frame.size.width+30.0f, textLbl.frame.size.height+10.0f);
+    }
+    else{
+        returnView.frame = CGRectMake(_position, 0.0f, textLbl.frame.size.width+30.0f, textLbl.frame.size.height+10.0f);
+    }
     
     [returnView addSubview:textImgView];
-    [returnView addSubview:bubbleText];
+    [returnView addSubview:textLbl];
     
     return returnView;
 }
-- (UIView *)yuyinView:(NSInteger)logntime from:(BOOL)fromSelf withIndexRow:(NSInteger)indexRow  withPosition:(int)position{
-    return nil;
+/**
+ *  语音气泡
+ *
+ *  @param logntime <#logntime description#>
+ *  @param fromSelf <#fromSelf description#>
+ *  @param indexRow <#indexRow description#>
+ *
+ *  @return <#return value description#>
+ */
+- (UIView *)videoVidew:(NSInteger)logntime from:(BOOL)fromSelf withIndexRow:(NSInteger)indexRow{
+    
+    //根据语音长度
+    int videoWidth= 66+(int)logntime;
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.tag = indexRow;
+    if(fromSelf){
+        button.frame =CGRectMake(kScreenWidth-_position-videoWidth, 20, videoWidth, 34);
+    }
+    else{
+        button.frame =CGRectMake(_position, 20, videoWidth, 34);
+    }
+    //image偏移量
+    UIEdgeInsets imageInsert;
+    imageInsert.top = -2;
+    imageInsert.left = fromSelf?button.frame.size.width/3:-button.frame.size.width/3;
+    button.imageEdgeInsets = imageInsert;
+    
+    [button setImage:[UIImage imageNamed:fromSelf?@"SenderVoiceNodePlaying":@"ReceiverVoiceNodePlaying"] forState:UIControlStateNormal];
+    UIImage *backgroundImage = [UIImage imageNamed:(fromSelf?@"msg_right":@"msg_left")];
+    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:20 topCapHeight:0];
+    [button setBackgroundImage:backgroundImage forState:UIControlStateNormal];
+    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(fromSelf?-30:button.frame.size.width, 0, 30, button.frame.size.height)];
+    label.text = [NSString stringWithFormat:@"%ld''",(long)logntime];
+    label.textColor = [UIColor grayColor];
+    label.font = [UIFont systemFontOfSize:13];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor = [UIColor clearColor];
+    [button addSubview:label];
+    
+    return button;
 }
 - (void)pressSettingBtn:(id)sender{
     
