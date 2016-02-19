@@ -105,7 +105,10 @@
     //根据文字长度计算
     NSString *contentStr = [[[_chatArr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:@"content"];
      UIFont *font = [UIFont systemFontOfSize:14.f];
-    CGSize size = [contentStr sizeWithFont:font constrainedToSize:CGSizeMake(180.0f, 20000.0f) lineBreakMode:NSLineBreakByWordWrapping];
+    //CGSize size = [contentStr sizeWithFont:font constrainedToSize:CGSizeMake(180.0f, 20000.0f) lineBreakMode:NSLineBreakByWordWrapping];
+    //ios7 及其以上版本
+    NSDictionary* attribute = @{NSFontAttributeName:font};
+    CGSize size = [contentStr boundingRectWithSize:CGSizeMake(180.f,20000.0f) options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin  attributes:attribute context:nil].size;
     return (size.height + 50.f);
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -131,16 +134,18 @@
 /**
  *  文字气泡
  *
- *  @param text     <#text description#>
- *  @param fromSelf <#fromSelf description#>
+ *  @param text     聊天内容
+ *  @param fromSelf 是否是自己发出
  *
- *  @return <#return value description#>
+ *  @return
  */
 - (UIView *)textView:(NSString *)text from:(BOOL)fromSelf{
     
     UIFont *font = [UIFont systemFontOfSize:14.f];
-    CGSize size = [text sizeWithFont:font constrainedToSize:CGSizeMake(180.0f, 20000.0f) lineBreakMode:NSLineBreakByWordWrapping];
-    
+    //CGSize size = [contentStr sizeWithFont:font constrainedToSize:CGSizeMake(180.0f, 20000.0f) lineBreakMode:NSLineBreakByWordWrapping];
+    //ios7 及其以上版本
+    NSDictionary* attribute = @{NSFontAttributeName:font};
+    CGSize size = [text boundingRectWithSize:CGSizeMake(180.f,20000.0f) options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin  attributes:attribute context:nil].size;
     UIView *returnView = [[UIView alloc] initWithFrame:CGRectZero];
     returnView.backgroundColor = [UIColor clearColor];
     
@@ -172,11 +177,11 @@
 /**
  *  语音气泡
  *
- *  @param logntime <#logntime description#>
- *  @param fromSelf <#fromSelf description#>
- *  @param indexRow <#indexRow description#>
+ *  @param logntime 语音时长
+ *  @param fromSelf 是否是自身发出
+ *  @param indexRow 语音的tag
  *
- *  @return <#return value description#>
+ *  @return
  */
 - (UIView *)videoVidew:(NSInteger)logntime from:(BOOL)fromSelf withIndexRow:(NSInteger)indexRow{
     
