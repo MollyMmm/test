@@ -477,10 +477,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		279D1370A9E8CEF1A904015E0BCEA513 /* Release */ = {
+		7182B14BE4C47620D8A13467A92F4C71 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 191093CD366F8114E557CDDFDF0FBACE /* MMDrawerController.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -494,6 +495,25 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		752FF7EB5D01F355B4F09A437E93ACBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191093CD366F8114E557CDDFDF0FBACE /* MMDrawerController.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -534,10 +554,11 @@
 			};
 			name = Debug;
 		};
-		A78C609558389FB670441AE2568F6725 /* Debug */ = {
+		9F8AEB3CCC6AA48AF3885CB878CED76D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 410EA75071F63D9E4B2623456FD03471 /* Pods-MobileSchool.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MACH_O_TYPE = staticlib;
@@ -551,10 +572,11 @@
 			};
 			name = Debug;
 		};
-		B91F4BAA969AB33517D6969A88B7CE91 /* Release */ = {
+		A2AB959BDC6FF1F01D742A11A04E61BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C4CC4F6B284EDF32E43E5CF69FC3EA7 /* Pods-MobileSchool.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MACH_O_TYPE = staticlib;
@@ -602,32 +624,14 @@
 			};
 			name = Release;
 		};
-		F9EE87DBF34BB08705D08F38994BBB91 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 191093CD366F8114E557CDDFDF0FBACE /* MMDrawerController.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MMDrawerController/MMDrawerController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		14B87A0FE9AA0C203232C564A52AC045 /* Build configuration list for PBXNativeTarget "Pods-MobileSchool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A78C609558389FB670441AE2568F6725 /* Debug */,
-				B91F4BAA969AB33517D6969A88B7CE91 /* Release */,
+				9F8AEB3CCC6AA48AF3885CB878CED76D /* Debug */,
+				A2AB959BDC6FF1F01D742A11A04E61BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -644,8 +648,8 @@
 		6BCBDE524BD4EFDC051B5AD1A976D69B /* Build configuration list for PBXNativeTarget "MMDrawerController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F9EE87DBF34BB08705D08F38994BBB91 /* Debug */,
-				279D1370A9E8CEF1A904015E0BCEA513 /* Release */,
+				752FF7EB5D01F355B4F09A437E93ACBE /* Debug */,
+				7182B14BE4C47620D8A13467A92F4C71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
