@@ -132,6 +132,8 @@
 		E55BCA021C74351B009A9AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55BCA001C74351B009A9AAA /* LaunchScreen.storyboard */; };
 		E55BCA0D1C74351B009A9AAA /* MobileSchoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E55BCA0C1C74351B009A9AAA /* MobileSchoolTests.m */; };
 		E55BCA181C74351B009A9AAA /* MobileSchoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E55BCA171C74351B009A9AAA /* MobileSchoolUITests.m */; };
+		E5D673191C78119600FCDB23 /* ExpressionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D673181C78119600FCDB23 /* ExpressionView.m */; };
+		E5D6731B1C7811AB00FCDB23 /* ExperssionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6731A1C7811AB00FCDB23 /* ExperssionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -381,6 +383,9 @@
 		E55BCA131C74351B009A9AAA /* MobileSchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileSchoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55BCA171C74351B009A9AAA /* MobileSchoolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileSchoolUITests.m; sourceTree = "<group>"; };
 		E55BCA191C74351B009A9AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D673171C78119600FCDB23 /* ExpressionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressionView.h; sourceTree = "<group>"; };
+		E5D673181C78119600FCDB23 /* ExpressionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressionView.m; sourceTree = "<group>"; };
+		E5D6731A1C7811AB00FCDB23 /* ExperssionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExperssionView.xib; sourceTree = "<group>"; };
 		FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileSchool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -937,6 +942,9 @@
 				E544CF9E1C744094003B22BC /* MessageTableViewCell.h */,
 				E544CF9F1C744094003B22BC /* MessageTableViewCell.m */,
 				E544CFA01C744094003B22BC /* MessageTableViewCell.xib */,
+				E5D673171C78119600FCDB23 /* ExpressionView.h */,
+				E5D673181C78119600FCDB23 /* ExpressionView.m */,
+				E5D6731A1C7811AB00FCDB23 /* ExperssionView.xib */,
 			);
 			name = subViews;
 			path = Views;
@@ -1469,7 +1477,7 @@
 				TargetAttributes = {
 					E55BC9EE1C74351B009A9AAA = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = GB6KC3Z5N2;
+						DevelopmentTeam = SLPUSQY849;
 					};
 					E55BCA071C74351B009A9AAA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1526,6 +1534,7 @@
 				E544D0511C744345003B22BC /* RecommendedViewController.xib in Resources */,
 				E544D05F1C744345003B22BC /* LongInterviewCell.xib in Resources */,
 				E544D05B1C744345003B22BC /* InterviewViewController.xib in Resources */,
+				E5D6731B1C7811AB00FCDB23 /* ExperssionView.xib in Resources */,
 				E544CFA41C744094003B22BC /* MessageTableViewCell.xib in Resources */,
 				E544CFA21C744094003B22BC /* MessageViewController.xib in Resources */,
 				E544CFC01C7440DB003B22BC /* Assets.xcassets in Resources */,
@@ -1626,6 +1635,7 @@
 				184EEDF51C75A4F70003AD39 /* SupportTableViewCell.m in Sources */,
 				E544CF721C744087003B22BC /* HomeCollectionViewCell.m in Sources */,
 				E528E5691C759420003C18BC /* ChatViewController.m in Sources */,
+				E5D673191C78119600FCDB23 /* ExpressionView.m in Sources */,
 				E544CF6B1C744087003B22BC /* DetailDailyRecodViewController.m in Sources */,
 				184EEDEC1C755AD10003AD39 /* CommentTableViewCell.m in Sources */,
 				E544CF661C744087003B22BC /* AddTableViewCell.m in Sources */,

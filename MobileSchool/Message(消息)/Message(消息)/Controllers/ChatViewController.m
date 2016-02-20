@@ -8,15 +8,40 @@
 
 #import "ChatViewController.h"
 
-@interface ChatViewController ()<UITableViewDataSource,UITableViewDelegate>{
+#import <AVOSCloudIM.h>
+
+#import "ExpressionView.h"
+
+@interface ChatViewController ()<UITableViewDataSource,UITableViewDelegate,AVIMClientDelegate,UITextFieldDelegate>{
+    
     int _position;
+    bool _videoStatus;
 }
+@property (weak, nonatomic) IBOutlet UIView *tabbarView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property(nonatomic,strong)NSArray* timeArr;
-@property(nonatomic,strong)NSArray *chatArr;
+@property (weak, nonatomic) IBOutlet UIButton *videoBtn;
+@property (weak, nonatomic) IBOutlet UITextField *inputField;
+@property(strong, nonatomic) UIButton *sayBtn;
+
+@property(nonatomic,strong)NSMutableArray *timeArr;
+@property(nonatomic,strong)NSMutableArray *chatArr;
+
+@property(nonatomic,strong)AVIMClient *client;
+@property(nonatomic,strong)AVIMClient *clientTest;
+
+@property(nonatomic,strong)ExpressionView * expressionView;
 @end
 
 @implementation ChatViewController
+
+- (ExpressionView *)expressionView{
+
+    if (!_expressionView) {
+        _expressionView = [ExpressionView instanceView];
+        return _expressionView;
+    }
+    return _expressionView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,18 +60,24 @@
     _tableView.backgroundColor = [[UIColor alloc] initWithRed:236/255.0 green:236/250.0 blue:236/250.0 alpha:1.0];
     
     _position = 60;
-    _timeArr = [[NSArray alloc] init];
-    _chatArr = [[NSMutableArray alloc] init];
-    _timeArr = @[@"01-16 13:01",@"3分钟前"];
-    NSDictionary *dict0 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"hello",@"content", nil];
-    NSDictionary *dict1 = [NSDictionary dictionaryWithObjectsAndKeys:@"right",@"id",@"头像",@"photo",@"哈哈哈哈哈",@"content", nil];
-    NSDictionary *dict2 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"你好啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",@"content", nil];
-    NSDictionary *dict3 = [NSDictionary dictionaryWithObjectsAndKeys:@"right",@"id",@"头像",@"photo",@"0",@"content", nil];
-    NSDictionary *dict4 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈",@"content", nil];
+    _timeArr = [NSMutableArray array];
+    _chatArr = [NSMutableArray array];
+//    _timeArr = [NSMutableArray arrayWithObjects:@"01-16 13:01",@"3分钟前", nil];
+//    NSDictionary *dict0 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"hello",@"content", nil];
+//    NSDictionary *dict1 = [NSDictionary dictionaryWithObjectsAndKeys:@"right",@"id",@"头像",@"photo",@"哈哈哈哈哈",@"content", nil];
+//    NSDictionary *dict2 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"你好啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",@"content", nil];
+//    NSDictionary *dict3 = [NSDictionary dictionaryWithObjectsAndKeys:@"right",@"id",@"头像",@"photo",@"0",@"content", nil];
+//    NSDictionary *dict4 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈",@"content", nil];
+//    _chatArr = [NSMutableArray arrayWithObjects:@[dict0],@[dict1,dict2,dict3,dict4], nil];
     
-    _chatArr = @[@[dict0],@[dict1,dict2,dict3,dict4]];
-    
-    // Do any additional setup after loading the view from its nib.
+    _videoStatus = false;
+    //_inputField = [[UITextField alloc] initWithFrame:CGRectMake(40, 4, kScreenWidth - 112, 30)];
+    _inputField.delegate = self;
+    _inputField.returnKeyType = UIReturnKeyDone;
+    [_tabbarView addSubview:_inputField];
+    _sayBtn = [[UIButton alloc] init];
+    [_sayBtn setImage:[UIImage imageNamed:@"azsh"] forState:UIControlStateNormal];
+    [_sayBtn addTarget:self action:@selector(pressSayBtn:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -130,7 +161,7 @@
     [headerView addSubview:timeLbl];
     return headerView;
 }
-#pragma mark - public 
+#pragma mark - public
 /**
  *  文字气泡
  *
@@ -222,5 +253,88 @@
 }
 - (void)pressCancleBtn:(id)sender{
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+/**
+ *  发送消息
+ */
+- (void)tomSendMessageToJerry {
+    // Tom 创建了一个 client，用自己的名字作为 clientId
+    self.client = [[AVIMClient alloc] initWithClientId:@"Tom"];
+    
+    // Tom 打开 client
+    [self.client openWithCallback:^(BOOL succeeded, NSError *error) {
+        // Tom 建立了与 Jerry 的会话
+        [self.client createConversationWithName:@"猫和老鼠" clientIds:@[@"Jerry"] callback:^(AVIMConversation *conversation, NSError *error) {
+            // Tom 发了一条消息给 Jerry
+            [conversation sendMessage:[AVIMTextMessage messageWithText:@"耗子，起床！" attributes:nil] callback:^(BOOL succeeded, NSError *error) {
+                if (succeeded) {
+                    NSLog(@"发送成功！");
+                    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"right",@"id",@"头像",@"photo",@"哈哈哈哈哈",@"content", nil];
+                    [_chatArr addObject:@[dict]];
+                    [_tableView reloadData];
+                }
+            }];
+        }];
+    }];
+}
+- (IBAction)test:(id)sender {
+    [self tomSendMessageToJerry];
+}
+- (IBAction)testR:(id)sender {
+    [self jerryReceiveMessageFromTom];
+}
+/**
+ *  接收消息
+ */
+- (void)jerryReceiveMessageFromTom {
+    // Jerry 创建了一个 client，用自己的名字作为 clientId
+    self.clientTest = [[AVIMClient alloc] initWithClientId:@"Jerry"];
+    
+    // 设置 client 的 delegate，并实现 delegate 方法
+    self.clientTest.delegate = self;
+    
+    // Jerry 打开 client
+    [self.clientTest openWithCallback:^(BOOL succeeded, NSError *error) {
+        // ...
+    }];
+}
+
+- (IBAction)pressExpressionBtn:(UIButton *)sender {
+    
+}
+- (IBAction)pressAddBtn:(UIButton *)sender {
+}
+- (IBAction)pressVideoBtn:(UIButton *)sender {
+    _videoStatus = !_videoStatus;
+    if (_videoStatus) {
+        [sender setImage:[UIImage imageNamed:@"jp"] forState:UIControlStateNormal];
+        _sayBtn.frame = CGRectMake(40, 4, kScreenWidth - 112, 30);
+        [self.tabbarView addSubview:_sayBtn];
+        
+    }
+    else{
+        [sender setImage:[UIImage imageNamed:@"message_chat_bg_normal"] forState:UIControlStateNormal];
+        [_sayBtn removeFromSuperview];
+    }
+}
+- (void)pressSayBtn:(UIButton *)sender {
+
+}
+#pragma mark - AVIMClientDelegate
+
+// 接收消息的回调函数
+- (void)conversation:(AVIMConversation *)conversation didReceiveTypedMessage:(AVIMTypedMessage *)message {
+    NSLog(@"----------%@", message.text); // 耗子，起床！
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",message.text,@"content", nil];
+    [_chatArr addObject:@[dict]];
+    [_timeArr addObject:@"1"];
+    [_tableView reloadData];
+    
+}
+#pragma mark - uitextFiledDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+
+    NSLog(@"----------这里点击键盘的done事件");
+    return YES;
 }
 @end

@@ -8,7 +8,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController">
             <connections>
+                <outlet property="inputField" destination="eZJ-YL-ggA" id="1gw-7X-CMm"/>
+                <outlet property="tabbarView" destination="UEU-aL-cYD" id="q4m-ba-L9K"/>
                 <outlet property="tableView" destination="h3s-z5-F8e" id="4nv-2I-mnI"/>
+                <outlet property="videoBtn" destination="jHH-3y-ewL" id="WM1-M3-MwF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,10 +30,16 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHH-3y-ewL">
                             <rect key="frame" x="8" y="7" width="24" height="24"/>
                             <state key="normal" image="message_chat_bg_normal"/>
+                            <connections>
+                                <action selector="pressVideoBtn:" destination="-1" eventType="touchUpInside" id="NQP-xF-VtI"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi3-j8-6io">
                             <rect key="frame" x="256" y="7" width="24" height="24"/>
                             <state key="normal" image="message_emotion_normal"/>
+                            <connections>
+                                <action selector="pressExpressionBtn:" destination="-1" eventType="touchUpInside" id="ijf-JR-fSs"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwq-mr-qGL">
                             <rect key="frame" x="288" y="7" width="24" height="24"/>
@@ -38,6 +47,9 @@
                                 <constraint firstAttribute="width" secondItem="fwq-mr-qGL" secondAttribute="height" multiplier="1:1" id="vBE-Bh-9MW"/>
                             </constraints>
                             <state key="normal" image="message_add_bg_normal"/>
+                            <connections>
+                                <action selector="pressAddBtn:" destination="-1" eventType="touchUpInside" id="wM0-Do-cNy"/>
+                            </connections>
                         </button>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZJ-YL-ggA">
                             <rect key="frame" x="40" y="4" width="208" height="30"/>
@@ -65,6 +77,20 @@
                         <constraint firstAttribute="bottom" secondItem="hi3-j8-6io" secondAttribute="bottom" constant="7" id="vlk-hK-IGD"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0e-wH-ukP">
+                    <rect key="frame" x="151" y="269" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="test:" destination="-1" eventType="touchUpInside" id="CW5-mM-HGD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQE-K1-fmh">
+                    <rect key="frame" x="151" y="333" width="47" height="30"/>
+                    <state key="normal" title="reciver"/>
+                    <connections>
+                        <action selector="testR:" destination="-1" eventType="touchUpInside" id="NIZ-Tb-ncn"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
