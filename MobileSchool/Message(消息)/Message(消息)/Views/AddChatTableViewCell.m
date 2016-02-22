@@ -11,7 +11,9 @@
 @implementation AddChatTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+
+    [_iconImg.layer setCornerRadius:27.f];
+    _iconImg.layer.masksToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

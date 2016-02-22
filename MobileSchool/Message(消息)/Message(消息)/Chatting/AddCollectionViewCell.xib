@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -27,6 +28,9 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr2-TV-O8f">
                         <rect key="frame" x="13" y="16" width="94" height="94"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dr2-TV-O8f" secondAttribute="height" multiplier="1:1" id="dqo-xc-TYT"/>
+                        </constraints>
                         <state key="normal" title="Button"/>
                     </button>
                 </subviews>
@@ -45,6 +49,9 @@
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="ACt-Gn-0R1"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="78i-lu-d7J"/>
                 </mask>
             </variation>
             <connections>

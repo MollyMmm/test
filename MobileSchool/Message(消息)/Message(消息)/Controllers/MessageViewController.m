@@ -9,6 +9,7 @@
 #import "MessageViewController.h"
 #import "MessageTableViewCell.h"
 
+#import "AddChatViewController.h"
 #import "ChatViewController.h"
 #import "NavigationViewController.h"
 @interface MessageViewController ()<UISearchBarDelegate,UITableViewDataSource,UITableViewDelegate>
@@ -33,8 +34,12 @@
     UIView* searchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 44)];
     [searchView addSubview:mSearchBar];
     _tableView.tableHeaderView = searchView;
+    
     [_tableView setSeparatorInset:UIEdgeInsetsZero];
     _tableView.tableFooterView = [[UIView alloc] init];
+    
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"qunhome_createChat_hl"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(pressAddChatBtn:)];
+    self.navigationItem.rightBarButtonItem = rightBarItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,6 +84,13 @@
 
     ChatViewController *chatController = [[ChatViewController alloc] init];
     NavigationViewController *nav = [[NavigationViewController alloc] initWithRootViewController:chatController];
+    [self.navigationController presentViewController:nav animated:YES completion:nil];
+}
+#pragma mark - public
+- (void)pressAddChatBtn:(id)sender{
+    
+    AddChatViewController *addVC = [[AddChatViewController alloc] init];
+    NavigationViewController *nav = [[NavigationViewController alloc] initWithRootViewController:addVC];
     [self.navigationController presentViewController:nav animated:YES completion:nil];
 }
 @end
