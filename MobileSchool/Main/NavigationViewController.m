@@ -7,7 +7,7 @@
 //
 
 #import "NavigationViewController.h"
-
+#import <AVOSCloud/AVOSCloud.h>
 @interface NavigationViewController ()
 
 @end
@@ -18,6 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationBar.barTintColor = [UIColor colorWithRed:0.98f green:0.54f blue:0.53f alpha:1.00f];
+    
+    AVObject *testObject = [AVObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"bar" forKey:@"foo"];
+    [testObject save];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,6 +9,11 @@
 #import "AppDelegate.h"
 #import "TabbarViewController.h"
 #import "IQKeyboardManager.h"
+#import <AVOSCloudIM/AVOSCloudIM.h>
+#import <AVOSCloud/AVOSCloud.h>
+#define kApplicationId @"q7A8P8I2IcPb8lwbaAqpGvz6-gzGzoHsz"
+#define kClientKey @"2KooEQ9JPFGq0ee1R1dGnqDo"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +22,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+
+
+//    [AVOSCloudIM registerForRemoteNotification];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
@@ -27,7 +36,18 @@
     IQKeyboardManager* keyBoardManager = [IQKeyboardManager sharedManager];
     keyBoardManager.enable = YES;
     keyBoardManager.shouldResignOnTouchOutside = YES;
-    // Override point for customization after application launch.
+    keyBoardManager.enableAutoToolbar = NO;
+
+    // 初始化 LeanCloud SDK
+    [AVOSCloud setApplicationId:kApplicationId clientKey:kClientKey];
+#ifdef DEBUG
+    [AVAnalytics setAnalyticsEnabled:NO];
+    [AVOSCloud setVerbosePolicy:kAVVerboseShow];
+    [AVLogger addLoggerDomain:AVLoggerDomainIM];
+    [AVLogger addLoggerDomain:AVLoggerDomainCURL];
+    [AVLogger setLoggerLevelMask:AVLoggerLevelAll];
+#endif
+
     return YES;
 }
 

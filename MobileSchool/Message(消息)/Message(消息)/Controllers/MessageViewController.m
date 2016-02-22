@@ -8,6 +8,9 @@
 
 #import "MessageViewController.h"
 #import "MessageTableViewCell.h"
+
+#import "ChatViewController.h"
+#import "NavigationViewController.h"
 @interface MessageViewController ()<UISearchBarDelegate,UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)NSArray* dataArr;
@@ -71,5 +74,11 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 60.f;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    ChatViewController *chatController = [[ChatViewController alloc] init];
+    NavigationViewController *nav = [[NavigationViewController alloc] initWithRootViewController:chatController];
+    [self.navigationController presentViewController:nav animated:YES completion:nil];
 }
 @end
