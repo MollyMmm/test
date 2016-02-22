@@ -132,6 +132,8 @@
 		E55BCA021C74351B009A9AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55BCA001C74351B009A9AAA /* LaunchScreen.storyboard */; };
 		E55BCA0D1C74351B009A9AAA /* MobileSchoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E55BCA0C1C74351B009A9AAA /* MobileSchoolTests.m */; };
 		E55BCA181C74351B009A9AAA /* MobileSchoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E55BCA171C74351B009A9AAA /* MobileSchoolUITests.m */; };
+		E59D9AA91C785CF5002BD569 /* AddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E59D9AA71C785CF5002BD569 /* AddCollectionViewCell.m */; };
+		E59D9AAA1C785CF5002BD569 /* AddCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59D9AA81C785CF5002BD569 /* AddCollectionViewCell.xib */; };
 		E5D673191C78119600FCDB23 /* ExpressionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D673181C78119600FCDB23 /* ExpressionView.m */; };
 		E5D6731B1C7811AB00FCDB23 /* ExperssionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6731A1C7811AB00FCDB23 /* ExperssionView.xib */; };
 /* End PBXBuildFile section */
@@ -183,9 +185,9 @@
 		184EEE001C75B7DC0003AD39 /* DetailOtherNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailOtherNotificationViewController.m; sourceTree = "<group>"; };
 		3091111A346374AA942EF064 /* Pods-MobileSchool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.release.xcconfig"; sourceTree = "<group>"; };
 		89753E9BA9172F279BEEF726 /* Pods-MobileSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.debug.xcconfig"; sourceTree = "<group>"; };
-		E528E5661C759420003C18BC /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
-		E528E5671C759420003C18BC /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
-		E528E5681C759420003C18BC /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		E528E5661C759420003C18BC /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = ../Controllers/ChatViewController.h; sourceTree = "<group>"; };
+		E528E5671C759420003C18BC /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = ../Controllers/ChatViewController.m; sourceTree = "<group>"; };
+		E528E5681C759420003C18BC /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatViewController.xib; path = ../Controllers/ChatViewController.xib; sourceTree = "<group>"; };
 		E544CEA01C744055003B22BC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E544CEF31C744087003B22BC /* AchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementViewController.h; sourceTree = "<group>"; };
 		E544CEF41C744087003B22BC /* AchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementViewController.m; sourceTree = "<group>"; };
@@ -383,6 +385,9 @@
 		E55BCA131C74351B009A9AAA /* MobileSchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileSchoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55BCA171C74351B009A9AAA /* MobileSchoolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileSchoolUITests.m; sourceTree = "<group>"; };
 		E55BCA191C74351B009A9AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E59D9AA61C785CF5002BD569 /* AddCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewCell.h; sourceTree = "<group>"; };
+		E59D9AA71C785CF5002BD569 /* AddCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionViewCell.m; sourceTree = "<group>"; };
+		E59D9AA81C785CF5002BD569 /* AddCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCollectionViewCell.xib; sourceTree = "<group>"; };
 		E5D673171C78119600FCDB23 /* ExpressionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressionView.h; sourceTree = "<group>"; };
 		E5D673181C78119600FCDB23 /* ExpressionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressionView.m; sourceTree = "<group>"; };
 		E5D6731A1C7811AB00FCDB23 /* ExperssionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExperssionView.xib; sourceTree = "<group>"; };
@@ -917,6 +922,7 @@
 		E544CF981C744094003B22BC /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
+				E59D9AA41C785CB8002BD569 /* Chatting */,
 				E544CF991C744094003B22BC /* Controllers */,
 				E544CF9D1C744094003B22BC /* subViews */,
 			);
@@ -929,9 +935,6 @@
 				E544CF9A1C744094003B22BC /* MessageViewController.h */,
 				E544CF9B1C744094003B22BC /* MessageViewController.m */,
 				E544CF9C1C744094003B22BC /* MessageViewController.xib */,
-				E528E5661C759420003C18BC /* ChatViewController.h */,
-				E528E5671C759420003C18BC /* ChatViewController.m */,
-				E528E5681C759420003C18BC /* ChatViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1407,6 +1410,27 @@
 			path = MobileSchoolUITests;
 			sourceTree = "<group>";
 		};
+		E59D9AA41C785CB8002BD569 /* Chatting */ = {
+			isa = PBXGroup;
+			children = (
+				E59D9AA51C785CCB002BD569 /* subViews */,
+				E528E5661C759420003C18BC /* ChatViewController.h */,
+				E528E5671C759420003C18BC /* ChatViewController.m */,
+				E528E5681C759420003C18BC /* ChatViewController.xib */,
+			);
+			path = Chatting;
+			sourceTree = "<group>";
+		};
+		E59D9AA51C785CCB002BD569 /* subViews */ = {
+			isa = PBXGroup;
+			children = (
+				E59D9AA61C785CF5002BD569 /* AddCollectionViewCell.h */,
+				E59D9AA71C785CF5002BD569 /* AddCollectionViewCell.m */,
+				E59D9AA81C785CF5002BD569 /* AddCollectionViewCell.xib */,
+			);
+			name = subViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1477,7 +1501,6 @@
 				TargetAttributes = {
 					E55BC9EE1C74351B009A9AAA = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = SLPUSQY849;
 					};
 					E55BCA071C74351B009A9AAA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1538,6 +1561,7 @@
 				E544CFA41C744094003B22BC /* MessageTableViewCell.xib in Resources */,
 				E544CFA21C744094003B22BC /* MessageViewController.xib in Resources */,
 				E544CFC01C7440DB003B22BC /* Assets.xcassets in Resources */,
+				E59D9AAA1C785CF5002BD569 /* AddCollectionViewCell.xib in Resources */,
 				E544D0591C744345003B22BC /* MoreTableViewCell.xib in Resources */,
 				E544CFBE1C744099003B22BC /* MyViewController.xib in Resources */,
 				E544D0691C744345003B22BC /* ReadingCell.xib in Resources */,
@@ -1617,6 +1641,7 @@
 			files = (
 				E544CF711C744087003B22BC /* HomeworkViewController.m in Sources */,
 				E544D05C1C744345003B22BC /* InterviewCell.m in Sources */,
+				E59D9AA91C785CF5002BD569 /* AddCollectionViewCell.m in Sources */,
 				E544D05A1C744345003B22BC /* InterviewViewController.m in Sources */,
 				E544CFF31C7441FA003B22BC /* IQKeyboardReturnKeyHandler.m in Sources */,
 				184EEDFB1C75B04D0003AD39 /* DetailInformationViewController.m in Sources */,
@@ -1792,10 +1817,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos9.2;
 			};
 			name = Debug;
 		};
@@ -1829,9 +1854,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos9.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1840,7 +1865,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89753E9BA9172F279BEEF726 /* Pods-MobileSchool.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileSchool/PrefixHeader.pch";
@@ -1855,7 +1879,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3091111A346374AA942EF064 /* Pods-MobileSchool.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MobileSchool/PrefixHeader.pch";

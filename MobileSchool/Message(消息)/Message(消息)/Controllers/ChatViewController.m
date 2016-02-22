@@ -10,38 +10,38 @@
 
 #import <AVOSCloudIM.h>
 
-#import "ExpressionView.h"
+#import "AddCollectionViewCell.h"
 
-@interface ChatViewController ()<UITableViewDataSource,UITableViewDelegate,AVIMClientDelegate,UITextFieldDelegate>{
+@interface ChatViewController ()<UITableViewDataSource,UITableViewDelegate,AVIMClientDelegate,UITextFieldDelegate,UICollectionViewDataSource,UICollectionViewDelegate>{
     
     int _position;
     bool _videoStatus;
+    bool _expressionStatus;
+    bool _addStatus;
+    CGFloat _tabbarH;
+    NSString *_cellIdentifier;
 }
-@property (weak, nonatomic) IBOutlet UIView *tabbarView;
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIButton *videoBtn;
-@property (weak, nonatomic) IBOutlet UITextField *inputField;
+@property (strong, nonatomic) UIView *tabbarView;
+@property (strong, nonatomic) UIButton *videoBtn;
+@property (strong, nonatomic) UITextField *inputField;
+@property (strong, nonatomic) UIButton *expressionBtn;
+@property (strong, nonatomic) UIButton *addBtn;
 @property(strong, nonatomic) UIButton *sayBtn;
 
-@property(nonatomic,strong)NSMutableArray *timeArr;
-@property(nonatomic,strong)NSMutableArray *chatArr;
+@property(strong, nonatomic)NSMutableArray *timeArr;
+@property(strong, nonatomic)NSMutableArray *chatArr;
 
-@property(nonatomic,strong)AVIMClient *client;
-@property(nonatomic,strong)AVIMClient *clientTest;
+@property(strong, nonatomic)AVIMClient *client;
+@property(strong, nonatomic)AVIMClient *clientTest;
 
-@property(nonatomic,strong)ExpressionView * expressionView;
+@property(strong, nonatomic)UIView *expressionView;
+@property(strong, nonatomic)UICollectionView *addCollectionView;
+
 @end
 
 @implementation ChatViewController
-
-- (ExpressionView *)expressionView{
-
-    if (!_expressionView) {
-        _expressionView = [ExpressionView instanceView];
-        return _expressionView;
-    }
-    return _expressionView;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,28 +56,23 @@
     UIBarButtonItem* leftBarBtnItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"leftBtn"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(pressCancleBtn:)];
     self.navigationItem.leftBarButtonItem = leftBarBtnItem;
    
+    _tabbarH = 38.f;
+    [self initTabbar];
+    
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.backgroundColor = [[UIColor alloc] initWithRed:236/255.0 green:236/250.0 blue:236/250.0 alpha:1.0];
     
     _position = 60;
-    _timeArr = [NSMutableArray array];
-    _chatArr = [NSMutableArray array];
-//    _timeArr = [NSMutableArray arrayWithObjects:@"01-16 13:01",@"3分钟前", nil];
-//    NSDictionary *dict0 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"hello",@"content", nil];
-//    NSDictionary *dict1 = [NSDictionary dictionaryWithObjectsAndKeys:@"right",@"id",@"头像",@"photo",@"哈哈哈哈哈",@"content", nil];
-//    NSDictionary *dict2 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"你好啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",@"content", nil];
-//    NSDictionary *dict3 = [NSDictionary dictionaryWithObjectsAndKeys:@"right",@"id",@"头像",@"photo",@"0",@"content", nil];
-//    NSDictionary *dict4 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈",@"content", nil];
-//    _chatArr = [NSMutableArray arrayWithObjects:@[dict0],@[dict1,dict2,dict3,dict4], nil];
+//    _timeArr = [NSMutableArray array];
+//    _chatArr = [NSMutableArray array];
+    _timeArr = [NSMutableArray arrayWithObjects:@"01-16 13:01",@"3分钟前", nil];
+    NSDictionary *dict0 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"hello",@"content", nil];
+    NSDictionary *dict1 = [NSDictionary dictionaryWithObjectsAndKeys:@"right",@"id",@"头像",@"photo",@"哈哈哈哈哈",@"content", nil];
+    NSDictionary *dict2 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"你好啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",@"content", nil];
+    NSDictionary *dict3 = [NSDictionary dictionaryWithObjectsAndKeys:@"right",@"id",@"头像",@"photo",@"0",@"content", nil];
+    NSDictionary *dict4 = [NSDictionary dictionaryWithObjectsAndKeys:@"left",@"id",@"schoolHelper",@"photo",@"哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈,哈哈哈哈哈哈哈哈哈哈哈哈哈",@"content", nil];
+    _chatArr = [NSMutableArray arrayWithObjects:@[dict0],@[dict1,dict2,dict3,dict4], nil];
     
-    _videoStatus = false;
-    //_inputField = [[UITextField alloc] initWithFrame:CGRectMake(40, 4, kScreenWidth - 112, 30)];
-    _inputField.delegate = self;
-    _inputField.returnKeyType = UIReturnKeyDone;
-    [_tabbarView addSubview:_inputField];
-    _sayBtn = [[UIButton alloc] init];
-    [_sayBtn setImage:[UIImage imageNamed:@"azsh"] forState:UIControlStateNormal];
-    [_sayBtn addTarget:self action:@selector(pressSayBtn:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -162,6 +157,94 @@
     return headerView;
 }
 #pragma mark - public
+
+- (void)initTabbar{
+    
+    CGFloat marginX = 8.f;
+    CGFloat marginY = 7.f;
+    CGFloat btnWH = 24.f;
+    _videoStatus = false;
+    _addStatus = false;
+    _expressionStatus = false;
+    
+    _tabbarView = [[UIView alloc] initWithFrame:CGRectMake(0, kScreenHeight - _tabbarH, kScreenWidth, _tabbarH)];
+    _tabbarView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    [self.view addSubview:_tabbarView];
+
+    _videoBtn = [[UIButton alloc] initWithFrame:CGRectMake(marginX, marginY,btnWH , btnWH)];
+    [_videoBtn setImage:[UIImage imageNamed:@"message_chat_bg_normal"] forState:UIControlStateNormal];
+    [_videoBtn addTarget:self action:@selector(pressVideoBtn:) forControlEvents:UIControlEventTouchUpInside];
+    _expressionBtn = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth - 2 * (btnWH + marginX), marginY, btnWH, btnWH)];
+    [_expressionBtn setImage:[UIImage imageNamed:@"message_emotion_normal"] forState:UIControlStateNormal];
+    [_expressionBtn addTarget:self action:@selector(pressExpressionBtn:) forControlEvents:UIControlEventTouchUpInside];
+    _addBtn = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth - marginX - btnWH, marginY, btnWH, btnWH)];
+    [_addBtn setImage:[UIImage imageNamed:@"message_add_bg_normal"] forState:UIControlStateNormal];
+    [_addBtn addTarget:self action:@selector(pressAddBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [_tabbarView addSubview:_videoBtn];
+    [_tabbarView addSubview:_expressionBtn];
+    [_tabbarView addSubview:_addBtn];
+    
+    _inputField = [[UITextField alloc] initWithFrame:CGRectMake(2 * marginX + btnWH, 4, kScreenWidth - 3 * btnWH - 5 * marginX, 30)];
+    _inputField.delegate = self;
+    _inputField.returnKeyType = UIReturnKeyDone;
+    _inputField.borderStyle = UITextBorderStyleRoundedRect;
+    [_tabbarView addSubview:_inputField];
+    
+    _sayBtn = [[UIButton alloc] init];
+    [_sayBtn setImage:[UIImage imageNamed:@"azsh"] forState:UIControlStateNormal];
+    [_sayBtn addTarget:self action:@selector(pressSayBtn:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self initExperssionView];
+    [self initAddView];
+}
+- (void)initExperssionView{
+
+   // CGFloat toolbarH = 38.f;
+    CGFloat expressionW = 46.f;
+    _expressionStatus = false;
+    _expressionView = [[UIView alloc] initWithFrame:CGRectMake(0, kScreenHeight - 238, kScreenWidth, 208)];
+    UIView *toolbar = [[UIView alloc] initWithFrame:CGRectMake(0, 200, kScreenWidth,_tabbarH)];
+    toolbar.backgroundColor = [UIColor whiteColor];
+    UIButton *expressionBtn1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0,expressionW , _tabbarH)];
+    [expressionBtn1 setTitle:@"表情1" forState:UIControlStateNormal];
+    [expressionBtn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    UIButton *expressionBtn2 = [[UIButton alloc] initWithFrame:CGRectMake(expressionW, 0,expressionW , _tabbarH)];
+    [expressionBtn2 setTitle:@"表情2" forState:UIControlStateNormal];
+    [expressionBtn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    UIButton *expressionBtn3 = [[UIButton alloc] initWithFrame:CGRectMake(expressionW*2, 0,expressionW , _tabbarH)];
+    [expressionBtn3 setTitle:@"表情3" forState:UIControlStateNormal];
+    [expressionBtn3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    UIButton *sendBtn = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth - expressionW, 0, expressionW, _tabbarH)];
+    sendBtn.backgroundColor = [[UIColor alloc] initWithRed:48/255.0 green:131/255.0 blue:251/255.0 alpha:1.0];
+    [sendBtn setTitle:@"发送" forState:UIControlStateNormal];
+    [sendBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    [toolbar addSubview:expressionBtn1];
+    [toolbar addSubview:expressionBtn2];
+    [toolbar addSubview:expressionBtn3];
+    [toolbar addSubview:sendBtn];
+    
+    [_expressionView addSubview:toolbar];
+}
+- (void)initAddView{
+    
+    //必须有一个layout 才能使collectionView 初始化
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    _addCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, kScreenHeight - 208, kScreenWidth, 208) collectionViewLayout:flowLayout];
+    _addCollectionView.backgroundColor = [UIColor whiteColor];
+    
+    _cellIdentifier = @"AddCollectionViewCell";
+    [_addCollectionView registerNib:[UINib nibWithNibName:@"AddCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:_cellIdentifier];
+    
+    _addCollectionView.delegate = self;
+    _addCollectionView.dataSource = self;
+    
+    //下面写法错误会报错: UICollectionView must be initialized with a non-nil layout parameter
+//    _addCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, kScreenWidth - 208, kScreenWidth, 208)];
+//    _addCollectionView.delegate = self;
+//    _addCollectionView.dataSource = self;
+}
 /**
  *  文字气泡
  *
@@ -248,12 +331,6 @@
     
     return button;
 }
-- (void)pressSettingBtn:(id)sender{
-    
-}
-- (void)pressCancleBtn:(id)sender{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 /**
  *  发送消息
  */
@@ -277,12 +354,6 @@
         }];
     }];
 }
-- (IBAction)test:(id)sender {
-    [self tomSendMessageToJerry];
-}
-- (IBAction)testR:(id)sender {
-    [self jerryReceiveMessageFromTom];
-}
 /**
  *  接收消息
  */
@@ -298,13 +369,55 @@
         // ...
     }];
 }
+- (IBAction)test:(id)sender {
+    [self tomSendMessageToJerry];
+}
+- (IBAction)testR:(id)sender {
+    [self jerryReceiveMessageFromTom];
+}
 
-- (IBAction)pressExpressionBtn:(UIButton *)sender {
+
+- (void)pressSettingBtn:(id)sender{
     
 }
-- (IBAction)pressAddBtn:(UIButton *)sender {
+- (void)pressCancleBtn:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-- (IBAction)pressVideoBtn:(UIButton *)sender {
+- (void)pressExpressionBtn:(UIButton *)sender {
+    
+    [_inputField resignFirstResponder];
+    _expressionStatus = !_expressionStatus;
+    
+    if (_expressionStatus) {
+        _tabbarView.frame = CGRectMake(0, kScreenHeight - _tabbarH -238, kScreenWidth, _tabbarH);
+        [self.view addSubview:_expressionView];
+        
+    }
+    else {
+        _tabbarView.frame = CGRectMake(0, kScreenHeight - _tabbarH, kScreenWidth, _tabbarH);
+        [_expressionView removeFromSuperview];
+    }
+}
+- (void)pressAddBtn:(UIButton *)sender {
+    
+    [_inputField resignFirstResponder];
+    
+    _addStatus = !_addStatus;
+    
+    if (_addStatus) {
+        _tabbarView.frame = CGRectMake(0, kScreenHeight - _tabbarH -238, kScreenWidth, _tabbarH);
+        [self.view addSubview:_addCollectionView];
+    }
+    else{
+        _tabbarView.frame = CGRectMake(0, kScreenHeight - _tabbarH, kScreenWidth, _tabbarH);
+        [_addCollectionView removeFromSuperview];
+    }
+    
+}
+- (void)pressVideoBtn:(UIButton *)sender {
+    
+    [_inputField resignFirstResponder];
+
     _videoStatus = !_videoStatus;
     if (_videoStatus) {
         [sender setImage:[UIImage imageNamed:@"jp"] forState:UIControlStateNormal];
@@ -335,6 +448,35 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
 
     NSLog(@"----------这里点击键盘的done事件");
+    [textField resignFirstResponder];
     return YES;
+}
+#pragma mark - collectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+
+}
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+//     NSString* cellIdentifier = @"cell";
+//    AddCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+//    if (!cell) {
+//        cell = [[[NSBundle mainBundle] loadNibNamed:@"AddCollectionViewCell" owner:nil options:nil] lastObject];
+//    }
+    AddCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:_cellIdentifier forIndexPath:indexPath];
+    
+    return  cell;
+}
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 7;
+}
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    CGFloat viewWidth = (kScreenWidth - 20)/4;
+    return CGSizeMake(viewWidth, 170/2);
+}
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    
+    return UIEdgeInsetsMake(0, 30, 0, 45);
 }
 @end
