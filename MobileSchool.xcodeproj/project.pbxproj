@@ -10,6 +10,18 @@
 		0A63205E1C7583ED00907B71 /* UIButton+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63205D1C7583ED00907B71 /* UIButton+Image.m */; };
 		0A6320631C759D5C00907B71 /* MyViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6320611C759D5C00907B71 /* MyViewTableViewCell.m */; };
 		0A6320641C759D5C00907B71 /* MyViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6320621C759D5C00907B71 /* MyViewTableViewCell.xib */; };
+		0AAE67D81C7812EE00359F17 /* BarcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67D61C7812EE00359F17 /* BarcodeViewController.m */; };
+		0AAE67D91C7812EE00359F17 /* BarcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67D71C7812EE00359F17 /* BarcodeViewController.xib */; };
+		0AAE67E71C78160400359F17 /* TrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67E51C78160400359F17 /* TrashViewController.m */; };
+		0AAE67E81C78160400359F17 /* TrashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67E61C78160400359F17 /* TrashViewController.xib */; };
+		0AAE67EC1C78162100359F17 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67EA1C78162100359F17 /* SettingViewController.m */; };
+		0AAE67ED1C78162100359F17 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67EB1C78162100359F17 /* SettingViewController.xib */; };
+		0AAE67F11C78163200359F17 /* SendQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67EF1C78163200359F17 /* SendQueueViewController.m */; };
+		0AAE67F21C78163200359F17 /* SendQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67F01C78163200359F17 /* SendQueueViewController.xib */; };
+		0AAE67F61C78164500359F17 /* BlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67F41C78164500359F17 /* BlackListViewController.m */; };
+		0AAE67F71C78164500359F17 /* BlackListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67F51C78164500359F17 /* BlackListViewController.xib */; };
+		0AAE67FE1C78168800359F17 /* IdentificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67FC1C78168800359F17 /* IdentificationViewController.m */; };
+		0AAE67FF1C78168800359F17 /* IdentificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67FD1C78168800359F17 /* IdentificationViewController.xib */; };
 		184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE21C744FB00003AD39 /* HeaderView.m */; };
 		184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */; };
 		184EEDE91C75547D0003AD39 /* RelayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */; };
@@ -157,6 +169,24 @@
 		0A6320601C759D5C00907B71 /* MyViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewTableViewCell.h; sourceTree = "<group>"; };
 		0A6320611C759D5C00907B71 /* MyViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewTableViewCell.m; sourceTree = "<group>"; };
 		0A6320621C759D5C00907B71 /* MyViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewTableViewCell.xib; sourceTree = "<group>"; };
+		0AAE67D51C7812EE00359F17 /* BarcodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeViewController.h; sourceTree = "<group>"; };
+		0AAE67D61C7812EE00359F17 /* BarcodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeViewController.m; sourceTree = "<group>"; };
+		0AAE67D71C7812EE00359F17 /* BarcodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarcodeViewController.xib; sourceTree = "<group>"; };
+		0AAE67E41C78160400359F17 /* TrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrashViewController.h; sourceTree = "<group>"; };
+		0AAE67E51C78160400359F17 /* TrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrashViewController.m; sourceTree = "<group>"; };
+		0AAE67E61C78160400359F17 /* TrashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrashViewController.xib; sourceTree = "<group>"; };
+		0AAE67E91C78162100359F17 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		0AAE67EA1C78162100359F17 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		0AAE67EB1C78162100359F17 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		0AAE67EE1C78163200359F17 /* SendQueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendQueueViewController.h; sourceTree = "<group>"; };
+		0AAE67EF1C78163200359F17 /* SendQueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendQueueViewController.m; sourceTree = "<group>"; };
+		0AAE67F01C78163200359F17 /* SendQueueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendQueueViewController.xib; sourceTree = "<group>"; };
+		0AAE67F31C78164500359F17 /* BlackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackListViewController.h; sourceTree = "<group>"; };
+		0AAE67F41C78164500359F17 /* BlackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackListViewController.m; sourceTree = "<group>"; };
+		0AAE67F51C78164500359F17 /* BlackListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlackListViewController.xib; sourceTree = "<group>"; };
+		0AAE67FB1C78168800359F17 /* IdentificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentificationViewController.h; sourceTree = "<group>"; };
+		0AAE67FC1C78168800359F17 /* IdentificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentificationViewController.m; sourceTree = "<group>"; };
+		0AAE67FD1C78168800359F17 /* IdentificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdentificationViewController.xib; sourceTree = "<group>"; };
 		184EEDE11C744FB00003AD39 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		184EEDE21C744FB00003AD39 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		184EEDE41C7464740003AD39 /* HeaderDailyRecodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderDailyRecodView.h; sourceTree = "<group>"; };
@@ -435,6 +465,114 @@
 				0A6320621C759D5C00907B71 /* MyViewTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0AAE67D31C7812CE00359F17 /* TwoBarcode(我的二维码) */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67D41C7812CE00359F17 /* Controllers */,
+			);
+			path = "TwoBarcode(我的二维码)";
+			sourceTree = "<group>";
+		};
+		0AAE67D41C7812CE00359F17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67D51C7812EE00359F17 /* BarcodeViewController.h */,
+				0AAE67D61C7812EE00359F17 /* BarcodeViewController.m */,
+				0AAE67D71C7812EE00359F17 /* BarcodeViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0AAE67DA1C7815B800359F17 /* SendQueue(发送队列) */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67DB1C7815B800359F17 /* Controllers */,
+			);
+			path = "SendQueue(发送队列)";
+			sourceTree = "<group>";
+		};
+		0AAE67DB1C7815B800359F17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67EE1C78163200359F17 /* SendQueueViewController.h */,
+				0AAE67EF1C78163200359F17 /* SendQueueViewController.m */,
+				0AAE67F01C78163200359F17 /* SendQueueViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0AAE67DC1C7815B800359F17 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67DD1C7815B800359F17 /* Controllers */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		0AAE67DD1C7815B800359F17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67E91C78162100359F17 /* SettingViewController.h */,
+				0AAE67EA1C78162100359F17 /* SettingViewController.m */,
+				0AAE67EB1C78162100359F17 /* SettingViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0AAE67DE1C7815B800359F17 /* Trash(回收站) */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67DF1C7815B800359F17 /* Controllers */,
+			);
+			path = "Trash(回收站)";
+			sourceTree = "<group>";
+		};
+		0AAE67DF1C7815B800359F17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67E41C78160400359F17 /* TrashViewController.h */,
+				0AAE67E51C78160400359F17 /* TrashViewController.m */,
+				0AAE67E61C78160400359F17 /* TrashViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0AAE67E01C7815C800359F17 /* BlackList(黑名单) */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67E11C7815C800359F17 /* Controllers */,
+			);
+			path = "BlackList(黑名单)";
+			sourceTree = "<group>";
+		};
+		0AAE67E11C7815C800359F17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67F31C78164500359F17 /* BlackListViewController.h */,
+				0AAE67F41C78164500359F17 /* BlackListViewController.m */,
+				0AAE67F51C78164500359F17 /* BlackListViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0AAE67E21C7815D800359F17 /* Identification(学校认证) */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67E31C7815D800359F17 /* Controllers */,
+			);
+			path = "Identification(学校认证)";
+			sourceTree = "<group>";
+		};
+		0AAE67E31C7815D800359F17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AAE67FB1C78168800359F17 /* IdentificationViewController.h */,
+				0AAE67FC1C78168800359F17 /* IdentificationViewController.m */,
+				0AAE67FD1C78168800359F17 /* IdentificationViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		25C9D2BB77DCD35BC4BF2A2C /* Frameworks */ = {
@@ -945,6 +1083,12 @@
 		E544CFA51C744099003B22BC /* Profile(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				0AAE67E21C7815D800359F17 /* Identification(学校认证) */,
+				0AAE67E01C7815C800359F17 /* BlackList(黑名单) */,
+				0AAE67DA1C7815B800359F17 /* SendQueue(发送队列) */,
+				0AAE67DC1C7815B800359F17 /* Setting(设置) */,
+				0AAE67DE1C7815B800359F17 /* Trash(回收站) */,
+				0AAE67D31C7812CE00359F17 /* TwoBarcode(我的二维码) */,
 				E544CFA61C744099003B22BC /* Contacts(通讯录) */,
 				E544CFB21C744099003B22BC /* Profile(我的) */,
 			);
@@ -1511,8 +1655,10 @@
 				E528E56A1C759420003C18BC /* ChatViewController.xib in Resources */,
 				E544D0571C744345003B22BC /* HotViewCell.xib in Resources */,
 				E544CFBA1C744099003B22BC /* LeftSideDrawerViewController.xib in Resources */,
+				0AAE67E81C78160400359F17 /* TrashViewController.xib in Resources */,
 				E544D0651C744345003B22BC /* LongReadingCell.xib in Resources */,
 				E544D0551C744345003B22BC /* HotViewController.xib in Resources */,
+				0AAE67FF1C78168800359F17 /* IdentificationViewController.xib in Resources */,
 				E544D0611C744345003B22BC /* LongInterviewTableViewCell.xib in Resources */,
 				E544D05D1C744345003B22BC /* InterviewCell.xib in Resources */,
 				E55BCA021C74351B009A9AAA /* LaunchScreen.storyboard in Resources */,
@@ -1526,9 +1672,13 @@
 				E544D0511C744345003B22BC /* RecommendedViewController.xib in Resources */,
 				E544D05F1C744345003B22BC /* LongInterviewCell.xib in Resources */,
 				E544D05B1C744345003B22BC /* InterviewViewController.xib in Resources */,
+				0AAE67F71C78164500359F17 /* BlackListViewController.xib in Resources */,
+				0AAE67ED1C78162100359F17 /* SettingViewController.xib in Resources */,
 				E544CFA41C744094003B22BC /* MessageTableViewCell.xib in Resources */,
+				0AAE67D91C7812EE00359F17 /* BarcodeViewController.xib in Resources */,
 				E544CFA21C744094003B22BC /* MessageViewController.xib in Resources */,
 				E544CFC01C7440DB003B22BC /* Assets.xcassets in Resources */,
+				0AAE67F21C78163200359F17 /* SendQueueViewController.xib in Resources */,
 				E544D0591C744345003B22BC /* MoreTableViewCell.xib in Resources */,
 				E544CFBE1C744099003B22BC /* MyViewController.xib in Resources */,
 				E544D0691C744345003B22BC /* ReadingCell.xib in Resources */,
@@ -1623,6 +1773,7 @@
 				E544D0661C744345003B22BC /* LongTableViewCell.m in Sources */,
 				E544CF831C744087003B22BC /* NotificationTableViewCell.m in Sources */,
 				E544CF761C744087003B22BC /* RTLabel.m in Sources */,
+				0AAE67E71C78160400359F17 /* TrashViewController.m in Sources */,
 				184EEDF51C75A4F70003AD39 /* SupportTableViewCell.m in Sources */,
 				E544CF721C744087003B22BC /* HomeCollectionViewCell.m in Sources */,
 				E528E5691C759420003C18BC /* ChatViewController.m in Sources */,
@@ -1630,6 +1781,9 @@
 				184EEDEC1C755AD10003AD39 /* CommentTableViewCell.m in Sources */,
 				E544CF661C744087003B22BC /* AddTableViewCell.m in Sources */,
 				E544D00B1C74430D003B22BC /* GroupViewController.m in Sources */,
+				0AAE67EC1C78162100359F17 /* SettingViewController.m in Sources */,
+				0AAE67FE1C78168800359F17 /* IdentificationViewController.m in Sources */,
+				0AAE67F11C78163200359F17 /* SendQueueViewController.m in Sources */,
 				E55BC9F71C74351B009A9AAA /* AppDelegate.m in Sources */,
 				E544CF801C744087003B22BC /* NotificationAndRecodsViewController.m in Sources */,
 				184EEDEF1C7560DA0003AD39 /* ReadTableViewCell.m in Sources */,
@@ -1670,10 +1824,12 @@
 				E544CF7C1C744087003B22BC /* MyselfInformationViewController.m in Sources */,
 				E544CF931C74408E003B22BC /* LCTabbar.m in Sources */,
 				E544D06D1C744372003B22BC /* JSDropmenuView.m in Sources */,
+				0AAE67F61C78164500359F17 /* BlackListViewController.m in Sources */,
 				E55BC9F41C74351B009A9AAA /* main.m in Sources */,
 				E544CFA11C744094003B22BC /* MessageViewController.m in Sources */,
 				E544CF771C744087003B22BC /* DetailMyDailyRecodsViewController.m in Sources */,
 				184EEE011C75B7DC0003AD39 /* DetailOtherNotificationViewController.m in Sources */,
+				0AAE67D81C7812EE00359F17 /* BarcodeViewController.m in Sources */,
 				E544CFBB1C744099003B22BC /* BottomTableView.m in Sources */,
 				E544CF871C744087003B22BC /* RemindTableViewCell.m in Sources */,
 				E544D00A1C74430D003B22BC /* GroupSpaceViewController.m in Sources */,

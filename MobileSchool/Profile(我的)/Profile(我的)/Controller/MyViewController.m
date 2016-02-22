@@ -12,6 +12,13 @@
 #import "MyViewTableViewCell.h"
 #import "MMDrawerController.h"
 #import "LeftSideDrawerViewController.h"
+#import "BarcodeViewController.h"
+#import "IdentificationViewController.h"
+#import "BlackListViewController.h"
+#import "SendQueueViewController.h"
+#import "SettingViewController.h"
+#import "TrashViewController.h"
+
 @interface MyViewController ()
 @property(nonatomic,strong)MMDrawerController* drawController;
 @end
@@ -27,7 +34,7 @@
 }
 -(void)getData
 {
-    _dataSource = @[@[@"我的二维码"],@[@"发送队列",@"回收站",@"黑名单"],@[@"设置"],@[@"学校认证"]];
+    _dataSource = @[@[@"button"],@[@"我的二维码"],@[@"发送队列",@"回收站",@"黑名单"],@[@"设置"],@[@"学校认证"]];
 }
 
 
@@ -69,17 +76,40 @@
     }
     
     
-    if ([text isEqualToString:@"系统设置"]) {
-        
+    if ([text isEqualToString:@"我的二维码"]) {
+        BarcodeViewController *barcode = [[BarcodeViewController alloc]init];
+        NavigationViewController *nac = [[NavigationViewController alloc]initWithRootViewController:barcode];
+        [self presentViewController:nac animated:YES completion:nil];
     }
     
-    if ([text isEqualToString:@"我的订单"]) {
+    if ([text isEqualToString:@"发送队列"]) {
+        SendQueueViewController *sendQueue = [[SendQueueViewController alloc]init];
+        NavigationViewController *nac = [[NavigationViewController alloc]initWithRootViewController:sendQueue];
+        [self presentViewController:nac animated:YES completion:nil];
         
     }
-    if ([text isEqualToString:@"地址管理"]) {
+    if ([text isEqualToString:@"回收站"]) {
+        TrashViewController *trash = [[TrashViewController alloc]init];
+        NavigationViewController *nac = [[NavigationViewController alloc]initWithRootViewController:trash];
+        [self presentViewController:nac animated:YES completion:nil];
         
     }
-    if ([text isEqualToString:@"我的账号"]) {
+    if ([text isEqualToString:@"黑名单"]) {
+        BlackListViewController *blackList = [[BlackListViewController alloc]init];
+        NavigationViewController *nac = [[NavigationViewController alloc]initWithRootViewController:blackList];
+        [self presentViewController:nac animated:YES completion:nil];
+    }
+    
+    if ([text isEqualToString:@"设置"]) {
+        SettingViewController *setting = [[SettingViewController alloc]init];
+        NavigationViewController *nac = [[NavigationViewController alloc]initWithRootViewController:setting];
+        [self presentViewController:nac animated:YES completion:nil];
+        
+    }
+    if ([text isEqualToString:@"学校认证"]) {
+        IdentificationViewController *indentification = [[IdentificationViewController alloc]init];
+        NavigationViewController *nac = [[NavigationViewController alloc]initWithRootViewController:indentification];
+        [self presentViewController:nac animated:YES completion:nil];
         
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
