@@ -11,8 +11,10 @@
 #import "HomeworkViewController.h"
 #import "DetailRecodesViewController.h"
 #import "GroupInformationViewController.h"
+#import "OtherPeopleSendWorkTableViewCell.h"
+#import "DetailOtherNotificationViewController.h"
 
-@interface RecodesViewController ()<UITableViewDataSource,UITableViewDelegate,recodesDelegate,ToGroupDelegate>
+@interface RecodesViewController ()<UITableViewDataSource,UITableViewDelegate,recodesDelegate,ToGroupDelegate,OtherToGroupDelegate,OtherPeopleDetailInformationDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 
 
@@ -51,19 +53,29 @@
     GroupInformationViewController *Group = [[GroupInformationViewController alloc] init];
     [self.navigationController pushViewController:Group animated:YES];
 }
+- (void)pushToDetail:(NSString *)name {
+    DetailOtherNotificationViewController *detail = [[DetailOtherNotificationViewController alloc] init];
+    [self.navigationController pushViewController:detail animated:YES];
+}
+- (void)pushToOtherGroup:(NSString *)Group {
+    GroupInformationViewController *group = [[GroupInformationViewController alloc] init];
+    [self.navigationController pushViewController:group animated:YES];
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *reuse = @"reuse";
-    RecodesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuse];
-    if (!cell) {
-        cell = [[RecodesTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuse];
-    };
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (indexPath.row == 0) {
+        OtherPeopleSendWorkTableViewCell *cell = [OtherPeopleSendWorkTableViewCell tableViewCell:tableView];
+        cell.delegate = self;
+        cell.groupDelegate = self;
+        return cell;
+    } else {
+    RecodesTableViewCell *cell = [RecodesTableViewCell RecodesTableViewCell:tableView];
     cell.delegate = self;
     cell.groupDelegate = self;
     return cell;
+    }
     
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

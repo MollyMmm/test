@@ -37,5 +37,7 @@
 @property (nonatomic, strong) id<recodesDelegate>delegate;
 @property (nonatomic, strong) id<ToGroupDelegate>groupDelegate;
 
++ (RecodesTableViewCell *)RecodesTableViewCell:(UITableView *)tableView;
+
 
 @end
