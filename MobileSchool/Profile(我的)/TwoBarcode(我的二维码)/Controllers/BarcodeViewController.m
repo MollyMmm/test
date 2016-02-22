@@ -7,8 +7,10 @@
 //
 
 #import "BarcodeViewController.h"
+#import "JSDropmenuView.h"
+@interface BarcodeViewController ()<JSDropmenuViewDelegate>
 
-@interface BarcodeViewController ()
+@property(nonatomic,strong) NSArray *menuArray;//菜单
 
 @end
 
@@ -18,14 +20,52 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"我的二维码";
-    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(pressCancleBtn:)];
-    self.navigationItem.leftBarButtonItem = barButtonItem;
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"leftBtn"] style:UIBarButtonItemStyleDone target:self action:@selector(pressCancleBtn:)];
+    self.navigationItem.leftBarButtonItem = leftButton;
+    //导航栏右侧按钮
+    UIImage *image = [[UIImage imageNamed:@"moreUnselected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(open:)];
+    self.navigationItem.rightBarButtonItem = rightBtn;
+    
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    
+    self.menuArray = @[@{@"imageName":@"SaoMiao", @"title":@"扫描二维码"},@{@"imageName":@"qunhome_createQun", @"title":@"保存照片"}];
+
+    
+    
     
     
 
 }
+
+//导航栏右侧按钮点击方法
+-(void)open:(UIBarButtonItem *)btn
+{
+    JSDropmenuView *dropmenuView = [[JSDropmenuView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-150, 64-12, 140, 44*3+12)];
+    dropmenuView.delegate = self;
+    
+    [dropmenuView showViewInView:self.navigationController.view];
+}
+
+//导航栏左侧按钮代理方法
+#pragma mark - JSDropmenuViewDelegate
+
+- (NSArray *)dropmenuDataSource {
+    return self.menuArray;
+}
+
+- (void)dropmenuView:(JSDropmenuView *)dropmenuView didSelectedRow:(NSInteger)index {
+    
+    if (index == 1) {
+        NSLog(@"图片");
+    }
+    if (index == 0) {
+        NSLog(@"二维码");
+    }
+    
+}
+
 
 
 -(void)pressCancleBtn:(UIButton *)btn

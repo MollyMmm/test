@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol ToGroupDelegate
+
+- (void)pushToGroup:(NSString *)groupName;
 
 
+
+@end
 @interface HeaderView : UIView
 @property (nonatomic, strong) UIImageView *peopleImageView;
 @property (nonatomic, strong) UILabel *peopleLabel;
@@ -20,5 +25,7 @@
 @property (nonatomic, strong) UILabel *contentLabel;
 
 @property (nonatomic, strong) UILabel *whoCanSeeLabel;
+
+@property (nonatomic, strong) id<ToGroupDelegate>toGroupDelegate;
 
 @end
