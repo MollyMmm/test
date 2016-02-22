@@ -21,6 +21,7 @@
 		184EEDFB1C75B04D0003AD39 /* DetailInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDFA1C75B04D0003AD39 /* DetailInformationViewController.m */; };
 		184EEDFE1C75B5D00003AD39 /* GroupInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDFD1C75B5D00003AD39 /* GroupInformationViewController.m */; };
 		184EEE011C75B7DC0003AD39 /* DetailOtherNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEE001C75B7DC0003AD39 /* DetailOtherNotificationViewController.m */; };
+		1880D4CA1C7AA27600847735 /* OtherPeopleSendWorkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880D4C91C7AA27600847735 /* OtherPeopleSendWorkTableViewCell.m */; };
 		332D8AB724C974AA1031C258 /* libPods-MobileSchool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */; };
 		E528E5691C759420003C18BC /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E528E5671C759420003C18BC /* ChatViewController.m */; };
 		E528E56A1C759420003C18BC /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E528E5681C759420003C18BC /* ChatViewController.xib */; };
@@ -179,6 +180,8 @@
 		184EEDFD1C75B5D00003AD39 /* GroupInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupInformationViewController.m; sourceTree = "<group>"; };
 		184EEDFF1C75B7DC0003AD39 /* DetailOtherNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailOtherNotificationViewController.h; sourceTree = "<group>"; };
 		184EEE001C75B7DC0003AD39 /* DetailOtherNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailOtherNotificationViewController.m; sourceTree = "<group>"; };
+		1880D4C81C7AA27600847735 /* OtherPeopleSendWorkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherPeopleSendWorkTableViewCell.h; sourceTree = "<group>"; };
+		1880D4C91C7AA27600847735 /* OtherPeopleSendWorkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherPeopleSendWorkTableViewCell.m; sourceTree = "<group>"; };
 		3091111A346374AA942EF064 /* Pods-MobileSchool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.release.xcconfig"; sourceTree = "<group>"; };
 		89753E9BA9172F279BEEF726 /* Pods-MobileSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSchool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileSchool/Pods-MobileSchool.debug.xcconfig"; sourceTree = "<group>"; };
 		E528E5661C759420003C18BC /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
@@ -748,6 +751,8 @@
 				E544CF341C744087003B22BC /* RTLabel.m */,
 				184EEDE11C744FB00003AD39 /* HeaderView.h */,
 				184EEDE21C744FB00003AD39 /* HeaderView.m */,
+				1880D4C81C7AA27600847735 /* OtherPeopleSendWorkTableViewCell.h */,
+				1880D4C91C7AA27600847735 /* OtherPeopleSendWorkTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1680,6 +1685,7 @@
 				E544CFED1C7441FA003B22BC /* IQNSArray+Sort.m in Sources */,
 				E544CF851C744087003B22BC /* SendTableViewCell.m in Sources */,
 				E544CF781C744087003B22BC /* MyDailyRecodViewController.m in Sources */,
+				1880D4CA1C7AA27600847735 /* OtherPeopleSendWorkTableViewCell.m in Sources */,
 				E544CF811C744087003B22BC /* ReceivePeopleViewController.m in Sources */,
 				E544D04E1C744345003B22BC /* FriendsCircleViewController.m in Sources */,
 				184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */,
