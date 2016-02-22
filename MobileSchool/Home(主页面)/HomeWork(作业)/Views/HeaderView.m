@@ -72,7 +72,7 @@
     
 }
 - (void)ToGroupAction {
-    
+    [self.toGroupDelegate pushToGroup:_fromLabel.text];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

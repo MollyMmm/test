@@ -9,8 +9,10 @@
 #import "DetailRecodesViewController.h"
 #import "NotReadTableViewCell.h"
 #import "HeaderView.h"
+#import "GroupInformationViewController.h"
 
-@interface DetailRecodesViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@interface DetailRecodesViewController ()<UITableViewDelegate,UITableViewDataSource,ToGroupDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIButton *passButton;
 @property (nonatomic, strong) UIButton *commentButton;
@@ -37,6 +39,7 @@
     _tableView.dataSource = self;
     _tableView.rowHeight = 60 * H;
     HeaderView *headerView = [[HeaderView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 190 * H)];
+    headerView.toGroupDelegate = self;
     _tableView.tableHeaderView = headerView;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
@@ -166,6 +169,10 @@
     cell.nameLabel.text = [NSString stringWithFormat:@"测试%d",_numberButton];
     return cell;
     
+}
+- (void)pushToGroup:(NSString *)groupName {
+    GroupInformationViewController *group = [[GroupInformationViewController alloc] init];
+    [self.navigationController pushViewController:group animated:YES];
 }
 
 - (void)backAction {

@@ -118,6 +118,16 @@
     grayLabel.backgroundColor = [UIColor grayColor];
     [self.contentView addSubview:grayLabel];
 }
++ (RecodesTableViewCell *)RecodesTableViewCell:(UITableView *)tableView {
+    static NSString *reuse = @"recodesReuse";
+    RecodesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuse];
+    if (!cell) {
+        cell = [[RecodesTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuse];
+    };
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+
+}
 - (void)ToGroupAction {
     [self.groupDelegate pushToGroup:_fromLabel.text];
 }
