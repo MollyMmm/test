@@ -49,9 +49,13 @@
         
         [self.navigationController presentViewController:conNav animated:YES completion:nil];
         
+        
+        NSLog(@"正确");
     } andFaildCallBack:^(id response) {
         
     }];
+    
+    
 }
 
 @end
