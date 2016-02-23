@@ -10,13 +10,16 @@
 		0A63205E1C7583ED00907B71 /* UIButton+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63205D1C7583ED00907B71 /* UIButton+Image.m */; };
 		0A6320631C759D5C00907B71 /* MyViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6320611C759D5C00907B71 /* MyViewTableViewCell.m */; };
 		0A6320641C759D5C00907B71 /* MyViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6320621C759D5C00907B71 /* MyViewTableViewCell.xib */; };
-		0AAE67D81C7812EE00359F17 /* BarcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67D61C7812EE00359F17 /* BarcodeViewController.m */; };
-		0AAE67D91C7812EE00359F17 /* BarcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67D71C7812EE00359F17 /* BarcodeViewController.xib */; };
+		0A67792E1C7C077400253BD8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A67792C1C7C077400253BD8 /* SettingViewController.m */; };
+		0A67792F1C7C077400253BD8 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A67792D1C7C077400253BD8 /* SettingViewController.xib */; };
+		0A6779331C7C0B4300253BD8 /* SendQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6779311C7C0B4300253BD8 /* SendQueueViewController.m */; };
+		0A6779341C7C0B4300253BD8 /* SendQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6779321C7C0B4300253BD8 /* SendQueueViewController.xib */; };
+		0A6779381C7C0BCE00253BD8 /* BlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6779361C7C0BCE00253BD8 /* BlackListViewController.m */; };
+		0A6779391C7C0BCE00253BD8 /* BlackListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6779371C7C0BCE00253BD8 /* BlackListViewController.xib */; };
+		0A67793D1C7C2DAB00253BD8 /* BarcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A67793B1C7C2DAB00253BD8 /* BarcodeViewController.m */; };
+		0A67793E1C7C2DAB00253BD8 /* BarcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A67793C1C7C2DAB00253BD8 /* BarcodeViewController.xib */; };
 		0AAE67E71C78160400359F17 /* TrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67E51C78160400359F17 /* TrashViewController.m */; };
 		0AAE67E81C78160400359F17 /* TrashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67E61C78160400359F17 /* TrashViewController.xib */; };
-		0AAE67EC1C78162100359F17 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67EA1C78162100359F17 /* SettingViewController.m */; };
-		0AAE67F11C78163200359F17 /* SendQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67EF1C78163200359F17 /* SendQueueViewController.m */; };
-		0AAE67F61C78164500359F17 /* BlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67F41C78164500359F17 /* BlackListViewController.m */; };
 		0AAE67FE1C78168800359F17 /* IdentificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67FC1C78168800359F17 /* IdentificationViewController.m */; };
 		0AAE67FF1C78168800359F17 /* IdentificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67FD1C78168800359F17 /* IdentificationViewController.xib */; };
 		184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE21C744FB00003AD39 /* HeaderView.m */; };
@@ -199,21 +202,21 @@
 		0A6320601C759D5C00907B71 /* MyViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewTableViewCell.h; sourceTree = "<group>"; };
 		0A6320611C759D5C00907B71 /* MyViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewTableViewCell.m; sourceTree = "<group>"; };
 		0A6320621C759D5C00907B71 /* MyViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewTableViewCell.xib; sourceTree = "<group>"; };
-		0AAE67D51C7812EE00359F17 /* BarcodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeViewController.h; sourceTree = "<group>"; };
-		0AAE67D61C7812EE00359F17 /* BarcodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeViewController.m; sourceTree = "<group>"; };
-		0AAE67D71C7812EE00359F17 /* BarcodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarcodeViewController.xib; sourceTree = "<group>"; };
+		0A67792B1C7C077400253BD8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		0A67792C1C7C077400253BD8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		0A67792D1C7C077400253BD8 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		0A6779301C7C0B4300253BD8 /* SendQueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendQueueViewController.h; sourceTree = "<group>"; };
+		0A6779311C7C0B4300253BD8 /* SendQueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendQueueViewController.m; sourceTree = "<group>"; };
+		0A6779321C7C0B4300253BD8 /* SendQueueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendQueueViewController.xib; sourceTree = "<group>"; };
+		0A6779351C7C0BCE00253BD8 /* BlackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackListViewController.h; sourceTree = "<group>"; };
+		0A6779361C7C0BCE00253BD8 /* BlackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackListViewController.m; sourceTree = "<group>"; };
+		0A6779371C7C0BCE00253BD8 /* BlackListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlackListViewController.xib; sourceTree = "<group>"; };
+		0A67793A1C7C2DAB00253BD8 /* BarcodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeViewController.h; sourceTree = "<group>"; };
+		0A67793B1C7C2DAB00253BD8 /* BarcodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeViewController.m; sourceTree = "<group>"; };
+		0A67793C1C7C2DAB00253BD8 /* BarcodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarcodeViewController.xib; sourceTree = "<group>"; };
 		0AAE67E41C78160400359F17 /* TrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrashViewController.h; sourceTree = "<group>"; };
 		0AAE67E51C78160400359F17 /* TrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrashViewController.m; sourceTree = "<group>"; };
 		0AAE67E61C78160400359F17 /* TrashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrashViewController.xib; sourceTree = "<group>"; };
-		0AAE67E91C78162100359F17 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		0AAE67EA1C78162100359F17 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		0AAE67EB1C78162100359F17 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
-		0AAE67EE1C78163200359F17 /* SendQueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendQueueViewController.h; sourceTree = "<group>"; };
-		0AAE67EF1C78163200359F17 /* SendQueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendQueueViewController.m; sourceTree = "<group>"; };
-		0AAE67F01C78163200359F17 /* SendQueueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendQueueViewController.xib; sourceTree = "<group>"; };
-		0AAE67F31C78164500359F17 /* BlackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackListViewController.h; sourceTree = "<group>"; };
-		0AAE67F41C78164500359F17 /* BlackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackListViewController.m; sourceTree = "<group>"; };
-		0AAE67F51C78164500359F17 /* BlackListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlackListViewController.xib; sourceTree = "<group>"; };
 		0AAE67FB1C78168800359F17 /* IdentificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentificationViewController.h; sourceTree = "<group>"; };
 		0AAE67FC1C78168800359F17 /* IdentificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentificationViewController.m; sourceTree = "<group>"; };
 		0AAE67FD1C78168800359F17 /* IdentificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdentificationViewController.xib; sourceTree = "<group>"; };
@@ -572,9 +575,9 @@
 		0AAE67D41C7812CE00359F17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0AAE67D51C7812EE00359F17 /* BarcodeViewController.h */,
-				0AAE67D61C7812EE00359F17 /* BarcodeViewController.m */,
-				0AAE67D71C7812EE00359F17 /* BarcodeViewController.xib */,
+				0A67793A1C7C2DAB00253BD8 /* BarcodeViewController.h */,
+				0A67793B1C7C2DAB00253BD8 /* BarcodeViewController.m */,
+				0A67793C1C7C2DAB00253BD8 /* BarcodeViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -590,9 +593,9 @@
 		0AAE67DB1C7815B800359F17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0AAE67EE1C78163200359F17 /* SendQueueViewController.h */,
-				0AAE67EF1C78163200359F17 /* SendQueueViewController.m */,
-				0AAE67F01C78163200359F17 /* SendQueueViewController.xib */,
+				0A6779301C7C0B4300253BD8 /* SendQueueViewController.h */,
+				0A6779311C7C0B4300253BD8 /* SendQueueViewController.m */,
+				0A6779321C7C0B4300253BD8 /* SendQueueViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -608,9 +611,9 @@
 		0AAE67DD1C7815B800359F17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0AAE67E91C78162100359F17 /* SettingViewController.h */,
-				0AAE67EA1C78162100359F17 /* SettingViewController.m */,
-				0AAE67EB1C78162100359F17 /* SettingViewController.xib */,
+				0A67792B1C7C077400253BD8 /* SettingViewController.h */,
+				0A67792C1C7C077400253BD8 /* SettingViewController.m */,
+				0A67792D1C7C077400253BD8 /* SettingViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -644,9 +647,9 @@
 		0AAE67E11C7815C800359F17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0AAE67F31C78164500359F17 /* BlackListViewController.h */,
-				0AAE67F41C78164500359F17 /* BlackListViewController.m */,
-				0AAE67F51C78164500359F17 /* BlackListViewController.xib */,
+				0A6779351C7C0BCE00253BD8 /* BlackListViewController.h */,
+				0A6779361C7C0BCE00253BD8 /* BlackListViewController.m */,
+				0A6779371C7C0BCE00253BD8 /* BlackListViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1874,6 +1877,7 @@
 				E544D00C1C74430D003B22BC /* GroupViewController.xib in Resources */,
 				E544CFFA1C7441FA003B22BC /* IQKeyboardManager.bundle in Resources */,
 				E528E56A1C759420003C18BC /* ChatViewController.xib in Resources */,
+				0A6779391C7C0BCE00253BD8 /* BlackListViewController.xib in Resources */,
 				E544D0571C744345003B22BC /* HotViewCell.xib in Resources */,
 				E544CFBA1C744099003B22BC /* LeftSideDrawerViewController.xib in Resources */,
 				0AAE67E81C78160400359F17 /* TrashViewController.xib in Resources */,
@@ -1885,6 +1889,7 @@
 				E544D05D1C744345003B22BC /* InterviewCell.xib in Resources */,
 				E55BCA021C74351B009A9AAA /* LaunchScreen.storyboard in Resources */,
 				E544D04D1C744345003B22BC /* FoundViewController.xib in Resources */,
+				0A6779341C7C0B4300253BD8 /* SendQueueViewController.xib in Resources */,
 				E544CFB81C744099003B22BC /* ContactsViewController.xib in Resources */,
 				E544D04F1C744345003B22BC /* FriendsCircleViewController.xib in Resources */,
 				E544D0631C744345003B22BC /* ReadingViewController.xib in Resources */,
@@ -1892,9 +1897,11 @@
 				E544CFBC1C744099003B22BC /* BottomTableView.xib in Resources */,
 				E544D0671C744345003B22BC /* LongTableViewCell.xib in Resources */,
 				E544D0511C744345003B22BC /* RecommendedViewController.xib in Resources */,
+				0A67792F1C7C077400253BD8 /* SettingViewController.xib in Resources */,
 				E544D05F1C744345003B22BC /* LongInterviewCell.xib in Resources */,
 				E544D05B1C744345003B22BC /* InterviewViewController.xib in Resources */,
 				E544CFA41C744094003B22BC /* MessageTableViewCell.xib in Resources */,
+				0A67793E1C7C2DAB00253BD8 /* BarcodeViewController.xib in Resources */,
 				E58DFB2C1C7AA21000B57170 /* AddChatViewController.xib in Resources */,
 				E566C5631C7C0BC400464659 /* SignInViewController.xib in Resources */,
 				0AAE67D91C7812EE00359F17 /* BarcodeViewController.xib in Resources */,
@@ -2001,6 +2008,7 @@
 				184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */,
 				E544D0081C74430D003B22BC /* DailyViewController.m in Sources */,
 				E544CF6A1C744087003B22BC /* DailyRecodViewController.m in Sources */,
+				0A67792E1C7C077400253BD8 /* SettingViewController.m in Sources */,
 				184EEDF21C756E860003AD39 /* ReadCollectionViewCell.m in Sources */,
 				E544D0661C744345003B22BC /* LongTableViewCell.m in Sources */,
 				E544CF831C744087003B22BC /* NotificationTableViewCell.m in Sources */,
@@ -2012,12 +2020,11 @@
 				E528E5691C759420003C18BC /* ChatViewController.m in Sources */,
 				E544CF6B1C744087003B22BC /* DetailDailyRecodViewController.m in Sources */,
 				184EEDEC1C755AD10003AD39 /* CommentTableViewCell.m in Sources */,
+				0A6779331C7C0B4300253BD8 /* SendQueueViewController.m in Sources */,
 				E544CF661C744087003B22BC /* AddTableViewCell.m in Sources */,
 				E566C5A41C7C0EFE00464659 /* AFSecurityPolicy.m in Sources */,
 				E544D00B1C74430D003B22BC /* GroupViewController.m in Sources */,
-				0AAE67EC1C78162100359F17 /* SettingViewController.m in Sources */,
 				0AAE67FE1C78168800359F17 /* IdentificationViewController.m in Sources */,
-				0AAE67F11C78163200359F17 /* SendQueueViewController.m in Sources */,
 				E55BC9F71C74351B009A9AAA /* AppDelegate.m in Sources */,
 				E544CF801C744087003B22BC /* NotificationAndRecodsViewController.m in Sources */,
 				184EEDEF1C7560DA0003AD39 /* ReadTableViewCell.m in Sources */,
@@ -2060,6 +2067,7 @@
 				E566C5711C7C0E1500464659 /* NetworkingManager.m in Sources */,
 				E544D0601C744345003B22BC /* LongInterviewTableViewCell.m in Sources */,
 				E544CF7A1C744087003B22BC /* EmailViewController.m in Sources */,
+				0A67793D1C7C2DAB00253BD8 /* BarcodeViewController.m in Sources */,
 				E544CF6D1C744087003B22BC /* DraftViewController.m in Sources */,
 				E544CF7D1C744087003B22BC /* NameViewController.m in Sources */,
 				E544CF7C1C744087003B22BC /* MyselfInformationViewController.m in Sources */,
@@ -2072,8 +2080,8 @@
 				E544CFA11C744094003B22BC /* MessageViewController.m in Sources */,
 				E544CF771C744087003B22BC /* DetailMyDailyRecodsViewController.m in Sources */,
 				184EEE011C75B7DC0003AD39 /* DetailOtherNotificationViewController.m in Sources */,
-				0AAE67D81C7812EE00359F17 /* BarcodeViewController.m in Sources */,
 				E544CFBB1C744099003B22BC /* BottomTableView.m in Sources */,
+				0A6779381C7C0BCE00253BD8 /* BlackListViewController.m in Sources */,
 				E544CF871C744087003B22BC /* RemindTableViewCell.m in Sources */,
 				E544D00A1C74430D003B22BC /* GroupSpaceViewController.m in Sources */,
 				E566C5871C7C0EF900464659 /* UIButton+AFNetworking.m in Sources */,

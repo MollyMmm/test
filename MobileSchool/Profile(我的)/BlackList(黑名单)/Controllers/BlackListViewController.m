@@ -2,7 +2,7 @@
 //  BlackListViewController.m
 //  MobileSchool
 //
-//  Created by 李公博 on 16/2/20.
+//  Created by 李公博 on 16/2/23.
 //  Copyright © 2016年 Molly. All rights reserved.
 //
 
@@ -16,17 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     self.title = @"黑名单";
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"leftBtn"] style:UIBarButtonItemStyleDone target:self action:@selector(pressCancleBtn:)];
     self.navigationItem.leftBarButtonItem = leftButton;
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
 }
+
 -(void)pressCancleBtn:(UIButton *)btn
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
