@@ -2,23 +2,20 @@
 //  BarcodeViewController.m
 //  MobileSchool
 //
-//  Created by 李公博 on 16/2/20.
+//  Created by 李公博 on 16/2/23.
 //  Copyright © 2016年 Molly. All rights reserved.
 //
 
 #import "BarcodeViewController.h"
 #import "JSDropmenuView.h"
 @interface BarcodeViewController ()<JSDropmenuViewDelegate>
-
 @property(nonatomic,strong) NSArray *menuArray;//菜单
-
 @end
 
 @implementation BarcodeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     self.title = @"我的二维码";
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"leftBtn"] style:UIBarButtonItemStyleDone target:self action:@selector(pressCancleBtn:)];
     self.navigationItem.leftBarButtonItem = leftButton;
@@ -31,12 +28,12 @@
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     
     self.menuArray = @[@{@"imageName":@"SaoMiao", @"title":@"扫描二维码"},@{@"imageName":@"qunhome_createQun", @"title":@"保存照片"}];
-
     
     
     
     
-
+    
+    
 }
 
 //导航栏右侧按钮点击方法
@@ -70,7 +67,7 @@
 
 -(void)pressCancleBtn:(UIButton *)btn
 {
-      [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
