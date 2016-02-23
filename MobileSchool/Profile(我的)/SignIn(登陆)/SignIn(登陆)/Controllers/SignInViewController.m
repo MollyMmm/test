@@ -7,7 +7,7 @@
 //
 
 #import "SignInViewController.h"
-
+#import "RegisterViewController.h"
 #import "NetworkingManager.h"
 #import "SignOperator.h"
 #import "UserModel.h"
@@ -73,7 +73,13 @@
     
 }
 - (IBAction)signIn:(id)sender {
+   
+    RegisterViewController *registerVC = [[RegisterViewController alloc] init];
+//    NavigationViewController *conNav = [[NavigationViewController alloc] initWithRootViewController:registerVC];
+//    
+//    [self.navigationController presentViewController:conNav animated:YES completion:nil];
     
+    [self presentViewController:registerVC animated:YES completion:nil];
     
 }
 
