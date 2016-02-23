@@ -13,6 +13,11 @@
 #import "NavigationViewController.h"
 #import "UIViewController+MMDrawerController.h"
 #import "TabbarViewController.h"
+
+#import "NetworkingManager.h"
+#import "GetFriendListOperator.h"
+#import "UserModel.h"
+
 @interface ContactsViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UIGestureRecognizerDelegate,leftSideDrawerValueDelegate>{
     UISearchBar* mSearchBar;
     int groupIndex;
@@ -25,6 +30,7 @@
 @property(nonatomic,strong)NSArray* indexData;
 @property(nonatomic,strong)NSArray* leftMenuData;
 
+@property (strong, nonatomic) NSArray *friendArr;
 
 @property(nonatomic,strong)MMDrawerController* drawController;
 @property(nonatomic,strong)UIWindow* window;
@@ -191,5 +197,26 @@
     
     [self.window makeKeyAndVisible];
 
+}
+/**
+ *  请求好友列表
+ *  http://123.56.17.198:8180/ms/api/user_ser?username=aaa
+ */
+//
+- (void)requestFriendList{
+    
+    GetFriendListOperator *friendListOperator = [[GetFriendListOperator alloc] initWithParamsDic:@{@"username":[[NSUserDefaults standardUserDefaults] objectForKey:@"username"]}];
+    NetworkingManager *manager = [NetworkingManager sharedInstance];
+    
+    [manager asyncTaskWithOperator:friendListOperator withSuccessCallBack:^(BaseModel *model) {
+        
+        _friendArr = [[NSArray alloc] init];
+        _friendArr = friendListOperator.friendArr;
+        
+        [_bottomTabelView initData];
+        
+    } andFaildCallBack:^(id response) {
+        
+    }];
 }
 @end

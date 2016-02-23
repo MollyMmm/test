@@ -43,6 +43,8 @@
         UserModel *userModel = [[UserModel alloc] init];
         userModel = signOperator.userModel;
         
+        [[NSUserDefaults standardUserDefaults] setValue:userModel.username forKey:@"username"];
+        
         //-暂时先跳转到通讯录
         ContactsViewController *conVC = [[ContactsViewController alloc] init];
         NavigationViewController *conNav = [[NavigationViewController alloc] initWithRootViewController:conVC];
