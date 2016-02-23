@@ -17,48 +17,53 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wi-2b-sza">
-                    <rect key="frame" x="49" y="202" width="51" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密    码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZo-zG-Mlt">
-                    <rect key="frame" x="48" y="253" width="52" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HUn-gW-aBy">
-                    <rect key="frame" x="108" y="198" width="159" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HUn-gW-aBy">
+                    <rect key="frame" x="49" y="198" width="218" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RtY-Vk-x3o">
-                    <rect key="frame" x="108" y="249" width="159" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dta-qU-hp4">
-                    <rect key="frame" x="49" y="314" width="218" height="35"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dta-qU-hp4">
+                    <rect key="frame" x="49" y="282" width="218" height="35"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="登录"/>
                     <connections>
                         <action selector="pressSignInBtn:" destination="-1" eventType="touchUpInside" id="B85-K5-VkU"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m63-z1-q8g">
-                    <rect key="frame" x="203" y="357" width="64" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m63-z1-q8g">
+                    <rect key="frame" x="203" y="325" width="64" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="免费注册">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="pressSignInBtn:" destination="-1" eventType="touchUpInside" id="gmh-ul-J8w"/>
+                        <action selector="signIn:" destination="-1" eventType="touchUpInside" id="NUd-Ta-nLW"/>
                     </connections>
                 </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RtY-Vk-x3o">
+                    <rect key="frame" x="49" y="231" width="218" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="m63-z1-q8g" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="203" id="0s8-he-eDf"/>
+                <constraint firstItem="m63-z1-q8g" firstAttribute="top" secondItem="Dta-qU-hp4" secondAttribute="bottom" constant="8" id="1pg-0b-94k"/>
+                <constraint firstItem="Dta-qU-hp4" firstAttribute="top" secondItem="RtY-Vk-x3o" secondAttribute="bottom" constant="21" id="3Ck-og-9Fw"/>
+                <constraint firstItem="Dta-qU-hp4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="73B-PB-fhl"/>
+                <constraint firstItem="HUn-gW-aBy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Cpi-4j-gav"/>
+                <constraint firstItem="m63-z1-q8g" firstAttribute="top" secondItem="Dta-qU-hp4" secondAttribute="bottom" constant="8" id="IDR-k6-uK5"/>
+                <constraint firstAttribute="trailing" secondItem="HUn-gW-aBy" secondAttribute="trailing" constant="50" id="MXM-Mc-kmk"/>
+                <constraint firstItem="HUn-gW-aBy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="198" id="Zay-Lr-a6q"/>
+                <constraint firstItem="Dta-qU-hp4" firstAttribute="top" secondItem="RtY-Vk-x3o" secondAttribute="bottom" constant="21" id="d8d-I3-bKJ"/>
+                <constraint firstItem="RtY-Vk-x3o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="iXZ-5f-xpt"/>
+                <constraint firstAttribute="trailing" secondItem="Dta-qU-hp4" secondAttribute="trailing" constant="50" id="lig-ie-WUB"/>
+                <constraint firstAttribute="trailing" secondItem="RtY-Vk-x3o" secondAttribute="trailing" constant="50" id="poJ-xy-xpn"/>
+                <constraint firstItem="RtY-Vk-x3o" firstAttribute="top" secondItem="HUn-gW-aBy" secondAttribute="bottom" constant="1" id="ril-PG-NWo"/>
+                <constraint firstAttribute="trailing" secondItem="m63-z1-q8g" secondAttribute="trailing" constant="53" id="zan-ui-bU8"/>
+            </constraints>
             <point key="canvasLocation" x="410" y="248"/>
         </view>
     </objects>
