@@ -11,7 +11,6 @@
 #import "NetworkingManager.h"
 #import "SignOperator.h"
 #import "UserModel.h"
-
 #import "ContactsViewController.h"
 #import "NavigationViewController.h"
 

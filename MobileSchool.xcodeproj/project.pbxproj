@@ -26,6 +26,8 @@
 		0AAE67E81C78160400359F17 /* TrashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67E61C78160400359F17 /* TrashViewController.xib */; };
 		0AAE67FE1C78168800359F17 /* IdentificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67FC1C78168800359F17 /* IdentificationViewController.m */; };
 		0AAE67FF1C78168800359F17 /* IdentificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67FD1C78168800359F17 /* IdentificationViewController.xib */; };
+		0AF208181C7D4C03003AF80C /* OrganizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF208161C7D4C03003AF80C /* OrganizationViewController.m */; };
+		0AF208191C7D4C03003AF80C /* OrganizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF208171C7D4C03003AF80C /* OrganizationViewController.xib */; };
 		184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE21C744FB00003AD39 /* HeaderView.m */; };
 		184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */; };
 		184EEDE91C75547D0003AD39 /* RelayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */; };
@@ -228,6 +230,9 @@
 		0AAE67FB1C78168800359F17 /* IdentificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentificationViewController.h; sourceTree = "<group>"; };
 		0AAE67FC1C78168800359F17 /* IdentificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentificationViewController.m; sourceTree = "<group>"; };
 		0AAE67FD1C78168800359F17 /* IdentificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdentificationViewController.xib; sourceTree = "<group>"; };
+		0AF208151C7D4C03003AF80C /* OrganizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizationViewController.h; sourceTree = "<group>"; };
+		0AF208161C7D4C03003AF80C /* OrganizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizationViewController.m; sourceTree = "<group>"; };
+		0AF208171C7D4C03003AF80C /* OrganizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrganizationViewController.xib; sourceTree = "<group>"; };
 		184EEDE11C744FB00003AD39 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		184EEDE21C744FB00003AD39 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		184EEDE41C7464740003AD39 /* HeaderDailyRecodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderDailyRecodView.h; sourceTree = "<group>"; };
@@ -722,6 +727,40 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		0AF208111C7D4BD9003AF80C /* Organization(组织机构) */ = {
+			isa = PBXGroup;
+			children = (
+				0AF208121C7D4BD9003AF80C /* Controlers */,
+				0AF208131C7D4BD9003AF80C /* Models */,
+				0AF208141C7D4BD9003AF80C /* Views */,
+			);
+			path = "Organization(组织机构)";
+			sourceTree = "<group>";
+		};
+		0AF208121C7D4BD9003AF80C /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				0AF208151C7D4C03003AF80C /* OrganizationViewController.h */,
+				0AF208161C7D4C03003AF80C /* OrganizationViewController.m */,
+				0AF208171C7D4C03003AF80C /* OrganizationViewController.xib */,
+			);
+			path = Controlers;
+			sourceTree = "<group>";
+		};
+		0AF208131C7D4BD9003AF80C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0AF208141C7D4BD9003AF80C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		25C9D2BB77DCD35BC4BF2A2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1193,6 +1232,7 @@
 		E544CF971C744094003B22BC /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
+				0AF208111C7D4BD9003AF80C /* Organization(组织机构) */,
 				E544CF981C744094003B22BC /* Message(消息) */,
 			);
 			path = "Message(消息)";
@@ -1934,6 +1974,7 @@
 				E544D0551C744345003B22BC /* HotViewController.xib in Resources */,
 				0AAE67FF1C78168800359F17 /* IdentificationViewController.xib in Resources */,
 				E544D0611C744345003B22BC /* LongInterviewTableViewCell.xib in Resources */,
+				0AF208191C7D4C03003AF80C /* OrganizationViewController.xib in Resources */,
 				E544D05D1C744345003B22BC /* InterviewCell.xib in Resources */,
 				E55BCA021C74351B009A9AAA /* LaunchScreen.storyboard in Resources */,
 				E544D04D1C744345003B22BC /* FoundViewController.xib in Resources */,
@@ -2137,6 +2178,7 @@
 				E544CFED1C7441FA003B22BC /* IQNSArray+Sort.m in Sources */,
 				E544CF851C744087003B22BC /* SendTableViewCell.m in Sources */,
 				E566C58A1C7C0EF900464659 /* UIRefreshControl+AFNetworking.m in Sources */,
+				0AF208181C7D4C03003AF80C /* OrganizationViewController.m in Sources */,
 				E544CF781C744087003B22BC /* MyDailyRecodViewController.m in Sources */,
 				E566C5A81C7C0EFE00464659 /* AFURLSessionManager.m in Sources */,
 				1880D4CA1C7AA27600847735 /* OtherPeopleSendWorkTableViewCell.m in Sources */,

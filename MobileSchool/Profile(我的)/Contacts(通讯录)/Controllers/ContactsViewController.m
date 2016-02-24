@@ -191,11 +191,11 @@
 
 }
 - (void)pressCancleBtn:(id)sender{
-//    TabbarViewController* tabbarController =  [[TabbarViewController alloc]init];
-//    tabbarController.selectedIndex = 4;
-//    self.window.rootViewController = tabbarController;
-//    
-//    [self.window makeKeyAndVisible];
+    TabbarViewController* tabbarController =  [[TabbarViewController alloc]init];
+    tabbarController.selectedIndex = 4;
+    self.window.rootViewController = tabbarController;
+    
+    [self.window makeKeyAndVisible];
 
 }
 /**
