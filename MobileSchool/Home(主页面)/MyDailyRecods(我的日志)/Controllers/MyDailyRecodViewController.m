@@ -31,7 +31,7 @@
     searchBar.placeholder = @"筛选";
     [self.view addSubview:searchBar];
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64 + 40 * H, kScreenWidth, kScreenHeight)];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64 + 40 * H, kScreenWidth, kScreenHeight - 64 - 40 * H)];
     _tableView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:_tableView];
     _tableView.delegate = self;

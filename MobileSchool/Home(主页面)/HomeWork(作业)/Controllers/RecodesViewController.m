@@ -13,6 +13,8 @@
 #import "GroupInformationViewController.h"
 #import "OtherPeopleSendWorkTableViewCell.h"
 #import "DetailOtherNotificationViewController.h"
+#import "DetailInformationViewController.h"
+#import "OtherPeopleDetailRecodesViewController.h"
 
 @interface RecodesViewController ()<UITableViewDataSource,UITableViewDelegate,recodesDelegate,ToGroupDelegate,OtherToGroupDelegate,OtherPeopleDetailInformationDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -36,11 +38,12 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"返回按钮"] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
     self.navigationItem.leftBarButtonItem = backItem;
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight + 49)];
     [self.view addSubview:_tableView];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.rowHeight = 250 * H;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 
 }
 - (void)getNumber:(int)number {
@@ -54,9 +57,8 @@
     [self.navigationController pushViewController:Group animated:YES];
 }
 - (void)pushToDetail:(NSString *)name {
-    DetailOtherNotificationViewController *detail = [[DetailOtherNotificationViewController alloc] init];
-    [self.navigationController pushViewController:detail animated:YES];
-}
+    DetailInformationViewController *detail = [[DetailInformationViewController alloc] init];
+    [self.navigationController pushViewController:detail animated:YES];}
 - (void)pushToOtherGroup:(NSString *)Group {
     GroupInformationViewController *group = [[GroupInformationViewController alloc] init];
     [self.navigationController pushViewController:group animated:YES];
@@ -79,9 +81,14 @@
     
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        OtherPeopleDetailRecodesViewController *other = [[OtherPeopleDetailRecodesViewController alloc] init];
+        [self.navigationController pushViewController:other animated:YES];
+    } else {
     DetailRecodesViewController *detail = [[DetailRecodesViewController alloc] init];
     detail.numberButton = 2;
     [self.navigationController pushViewController:detail animated:YES];
+    }
 }
 
 - (void)backAction {

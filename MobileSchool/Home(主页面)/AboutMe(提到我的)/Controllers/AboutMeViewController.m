@@ -24,6 +24,7 @@
     
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"提到我的"]];
     self.view = imageView;
+    self.view.backgroundColor = [UIColor whiteColor];
 
 
 }

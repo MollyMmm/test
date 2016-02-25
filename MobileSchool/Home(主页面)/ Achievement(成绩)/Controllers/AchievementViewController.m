@@ -24,6 +24,7 @@
     self.navigationItem.leftBarButtonItem = backItem;
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"成绩单"]];
     self.view = imageView;
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 - (void)backAction {
     [self.navigationController popViewControllerAnimated:YES];

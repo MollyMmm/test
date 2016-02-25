@@ -29,11 +29,12 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"返回按钮"] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
     self.navigationItem.leftBarButtonItem = backItem;
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight + 49)];
     _tableView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:_tableView];
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 #pragma mark 头视图
     UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 150 * H)];
     backView.backgroundColor = [UIColor whiteColor];
@@ -41,12 +42,14 @@
     _imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"背景图片"]];
     _imageView.frame = CGRectMake(0, 0, kScreenWidth, 100 * H);
     _imageView.userInteractionEnabled = YES;
+    _imageView.backgroundColor = [UIColor yellowColor];
     
     UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(chooseImage:)];
     tap.numberOfTapsRequired=1;
     [_imageView addGestureRecognizer:tap];
 #pragma mark
     _header = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"个人头像"]];
+    _header.backgroundColor = [UIColor blueColor];
     _header.frame = CGRectMake(0, 0, 60 * H, 60 * H);
     _header.layer.cornerRadius = 30 * H;
     _header.layer.masksToBounds = YES;

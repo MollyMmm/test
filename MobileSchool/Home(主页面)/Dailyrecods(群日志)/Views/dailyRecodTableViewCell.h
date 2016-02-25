@@ -22,6 +22,8 @@
 @property (nonatomic, strong) UIButton *readButton;
 @property (nonatomic, strong) UIButton *supportButton;
 
+@property (nonatomic, strong) UIImageView *contentImageView;
+
 @property (nonatomic, strong) id<dailyRecodDelegate>delegate;
 
 

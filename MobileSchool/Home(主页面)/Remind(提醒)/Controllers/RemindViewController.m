@@ -42,14 +42,14 @@
     
 }
 - (void)segmentControlAction:(id)sender {
-    NSInteger selectedIndex = [_segmentControl selectedSegmentIndex];
-    if (selectedIndex == 0) {
-        _tableView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
-        _notReadTableView.frame = CGRectMake(0, 0, 0, 0);
-    } else {
-        _notReadTableView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
-        _tableView.frame = CGRectMake(0, 0, 0, 0);
-    }
+//    NSInteger selectedIndex = [_segmentControl selectedSegmentIndex];
+//    if (selectedIndex == 0) {
+//        _tableView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight + 49);
+//        _notReadTableView.frame = CGRectMake(0, 0, 0, 0);
+//    } else {
+//        _notReadTableView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight + 49);
+//        _tableView.frame = CGRectMake(0, 0, 0, 0);
+//    }
 }
 
 - (void)viewDidLoad {
@@ -59,18 +59,20 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"返回按钮"] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
     self.navigationItem.leftBarButtonItem = backItem;
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight + 49)];
     _tableView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:_tableView];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.rowHeight = 100 * H;
-    _notReadTableView = [[UITableView alloc] init];
-    _notReadTableView.backgroundColor = [UIColor orangeColor];
-    [self.view addSubview:_notReadTableView];
-    _notReadTableView.delegate = self;
-    _notReadTableView.dataSource = self;
-    _notReadTableView.rowHeight = 100 * H;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    _notReadTableView = [[UITableView alloc] init];
+//    _notReadTableView.backgroundColor = [UIColor orangeColor];
+//    [self.view addSubview:_notReadTableView];
+//    _notReadTableView.delegate = self;
+//    _notReadTableView.dataSource = self;
+//    _notReadTableView.rowHeight = 100 * H;
+//    _notReadTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 
 
 }

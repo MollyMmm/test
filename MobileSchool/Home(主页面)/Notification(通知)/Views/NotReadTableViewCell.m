@@ -39,6 +39,7 @@
     _headerImageView.layer.masksToBounds = YES;
     
     _headerImageView.image = [UIImage imageNamed:@"头像"];
+    _headerImageView.backgroundColor = [UIColor yellowColor];
 }
 - (void)awakeFromNib {
     // Initialization code
