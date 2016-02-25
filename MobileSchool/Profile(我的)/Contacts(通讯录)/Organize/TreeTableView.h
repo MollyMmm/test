@@ -18,6 +18,6 @@
 
 @property (weak, nonatomic) id<TreeTableCellDelegate>  treeTableCellDelegate;
 
-- (instancetype)initWithFrame:(CGRect)frame initWithData:(NSArray *)data;
+- (instancetype)initWithFrame:(CGRect)frame withData:(NSArray *)data;
 
 @end
