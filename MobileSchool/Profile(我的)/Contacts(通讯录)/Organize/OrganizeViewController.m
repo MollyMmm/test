@@ -9,7 +9,7 @@
 #import "OrganizeViewController.h"
 
 #import "Node.h"
-
+#import "TreeTableView.h"
 @interface OrganizeViewController ()
 
 @end
@@ -58,7 +58,14 @@
     Node *province9 = [[Node alloc] initWithParentId:17 nodeId:20 name:@"东京2" deapth:1 expand:NO];
     
      NSArray *data = [NSArray arrayWithObjects:country1,province1,city1,city2,city3,province2,city4,city5,province3,city6,country2,province4,province5,city7,province6,city8,city9,country3,province7,province8,province9, nil];
-    
+    TreeTableView *tableview = [[TreeTableView alloc] initWithFrame:CGRectMake(0, 20, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)-20) withData:data];
+    tableview.treeTableCellDelegate = self;
+    [self.view addSubview:tableview];
+}
+
+#pragma mark - TreeTableCellDelegate
+-(void)cellClick:(Node *)node{
+    NSLog(@"%@",node.name);
 }
 
 @end
