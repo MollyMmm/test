@@ -184,6 +184,18 @@
 		E58DFB331C7AE87D00B57170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58DFB321C7AE87D00B57170 /* Assets.xcassets */; };
 		E59D9AA91C785CF5002BD569 /* AddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E59D9AA71C785CF5002BD569 /* AddCollectionViewCell.m */; };
 		E59D9AAA1C785CF5002BD569 /* AddCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59D9AA81C785CF5002BD569 /* AddCollectionViewCell.xib */; };
+		E5D1610D1C7D54F40079C05E /* FriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1610B1C7D54F40079C05E /* FriendsListViewController.m */; };
+		E5D1610E1C7D54F40079C05E /* FriendsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D1610C1C7D54F40079C05E /* FriendsListViewController.xib */; };
+		E5D161171C7D5BC80079C05E /* GroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D161151C7D5BC80079C05E /* GroupListViewController.m */; };
+		E5D161181C7D5BC80079C05E /* GroupListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D161161C7D5BC80079C05E /* GroupListViewController.xib */; };
+		E5D1611E1C7D857A0079C05E /* GroupMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1611C1C7D857A0079C05E /* GroupMemberViewController.m */; };
+		E5D1611F1C7D857A0079C05E /* GroupMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D1611D1C7D857A0079C05E /* GroupMemberViewController.xib */; };
+		E5D161241C7D90120079C05E /* GroupMemberCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D161221C7D90120079C05E /* GroupMemberCollectionViewCell.m */; };
+		E5D161251C7D90120079C05E /* GroupMemberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D161231C7D90120079C05E /* GroupMemberCollectionViewCell.xib */; };
+		E5D161281C7EB2A10079C05E /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D161271C7EB2A10079C05E /* Node.m */; };
+		E5D1612E1C7EC6200079C05E /* OrganizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1612C1C7EC6200079C05E /* OrganizeViewController.m */; };
+		E5D1612F1C7EC6200079C05E /* OrganizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D1612D1C7EC6200079C05E /* OrganizeViewController.xib */; };
+		E5D161331C7EC9330079C05E /* TreeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D161321C7EC9330079C05E /* TreeTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -525,6 +537,25 @@
 		E59D9AA61C785CF5002BD569 /* AddCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewCell.h; sourceTree = "<group>"; };
 		E59D9AA71C785CF5002BD569 /* AddCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionViewCell.m; sourceTree = "<group>"; };
 		E59D9AA81C785CF5002BD569 /* AddCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCollectionViewCell.xib; sourceTree = "<group>"; };
+		E5D1610A1C7D54F40079C05E /* FriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsListViewController.h; path = ../Controllers/FriendsListViewController.h; sourceTree = "<group>"; };
+		E5D1610B1C7D54F40079C05E /* FriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendsListViewController.m; path = ../Controllers/FriendsListViewController.m; sourceTree = "<group>"; };
+		E5D1610C1C7D54F40079C05E /* FriendsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FriendsListViewController.xib; path = ../Controllers/FriendsListViewController.xib; sourceTree = "<group>"; };
+		E5D161141C7D5BC80079C05E /* GroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupListViewController.h; path = ../Controllers/GroupListViewController.h; sourceTree = "<group>"; };
+		E5D161151C7D5BC80079C05E /* GroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupListViewController.m; path = ../Controllers/GroupListViewController.m; sourceTree = "<group>"; };
+		E5D161161C7D5BC80079C05E /* GroupListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GroupListViewController.xib; path = ../Controllers/GroupListViewController.xib; sourceTree = "<group>"; };
+		E5D1611B1C7D857A0079C05E /* GroupMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupMemberViewController.h; sourceTree = "<group>"; };
+		E5D1611C1C7D857A0079C05E /* GroupMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMemberViewController.m; sourceTree = "<group>"; };
+		E5D1611D1C7D857A0079C05E /* GroupMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupMemberViewController.xib; sourceTree = "<group>"; };
+		E5D161211C7D90120079C05E /* GroupMemberCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupMemberCollectionViewCell.h; sourceTree = "<group>"; };
+		E5D161221C7D90120079C05E /* GroupMemberCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMemberCollectionViewCell.m; sourceTree = "<group>"; };
+		E5D161231C7D90120079C05E /* GroupMemberCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupMemberCollectionViewCell.xib; sourceTree = "<group>"; };
+		E5D161261C7EB2A10079C05E /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		E5D161271C7EB2A10079C05E /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		E5D1612B1C7EC6200079C05E /* OrganizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeViewController.h; sourceTree = "<group>"; };
+		E5D1612C1C7EC6200079C05E /* OrganizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeViewController.m; sourceTree = "<group>"; };
+		E5D1612D1C7EC6200079C05E /* OrganizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrganizeViewController.xib; sourceTree = "<group>"; };
+		E5D161311C7EC9330079C05E /* TreeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeTableView.h; sourceTree = "<group>"; };
+		E5D161321C7EC9330079C05E /* TreeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTableView.m; sourceTree = "<group>"; };
 		FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileSchool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1336,6 +1367,9 @@
 		E544CFA61C744099003B22BC /* Contacts(通讯录) */ = {
 			isa = PBXGroup;
 			children = (
+				E5D1612A1C7EC5FB0079C05E /* Organize */,
+				E5D1611A1C7D85430079C05E /* Group */,
+				E5D161191C7D5C7B0079C05E /* FriendList */,
 				E544CFA71C744099003B22BC /* Controllers */,
 				E544CFAE1C744099003B22BC /* Views */,
 			);
@@ -1814,6 +1848,8 @@
 				E566C56A1C7C0E1500464659 /* BaseModel.m */,
 				E566C5A91C7C0FCD00464659 /* UserModel.h */,
 				E566C5AA1C7C0FCD00464659 /* UserModel.m */,
+				E5D161261C7EB2A10079C05E /* Node.h */,
+				E5D161271C7EB2A10079C05E /* Node.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1897,6 +1933,60 @@
 				E59D9AA81C785CF5002BD569 /* AddCollectionViewCell.xib */,
 			);
 			name = subViews;
+			sourceTree = "<group>";
+		};
+		E5D161191C7D5C7B0079C05E /* FriendList */ = {
+			isa = PBXGroup;
+			children = (
+				E5D1610A1C7D54F40079C05E /* FriendsListViewController.h */,
+				E5D1610B1C7D54F40079C05E /* FriendsListViewController.m */,
+				E5D1610C1C7D54F40079C05E /* FriendsListViewController.xib */,
+				E5D161141C7D5BC80079C05E /* GroupListViewController.h */,
+				E5D161151C7D5BC80079C05E /* GroupListViewController.m */,
+				E5D161161C7D5BC80079C05E /* GroupListViewController.xib */,
+			);
+			path = FriendList;
+			sourceTree = "<group>";
+		};
+		E5D1611A1C7D85430079C05E /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				E5D1611B1C7D857A0079C05E /* GroupMemberViewController.h */,
+				E5D1611C1C7D857A0079C05E /* GroupMemberViewController.m */,
+				E5D1611D1C7D857A0079C05E /* GroupMemberViewController.xib */,
+				E5D161201C7D8FEB0079C05E /* subview */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		E5D161201C7D8FEB0079C05E /* subview */ = {
+			isa = PBXGroup;
+			children = (
+				E5D161211C7D90120079C05E /* GroupMemberCollectionViewCell.h */,
+				E5D161221C7D90120079C05E /* GroupMemberCollectionViewCell.m */,
+				E5D161231C7D90120079C05E /* GroupMemberCollectionViewCell.xib */,
+			);
+			name = subview;
+			sourceTree = "<group>";
+		};
+		E5D1612A1C7EC5FB0079C05E /* Organize */ = {
+			isa = PBXGroup;
+			children = (
+				E5D1612B1C7EC6200079C05E /* OrganizeViewController.h */,
+				E5D1612C1C7EC6200079C05E /* OrganizeViewController.m */,
+				E5D1612D1C7EC6200079C05E /* OrganizeViewController.xib */,
+				E5D161301C7EC9020079C05E /* subviews */,
+			);
+			path = Organize;
+			sourceTree = "<group>";
+		};
+		E5D161301C7EC9020079C05E /* subviews */ = {
+			isa = PBXGroup;
+			children = (
+				E5D161311C7EC9330079C05E /* TreeTableView.h */,
+				E5D161321C7EC9330079C05E /* TreeTableView.m */,
+			);
+			name = subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2009,6 +2099,8 @@
 				E544CFFA1C7441FA003B22BC /* IQKeyboardManager.bundle in Resources */,
 				E528E56A1C759420003C18BC /* ChatViewController.xib in Resources */,
 				0A6779391C7C0BCE00253BD8 /* BlackListViewController.xib in Resources */,
+				E5D1611F1C7D857A0079C05E /* GroupMemberViewController.xib in Resources */,
+				E5D161251C7D90120079C05E /* GroupMemberCollectionViewCell.xib in Resources */,
 				E544D0571C744345003B22BC /* HotViewCell.xib in Resources */,
 				E544CFBA1C744099003B22BC /* LeftSideDrawerViewController.xib in Resources */,
 				0AAE67E81C78160400359F17 /* TrashViewController.xib in Resources */,
@@ -2027,6 +2119,7 @@
 				E544CFB81C744099003B22BC /* ContactsViewController.xib in Resources */,
 				E544D04F1C744345003B22BC /* FriendsCircleViewController.xib in Resources */,
 				E544D0631C744345003B22BC /* ReadingViewController.xib in Resources */,
+				E5D1610E1C7D54F40079C05E /* FriendsListViewController.xib in Resources */,
 				E544D0091C74430D003B22BC /* DailyViewController.xib in Resources */,
 				E544CFBC1C744099003B22BC /* BottomTableView.xib in Resources */,
 				E544D0671C744345003B22BC /* LongTableViewCell.xib in Resources */,
@@ -2038,6 +2131,7 @@
 				E544CFA41C744094003B22BC /* MessageTableViewCell.xib in Resources */,
 				0A67793E1C7C2DAB00253BD8 /* BarcodeViewController.xib in Resources */,
 				E58DFB2C1C7AA21000B57170 /* AddChatViewController.xib in Resources */,
+				E566C5631C7C0BC400464659 /* SignInViewController.xib in Resources */,
 				E544CFA21C744094003B22BC /* MessageViewController.xib in Resources */,
 				0A67794D1C7C479400253BD8 /* RegisterViewController.xib in Resources */,
 				E58DFB311C7AA83B00B57170 /* AddChatTableViewCell.xib in Resources */,
@@ -2047,6 +2141,7 @@
 				E544D0691C744345003B22BC /* ReadingCell.xib in Resources */,
 				E566C5B31C7C2D1400464659 /* path.plist in Resources */,
 				E544D0531C744345003B22BC /* HelpViewController.xib in Resources */,
+				E5D161181C7D5BC80079C05E /* GroupListViewController.xib in Resources */,
 				0A6320641C759D5C00907B71 /* MyViewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2122,6 +2217,7 @@
 			files = (
 				E566C5A01C7C0EFE00464659 /* AFHTTPRequestOperation.m in Sources */,
 				E544CF711C744087003B22BC /* HomeworkViewController.m in Sources */,
+				E5D1610D1C7D54F40079C05E /* FriendsListViewController.m in Sources */,
 				E544D05C1C744345003B22BC /* InterviewCell.m in Sources */,
 				E566C5A61C7C0EFE00464659 /* AFURLRequestSerialization.m in Sources */,
 				E566C5881C7C0EF900464659 /* UIImageView+AFNetworking.m in Sources */,
@@ -2139,6 +2235,7 @@
 				E566C5841C7C0EF900464659 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				E544D0641C744345003B22BC /* LongReadingCell.m in Sources */,
 				E544CFEF1C7441FA003B22BC /* IQUIView+Hierarchy.m in Sources */,
+				E5D161281C7EB2A10079C05E /* Node.m in Sources */,
 				E566C5B11C7C178300464659 /* GetFriendListOperator.m in Sources */,
 				184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */,
 				E544D0081C74430D003B22BC /* DailyViewController.m in Sources */,
@@ -2173,6 +2270,7 @@
 				E544CFA31C744094003B22BC /* MessageTableViewCell.m in Sources */,
 				E544CFF01C7441FA003B22BC /* IQUIViewController+Additions.m in Sources */,
 				E544CFF91C7441FA003B22BC /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				E5D161171C7D5BC80079C05E /* GroupListViewController.m in Sources */,
 				E544D0541C744345003B22BC /* HotViewController.m in Sources */,
 				E544CFF81C7441FA003B22BC /* IQToolbar.m in Sources */,
 				0A63205E1C7583ED00907B71 /* UIButton+Image.m in Sources */,
@@ -2197,7 +2295,9 @@
 				E544CF731C744087003B22BC /* DetailRecodesViewController.m in Sources */,
 				E544CF961C74408E003B22BC /* TabbarViewController.m in Sources */,
 				E544D05E1C744345003B22BC /* LongInterviewCell.m in Sources */,
+				E5D1611E1C7D857A0079C05E /* GroupMemberViewController.m in Sources */,
 				184EEDFE1C75B5D00003AD39 /* GroupInformationViewController.m in Sources */,
+				E5D161241C7D90120079C05E /* GroupMemberCollectionViewCell.m in Sources */,
 				E566C5861C7C0EF900464659 /* UIAlertView+AFNetworking.m in Sources */,
 				E544CFEE1C7441FA003B22BC /* IQUITextFieldView+Additions.m in Sources */,
 				E566C5711C7C0E1500464659 /* NetworkingManager.m in Sources */,
@@ -2211,6 +2311,7 @@
 				E544CF931C74408E003B22BC /* LCTabbar.m in Sources */,
 				E566C5891C7C0EF900464659 /* UIProgressView+AFNetworking.m in Sources */,
 				E544D06D1C744372003B22BC /* JSDropmenuView.m in Sources */,
+				E566C5621C7C0BC400464659 /* SignInViewController.m in Sources */,
 				E55BC9F41C74351B009A9AAA /* main.m in Sources */,
 				E544CFA11C744094003B22BC /* MessageViewController.m in Sources */,
 				0A67794C1C7C479400253BD8 /* RegisterViewController.m in Sources */,
@@ -2231,6 +2332,7 @@
 				E544CF811C744087003B22BC /* ReceivePeopleViewController.m in Sources */,
 				E58DFB301C7AA83B00B57170 /* AddChatTableViewCell.m in Sources */,
 				E544D04E1C744345003B22BC /* FriendsCircleViewController.m in Sources */,
+				E5D1612E1C7EC6200079C05E /* OrganizeViewController.m in Sources */,
 				184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */,
 				E544CF951C74408E003B22BC /* NavigationViewController.m in Sources */,
 				E566C5A51C7C0EFE00464659 /* AFURLConnectionOperation.m in Sources */,

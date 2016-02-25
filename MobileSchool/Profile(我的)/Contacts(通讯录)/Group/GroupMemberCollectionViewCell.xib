@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GroupMemberCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHC-1p-dPt">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hHC-1p-dPt" secondAttribute="height" multiplier="1:1" id="dfI-Qd-BSb"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTn-4t-Bui">
+                        <rect key="frame" x="0.0" y="100" width="100" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="zTn-4t-Bui" firstAttribute="top" secondItem="hHC-1p-dPt" secondAttribute="bottom" id="527-hl-Tt1"/>
+                <constraint firstAttribute="trailing" secondItem="zTn-4t-Bui" secondAttribute="trailing" id="7Yj-5m-tFS"/>
+                <constraint firstItem="hHC-1p-dPt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SmQ-RW-BAu"/>
+                <constraint firstAttribute="trailing" secondItem="hHC-1p-dPt" secondAttribute="trailing" id="Uaq-LP-b4G"/>
+                <constraint firstItem="hHC-1p-dPt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cH3-C5-Ymo"/>
+                <constraint firstAttribute="bottom" secondItem="zTn-4t-Bui" secondAttribute="bottom" id="efG-1s-8uQ"/>
+                <constraint firstItem="zTn-4t-Bui" firstAttribute="top" secondItem="hHC-1p-dPt" secondAttribute="bottom" id="f3R-jp-cD7"/>
+                <constraint firstItem="zTn-4t-Bui" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mAE-9z-WhH"/>
+            </constraints>
+            <size key="customSize" width="100" height="120"/>
+            <connections>
+                <outlet property="iconBtn" destination="hHC-1p-dPt" id="Xoi-P1-KDa"/>
+                <outlet property="nameLbl" destination="zTn-4t-Bui" id="afX-qM-Fha"/>
+            </connections>
+            <point key="canvasLocation" x="435" y="283"/>
+        </collectionViewCell>
+    </objects>
+</document>
