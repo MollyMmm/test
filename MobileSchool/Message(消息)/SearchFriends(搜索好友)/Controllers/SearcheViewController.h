@@ -1,5 +1,5 @@
 //
-//  OrganizationViewController.h
+//  SearcheViewController.h
 //  MobileSchool
 //
 //  Created by 李公博 on 16/2/24.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OrganizationViewController : UIViewController
+@interface SearcheViewController : UIViewController
 
 @end

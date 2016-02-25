@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0373C71C7ECEAC00D5E706 /* SearchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0373C51C7ECEAC00D5E706 /* SearchGroupViewController.m */; };
+		0A0373C81C7ECEAC00D5E706 /* SearchGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0373C61C7ECEAC00D5E706 /* SearchGroupViewController.xib */; };
 		0A63205E1C7583ED00907B71 /* UIButton+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63205D1C7583ED00907B71 /* UIButton+Image.m */; };
 		0A6320631C759D5C00907B71 /* MyViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6320611C759D5C00907B71 /* MyViewTableViewCell.m */; };
 		0A6320641C759D5C00907B71 /* MyViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6320621C759D5C00907B71 /* MyViewTableViewCell.xib */; };
@@ -26,8 +28,9 @@
 		0AAE67E81C78160400359F17 /* TrashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67E61C78160400359F17 /* TrashViewController.xib */; };
 		0AAE67FE1C78168800359F17 /* IdentificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE67FC1C78168800359F17 /* IdentificationViewController.m */; };
 		0AAE67FF1C78168800359F17 /* IdentificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAE67FD1C78168800359F17 /* IdentificationViewController.xib */; };
-		0AF208181C7D4C03003AF80C /* OrganizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF208161C7D4C03003AF80C /* OrganizationViewController.m */; };
-		0AF208191C7D4C03003AF80C /* OrganizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF208171C7D4C03003AF80C /* OrganizationViewController.xib */; };
+		0AF2082A1C7D8D7C003AF80C /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AF208291C7D8D7C003AF80C /* friends.plist */; };
+		0AF208321C7D994F003AF80C /* SearcheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF208301C7D994F003AF80C /* SearcheViewController.m */; };
+		0AF208331C7D994F003AF80C /* SearcheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF208311C7D994F003AF80C /* SearcheViewController.xib */; };
 		184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE21C744FB00003AD39 /* HeaderView.m */; };
 		184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */; };
 		184EEDE91C75547D0003AD39 /* RelayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */; };
@@ -201,6 +204,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0373C41C7ECEAC00D5E706 /* SearchGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchGroupViewController.h; sourceTree = "<group>"; };
+		0A0373C51C7ECEAC00D5E706 /* SearchGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchGroupViewController.m; sourceTree = "<group>"; };
+		0A0373C61C7ECEAC00D5E706 /* SearchGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchGroupViewController.xib; sourceTree = "<group>"; };
 		0A63205C1C7583ED00907B71 /* UIButton+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Image.h"; sourceTree = "<group>"; };
 		0A63205D1C7583ED00907B71 /* UIButton+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Image.m"; sourceTree = "<group>"; };
 		0A6320601C759D5C00907B71 /* MyViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewTableViewCell.h; sourceTree = "<group>"; };
@@ -230,9 +236,10 @@
 		0AAE67FB1C78168800359F17 /* IdentificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentificationViewController.h; sourceTree = "<group>"; };
 		0AAE67FC1C78168800359F17 /* IdentificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentificationViewController.m; sourceTree = "<group>"; };
 		0AAE67FD1C78168800359F17 /* IdentificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdentificationViewController.xib; sourceTree = "<group>"; };
-		0AF208151C7D4C03003AF80C /* OrganizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizationViewController.h; sourceTree = "<group>"; };
-		0AF208161C7D4C03003AF80C /* OrganizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizationViewController.m; sourceTree = "<group>"; };
-		0AF208171C7D4C03003AF80C /* OrganizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrganizationViewController.xib; sourceTree = "<group>"; };
+		0AF208291C7D8D7C003AF80C /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		0AF2082F1C7D994F003AF80C /* SearcheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearcheViewController.h; sourceTree = "<group>"; };
+		0AF208301C7D994F003AF80C /* SearcheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearcheViewController.m; sourceTree = "<group>"; };
+		0AF208311C7D994F003AF80C /* SearcheViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearcheViewController.xib; sourceTree = "<group>"; };
 		184EEDE11C744FB00003AD39 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		184EEDE21C744FB00003AD39 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		184EEDE41C7464740003AD39 /* HeaderDailyRecodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderDailyRecodView.h; sourceTree = "<group>"; };
@@ -547,6 +554,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0373C01C7ECCC200D5E706 /* SearchGroup(搜索群) */ = {
+			isa = PBXGroup;
+			children = (
+				0A0373C11C7ECCC200D5E706 /* Controllers */,
+				0A0373C21C7ECCC200D5E706 /* Models */,
+				0A0373C31C7ECCC200D5E706 /* Views */,
+			);
+			path = "SearchGroup(搜索群)";
+			sourceTree = "<group>";
+		};
+		0A0373C11C7ECCC200D5E706 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A0373C41C7ECEAC00D5E706 /* SearchGroupViewController.h */,
+				0A0373C51C7ECEAC00D5E706 /* SearchGroupViewController.m */,
+				0A0373C61C7ECEAC00D5E706 /* SearchGroupViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0A0373C21C7ECCC200D5E706 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A0373C31C7ECCC200D5E706 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0A63205A1C7583DE00907B71 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -727,34 +768,34 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		0AF208111C7D4BD9003AF80C /* Organization(组织机构) */ = {
+		0AF2082B1C7D9935003AF80C /* SearchFriends(搜索好友) */ = {
 			isa = PBXGroup;
 			children = (
-				0AF208121C7D4BD9003AF80C /* Controlers */,
-				0AF208131C7D4BD9003AF80C /* Models */,
-				0AF208141C7D4BD9003AF80C /* Views */,
+				0AF2082C1C7D9935003AF80C /* Controllers */,
+				0AF2082D1C7D9935003AF80C /* Models */,
+				0AF2082E1C7D9935003AF80C /* Views */,
 			);
-			path = "Organization(组织机构)";
+			path = "SearchFriends(搜索好友)";
 			sourceTree = "<group>";
 		};
-		0AF208121C7D4BD9003AF80C /* Controlers */ = {
+		0AF2082C1C7D9935003AF80C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0AF208151C7D4C03003AF80C /* OrganizationViewController.h */,
-				0AF208161C7D4C03003AF80C /* OrganizationViewController.m */,
-				0AF208171C7D4C03003AF80C /* OrganizationViewController.xib */,
+				0AF2082F1C7D994F003AF80C /* SearcheViewController.h */,
+				0AF208301C7D994F003AF80C /* SearcheViewController.m */,
+				0AF208311C7D994F003AF80C /* SearcheViewController.xib */,
 			);
-			path = Controlers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		0AF208131C7D4BD9003AF80C /* Models */ = {
+		0AF2082D1C7D9935003AF80C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		0AF208141C7D4BD9003AF80C /* Views */ = {
+		0AF2082E1C7D9935003AF80C /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -1232,7 +1273,8 @@
 		E544CF971C744094003B22BC /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
-				0AF208111C7D4BD9003AF80C /* Organization(组织机构) */,
+				0A0373C01C7ECCC200D5E706 /* SearchGroup(搜索群) */,
+				0AF2082B1C7D9935003AF80C /* SearchFriends(搜索好友) */,
 				E544CF981C744094003B22BC /* Message(消息) */,
 			);
 			path = "Message(消息)";
@@ -1713,6 +1755,7 @@
 		E55BC9F21C74351B009A9AAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0AF208291C7D8D7C003AF80C /* friends.plist */,
 				E566C5B21C7C2D1400464659 /* path.plist */,
 				E58DFB321C7AE87D00B57170 /* Assets.xcassets */,
 				E55BCA001C74351B009A9AAA /* LaunchScreen.storyboard */,
@@ -1973,9 +2016,10 @@
 				E544D0651C744345003B22BC /* LongReadingCell.xib in Resources */,
 				E544D0551C744345003B22BC /* HotViewController.xib in Resources */,
 				0AAE67FF1C78168800359F17 /* IdentificationViewController.xib in Resources */,
+				0AF208331C7D994F003AF80C /* SearcheViewController.xib in Resources */,
 				E544D0611C744345003B22BC /* LongInterviewTableViewCell.xib in Resources */,
-				0AF208191C7D4C03003AF80C /* OrganizationViewController.xib in Resources */,
 				E544D05D1C744345003B22BC /* InterviewCell.xib in Resources */,
+				0AF2082A1C7D8D7C003AF80C /* friends.plist in Resources */,
 				E55BCA021C74351B009A9AAA /* LaunchScreen.storyboard in Resources */,
 				E544D04D1C744345003B22BC /* FoundViewController.xib in Resources */,
 				0A6779341C7C0B4300253BD8 /* SendQueueViewController.xib in Resources */,
@@ -1987,6 +2031,7 @@
 				E544CFBC1C744099003B22BC /* BottomTableView.xib in Resources */,
 				E544D0671C744345003B22BC /* LongTableViewCell.xib in Resources */,
 				E544D0511C744345003B22BC /* RecommendedViewController.xib in Resources */,
+				0A0373C81C7ECEAC00D5E706 /* SearchGroupViewController.xib in Resources */,
 				0A67792F1C7C077400253BD8 /* SettingViewController.xib in Resources */,
 				E544D05F1C744345003B22BC /* LongInterviewCell.xib in Resources */,
 				E544D05B1C744345003B22BC /* InterviewViewController.xib in Resources */,
@@ -2085,6 +2130,7 @@
 				E544D05A1C744345003B22BC /* InterviewViewController.m in Sources */,
 				E544CFF31C7441FA003B22BC /* IQKeyboardReturnKeyHandler.m in Sources */,
 				184EEDFB1C75B04D0003AD39 /* DetailInformationViewController.m in Sources */,
+				0A0373C71C7ECEAC00D5E706 /* SearchGroupViewController.m in Sources */,
 				E544CFB71C744099003B22BC /* ContactsViewController.m in Sources */,
 				E544CF7E1C744087003B22BC /* PhoneViewController.m in Sources */,
 				E544D0581C744345003B22BC /* MoreTableViewCell.m in Sources */,
@@ -2157,6 +2203,7 @@
 				E566C5711C7C0E1500464659 /* NetworkingManager.m in Sources */,
 				E544D0601C744345003B22BC /* LongInterviewTableViewCell.m in Sources */,
 				E544CF7A1C744087003B22BC /* EmailViewController.m in Sources */,
+				0AF208321C7D994F003AF80C /* SearcheViewController.m in Sources */,
 				0A67793D1C7C2DAB00253BD8 /* BarcodeViewController.m in Sources */,
 				E544CF6D1C744087003B22BC /* DraftViewController.m in Sources */,
 				E544CF7D1C744087003B22BC /* NameViewController.m in Sources */,
@@ -2178,7 +2225,6 @@
 				E544CFED1C7441FA003B22BC /* IQNSArray+Sort.m in Sources */,
 				E544CF851C744087003B22BC /* SendTableViewCell.m in Sources */,
 				E566C58A1C7C0EF900464659 /* UIRefreshControl+AFNetworking.m in Sources */,
-				0AF208181C7D4C03003AF80C /* OrganizationViewController.m in Sources */,
 				E544CF781C744087003B22BC /* MyDailyRecodViewController.m in Sources */,
 				E566C5A81C7C0EFE00464659 /* AFURLSessionManager.m in Sources */,
 				1880D4CA1C7AA27600847735 /* OtherPeopleSendWorkTableViewCell.m in Sources */,

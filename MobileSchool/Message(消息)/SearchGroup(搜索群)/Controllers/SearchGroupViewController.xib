@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchGroupViewController">
+            <connections>
+                <outlet property="searchBar" destination="ocB-c8-1jQ" id="bn5-uX-zcy"/>
+                <outlet property="tableView" destination="hxL-LJ-v1M" id="vav-vt-Tm3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-LJ-v1M">
+                    <rect key="frame" x="0.0" y="59" width="312" height="501"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" id="ocB-c8-1jQ">
+                        <rect key="frame" x="0.0" y="0.0" width="312" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </searchBar>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hxL-LJ-v1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B3W-vg-akG"/>
+                <constraint firstItem="hxL-LJ-v1M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Gv3-6k-zCj"/>
+                <constraint firstAttribute="trailing" secondItem="hxL-LJ-v1M" secondAttribute="trailing" id="ieN-do-WIM"/>
+                <constraint firstAttribute="bottom" secondItem="hxL-LJ-v1M" secondAttribute="bottom" id="mRL-Co-C6c"/>
+            </constraints>
+            <point key="canvasLocation" x="305" y="246"/>
+        </view>
+    </objects>
+</document>

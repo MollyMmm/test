@@ -13,6 +13,7 @@
 #import "UserModel.h"
 #import "ContactsViewController.h"
 #import "NavigationViewController.h"
+#import "SearcheViewController.h"
 
 @interface SignInViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameTxtField;
@@ -72,13 +73,14 @@
     
 }
 - (IBAction)signIn:(id)sender {
-   
-    RegisterViewController *registerVC = [[RegisterViewController alloc] init];
-//    NavigationViewController *conNav = [[NavigationViewController alloc] initWithRootViewController:registerVC];
-//    
-//    [self.navigationController presentViewController:conNav animated:YES completion:nil];
+
     
-    [self presentViewController:registerVC animated:YES completion:nil];
+}
+- (IBAction)searchFriend:(id)sender {
+    
+    SearcheViewController *svc = [[SearcheViewController alloc]init];
+    NavigationViewController *navc = [[NavigationViewController alloc]initWithRootViewController:svc];
+    [self.navigationController presentViewController:navc animated:YES completion:nil];
     
 }
 

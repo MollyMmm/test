@@ -37,8 +37,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="pressSignInBtn:" destination="-1" eventType="touchUpInside" id="gmh-ul-J8w"/>
-                        <action selector="signIn:" destination="-1" eventType="touchUpInside" id="NUd-Ta-nLW"/>
+                        <action selector="signIn:" destination="-1" eventType="touchUpInside" id="sm4-pL-07C"/>
                     </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RtY-Vk-x3o">
@@ -46,6 +45,13 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oES-zV-kFb">
+                    <rect key="frame" x="145" y="400" width="30" height="30"/>
+                    <state key="normal" title="搜索"/>
+                    <connections>
+                        <action selector="searchFriend:" destination="-1" eventType="touchUpInside" id="6SM-bQ-TIL"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
