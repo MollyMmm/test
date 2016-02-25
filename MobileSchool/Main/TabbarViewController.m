@@ -15,6 +15,8 @@
 #import "FoundViewController.h"
 #import "MyViewController.h"
 
+#import "FriendsListViewController.h"
+
 #import "ContactsViewController.h"
 @interface TabbarViewController ()
 
@@ -39,13 +41,17 @@
     [self addChildViewController:home image:@"tabbar_home" selectedImage:@"tabbar_home_selected" title:@"首页"];
     
     //发现
-    FoundViewController *found = [[FoundViewController alloc]init];
-    [self addChildViewController:found image:@"tabbar_home" selectedImage:@"tabbar_home_selected" title:@"发现"];
+//    FoundViewController *found = [[FoundViewController alloc]init];
+//    [self addChildViewController:found image:@"tabbar_home" selectedImage:@"tabbar_home_selected" title:@"发现"];
     
     //我的
     MyViewController *my = [[MyViewController alloc]init];
     [self addChildViewController:my image:@"tabbar_home" selectedImage:@"tabbar_home_selected" title:@"我的"];
     
+    
+    //好友列表
+    FriendsListViewController *friend = [[FriendsListViewController alloc] init];
+    [self addChildViewController:friend image:@"tabbar_home" selectedImage:@"tabbar_home_selected" title:@"好友"];
 
 }
 

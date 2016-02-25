@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendsListViewController">
             <connections>
-                <outlet property="tableView" destination="akU-SM-lFf" id="P2n-Ia-Wun"/>
+                <outlet property="tableView" destination="EdJ-aA-8s9" id="o9M-nu-3Ke"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,19 +16,19 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="akU-SM-lFf">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EdJ-aA-8s9">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="akU-SM-lFf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3bl-mt-zmI"/>
-                <constraint firstAttribute="trailing" secondItem="akU-SM-lFf" secondAttribute="trailing" id="Kic-uq-XuM"/>
-                <constraint firstAttribute="bottom" secondItem="akU-SM-lFf" secondAttribute="bottom" id="TFi-mG-aIM"/>
-                <constraint firstItem="akU-SM-lFf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dmp-dI-wbd"/>
+                <constraint firstAttribute="trailing" secondItem="EdJ-aA-8s9" secondAttribute="trailing" id="Csd-DG-Jfi"/>
+                <constraint firstAttribute="bottom" secondItem="EdJ-aA-8s9" secondAttribute="bottom" id="Fn7-K0-U83"/>
+                <constraint firstItem="EdJ-aA-8s9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L8X-5e-sr6"/>
+                <constraint firstItem="EdJ-aA-8s9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hwV-MT-XjG"/>
             </constraints>
-            <point key="canvasLocation" x="385" y="342"/>
+            <point key="canvasLocation" x="280" y="248"/>
         </view>
     </objects>
 </document>
