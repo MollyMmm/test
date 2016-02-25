@@ -31,13 +31,13 @@
     [self.contentView addSubview:_contentLabel];
     
     _passButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [_passButton setTitle:@"转发" forState:UIControlStateNormal];
+    [_passButton setTitle:@"转发3" forState:UIControlStateNormal];
     [_passButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [_passButton addTarget:self action:@selector(passAction) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:_passButton];
     
     _commentButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [_commentButton setTitle:@"评论" forState:UIControlStateNormal];
+    [_commentButton setTitle:@"评论5" forState:UIControlStateNormal];
     [_commentButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [_commentButton addTarget:self action:@selector(commentAction) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:_commentButton];
@@ -55,6 +55,9 @@
     [self.contentView addSubview:_readButton];
     self.contentView.backgroundColor = [UIColor whiteColor];
     
+    _contentImageView = [[UIImageView alloc] init];
+    [self.contentView addSubview:_contentImageView];
+    
     
 }
 - (void)layoutSubviews {
@@ -66,16 +69,18 @@
     _peopleImageView.backgroundColor = [UIColor orangeColor];
     _peopleImageView.layer.masksToBounds = YES;
     _peopleLabel.frame = CGRectMake(70 * W, 10 * H, 200 * W, 30 * H);
-    _peopleLabel.text = @"尹直富";
+    _peopleLabel.text = @"lzh2008";
     _fromLabel.frame = CGRectMake(70 * W, 30 * H, 200 * W, 30 * H);
-    _fromLabel.text = @"发表于开心乐园";
+    _fromLabel.text = @"发表于爱上阅读";
     _fromLabel.textColor = [UIColor redColor];
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:_fromLabel.text];
     [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:NSMakeRange(0, 3)];
     _fromLabel.font = [UIFont systemFontOfSize:15 * H];
     _fromLabel.attributedText = attributedString;
-    _contentLabel.frame = CGRectMake(10 * W, 80 * H, kScreenWidth - 20 * W, 100 * H);
-    _contentLabel.text = @"反对是非得失个地方不符合德国的方法";
+    _contentLabel.frame = CGRectMake(10 * W, 60 * H, kScreenWidth - 20 * W, 80 * H);
+    _contentLabel.numberOfLines = 0;
+    _contentLabel.lineBreakMode =                         NSLineBreakByClipping;
+    _contentLabel.text = @"“呵呵”，是笑声的拟声词，表示意思需看语境，有时会产生误解。“呵呵”，表示单纯的笑，浅笑、开心地笑。“呵呵”，表示嘲笑或讥讽，表示嘲讽别人无知，可以单独使用，也可以和其它的词语搭配使用。在互联网迅速发展特别是聊天工具和BBS的普及发展的情况下，“呵呵”这个词被越来越多地用在网络，电脑屏幕上用来反映自己的表情。当然，在手机短信里同样也得到了广泛的使用。在用语中，表示单纯的笑、浅笑、开心的笑，或表示嘲笑、讽刺，或表示好笑，或表示无奈，或是想结束本次的聊天，但是也不能片面的理解，有时会产生误解。";
     _passButton.frame = CGRectMake(0, 190 * H, kScreenWidth / 4, 40 * H);
     UILabel *passLineLabel = [[UILabel alloc] initWithFrame:CGRectMake(kScreenWidth / 4, 200 * H, 1 * W, 20 * H)];
     [self.contentView addSubview:passLineLabel];

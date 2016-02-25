@@ -25,7 +25,16 @@
 @property (nonatomic, strong) UILabel *peopleLabel;
 @property (nonatomic, strong) UILabel *timeLabel;
 @property (nonatomic, strong) UILabel *fromLabel;
+
+@property (nonatomic, strong) UILabel *homeWorkTimeLabel;
+@property (nonatomic, strong) UILabel *subjectLabel;
 @property (nonatomic, strong) UILabel *contentLabel;
+
+@property (nonatomic, strong) UILabel *passButton;
+
+@property (nonatomic, strong) UIButton *signButton;
+
+
 @property (nonatomic, strong) UILabel *whoCanSeeLabel;
 @property (nonatomic, strong) id<OtherPeopleDetailInformationDelegate>delegate;
 @property (nonatomic, strong) id<OtherToGroupDelegate>groupDelegate;

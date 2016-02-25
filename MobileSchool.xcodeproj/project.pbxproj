@@ -31,6 +31,12 @@
 		0AF2082A1C7D8D7C003AF80C /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AF208291C7D8D7C003AF80C /* friends.plist */; };
 		0AF208321C7D994F003AF80C /* SearcheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF208301C7D994F003AF80C /* SearcheViewController.m */; };
 		0AF208331C7D994F003AF80C /* SearcheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF208311C7D994F003AF80C /* SearcheViewController.xib */; };
+		180CD1191C7EEBE0000BE5B3 /* 1 in Resources */ = {isa = PBXBuildFile; fileRef = 180CD1131C7EEBE0000BE5B3 /* 1 */; };
+		180CD11A1C7EEBE0000BE5B3 /* 2 in Resources */ = {isa = PBXBuildFile; fileRef = 180CD1141C7EEBE0000BE5B3 /* 2 */; };
+		180CD11B1C7EEBE0000BE5B3 /* 3 in Resources */ = {isa = PBXBuildFile; fileRef = 180CD1151C7EEBE0000BE5B3 /* 3 */; };
+		180CD11C1C7EEBE0000BE5B3 /* 4 in Resources */ = {isa = PBXBuildFile; fileRef = 180CD1161C7EEBE0000BE5B3 /* 4 */; };
+		180CD11D1C7EEBE0000BE5B3 /* CHLeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD1181C7EEBE0000BE5B3 /* CHLeadViewController.m */; };
+		180CD1201C7EEBF5000BE5B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD11F1C7EEBF5000BE5B3 /* AppDelegate.m */; };
 		184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE21C744FB00003AD39 /* HeaderView.m */; };
 		184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */; };
 		184EEDE91C75547D0003AD39 /* RelayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */; };
@@ -149,7 +155,6 @@
 		E544D0691C744345003B22BC /* ReadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E544D04B1C744345003B22BC /* ReadingCell.xib */; };
 		E544D06D1C744372003B22BC /* JSDropmenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = E544D06C1C744372003B22BC /* JSDropmenuView.m */; };
 		E55BC9F41C74351B009A9AAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E55BC9F31C74351B009A9AAA /* main.m */; };
-		E55BC9F71C74351B009A9AAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E55BC9F61C74351B009A9AAA /* AppDelegate.m */; };
 		E55BCA021C74351B009A9AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55BCA001C74351B009A9AAA /* LaunchScreen.storyboard */; };
 		E55BCA0D1C74351B009A9AAA /* MobileSchoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E55BCA0C1C74351B009A9AAA /* MobileSchoolTests.m */; };
 		E55BCA181C74351B009A9AAA /* MobileSchoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E55BCA171C74351B009A9AAA /* MobileSchoolUITests.m */; };
@@ -246,6 +251,14 @@
 		0AF2082F1C7D994F003AF80C /* SearcheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearcheViewController.h; sourceTree = "<group>"; };
 		0AF208301C7D994F003AF80C /* SearcheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearcheViewController.m; sourceTree = "<group>"; };
 		0AF208311C7D994F003AF80C /* SearcheViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearcheViewController.xib; sourceTree = "<group>"; };
+		180CD1131C7EEBE0000BE5B3 /* 1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1; sourceTree = "<group>"; };
+		180CD1141C7EEBE0000BE5B3 /* 2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2; sourceTree = "<group>"; };
+		180CD1151C7EEBE0000BE5B3 /* 3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3; sourceTree = "<group>"; };
+		180CD1161C7EEBE0000BE5B3 /* 4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4; sourceTree = "<group>"; };
+		180CD1171C7EEBE0000BE5B3 /* CHLeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLeadViewController.h; sourceTree = "<group>"; };
+		180CD1181C7EEBE0000BE5B3 /* CHLeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLeadViewController.m; sourceTree = "<group>"; };
+		180CD11E1C7EEBF5000BE5B3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		180CD11F1C7EEBF5000BE5B3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		184EEDE11C744FB00003AD39 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		184EEDE21C744FB00003AD39 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		184EEDE41C7464740003AD39 /* HeaderDailyRecodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderDailyRecodView.h; sourceTree = "<group>"; };
@@ -461,8 +474,6 @@
 		E544D06C1C744372003B22BC /* JSDropmenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDropmenuView.m; sourceTree = "<group>"; };
 		E55BC9EF1C74351B009A9AAA /* MobileSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55BC9F31C74351B009A9AAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E55BC9F51C74351B009A9AAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
-		E55BC9F61C74351B009A9AAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		E55BCA011C74351B009A9AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E55BCA031C74351B009A9AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E55BCA081C74351B009A9AAA /* MobileSchoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileSchoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1277,14 +1288,20 @@
 		E544CF881C74408E003B22BC /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				E55BC9F51C74351B009A9AAA /* AppDelegate.h */,
-				E55BC9F61C74351B009A9AAA /* AppDelegate.m */,
+				180CD11E1C7EEBF5000BE5B3 /* AppDelegate.h */,
+				180CD11F1C7EEBF5000BE5B3 /* AppDelegate.m */,
 				E544CF8B1C74408E003B22BC /* LCTabbar.h */,
 				E544CF8C1C74408E003B22BC /* LCTabbar.m */,
 				E544CF8E1C74408E003B22BC /* NavigationViewController.h */,
 				E544CF8F1C74408E003B22BC /* NavigationViewController.m */,
 				E544CF901C74408E003B22BC /* TabbarViewController.h */,
 				E544CF911C74408E003B22BC /* TabbarViewController.m */,
+				180CD1131C7EEBE0000BE5B3 /* 1 */,
+				180CD1141C7EEBE0000BE5B3 /* 2 */,
+				180CD1151C7EEBE0000BE5B3 /* 3 */,
+				180CD1161C7EEBE0000BE5B3 /* 4 */,
+				180CD1171C7EEBE0000BE5B3 /* CHLeadViewController.h */,
+				180CD1181C7EEBE0000BE5B3 /* CHLeadViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -2089,6 +2106,7 @@
 				E58DFB331C7AE87D00B57170 /* Assets.xcassets in Resources */,
 				E544D0651C744345003B22BC /* LongReadingCell.xib in Resources */,
 				E544D0551C744345003B22BC /* HotViewController.xib in Resources */,
+				180CD11B1C7EEBE0000BE5B3 /* 3 in Resources */,
 				0AAE67FF1C78168800359F17 /* IdentificationViewController.xib in Resources */,
 				0AF208331C7D994F003AF80C /* SearcheViewController.xib in Resources */,
 				E544D0611C744345003B22BC /* LongInterviewTableViewCell.xib in Resources */,
@@ -2105,6 +2123,7 @@
 				E544CFBC1C744099003B22BC /* BottomTableView.xib in Resources */,
 				E544D0671C744345003B22BC /* LongTableViewCell.xib in Resources */,
 				E544D0511C744345003B22BC /* RecommendedViewController.xib in Resources */,
+				180CD11A1C7EEBE0000BE5B3 /* 2 in Resources */,
 				0A0373C81C7ECEAC00D5E706 /* SearchGroupViewController.xib in Resources */,
 				0A67792F1C7C077400253BD8 /* SettingViewController.xib in Resources */,
 				E544D05F1C744345003B22BC /* LongInterviewCell.xib in Resources */,
@@ -2120,7 +2139,9 @@
 				E544CFBE1C744099003B22BC /* MyViewController.xib in Resources */,
 				E544D0691C744345003B22BC /* ReadingCell.xib in Resources */,
 				E566C5B31C7C2D1400464659 /* path.plist in Resources */,
+				180CD11C1C7EEBE0000BE5B3 /* 4 in Resources */,
 				E544D0531C744345003B22BC /* HelpViewController.xib in Resources */,
+				180CD1191C7EEBE0000BE5B3 /* 1 in Resources */,
 				0A6320641C759D5C00907B71 /* MyViewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2235,7 +2256,6 @@
 				E566C5A41C7C0EFE00464659 /* AFSecurityPolicy.m in Sources */,
 				E544D00B1C74430D003B22BC /* GroupViewController.m in Sources */,
 				0AAE67FE1C78168800359F17 /* IdentificationViewController.m in Sources */,
-				E55BC9F71C74351B009A9AAA /* AppDelegate.m in Sources */,
 				E544CF801C744087003B22BC /* NotificationAndRecodsViewController.m in Sources */,
 				184EEDEF1C7560DA0003AD39 /* ReadTableViewCell.m in Sources */,
 				E544CFBD1C744099003B22BC /* MyViewController.m in Sources */,
@@ -2245,6 +2265,7 @@
 				E544CF651C744087003B22BC /* AddViewController.m in Sources */,
 				E566C56F1C7C0E1500464659 /* BaseOperator.m in Sources */,
 				E544CFF21C7441FA003B22BC /* IQKeyboardManager.m in Sources */,
+				180CD11D1C7EEBE0000BE5B3 /* CHLeadViewController.m in Sources */,
 				E544CFA31C744094003B22BC /* MessageTableViewCell.m in Sources */,
 				E544CFF01C7441FA003B22BC /* IQUIViewController+Additions.m in Sources */,
 				E544CFF91C7441FA003B22BC /* IQUIView+IQKeyboardToolbar.m in Sources */,
@@ -2310,6 +2331,7 @@
 				E544D04E1C744345003B22BC /* FriendsCircleViewController.m in Sources */,
 				E5D1612E1C7EC6200079C05E /* OrganizeViewController.m in Sources */,
 				184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */,
+				180CD1201C7EEBF5000BE5B3 /* AppDelegate.m in Sources */,
 				E544CF951C74408E003B22BC /* NavigationViewController.m in Sources */,
 				E566C5A51C7C0EFE00464659 /* AFURLConnectionOperation.m in Sources */,
 				E544CF671C744087003B22BC /* AddressBookViewController.m in Sources */,

@@ -18,14 +18,6 @@
 
 @implementation AddViewController
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-       
-    }
-    return self;
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     self.hidesBottomBarWhenPushed = YES;
 }
@@ -33,7 +25,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _allArr = [NSMutableArray array];
-    [_addArr removeLastObject];
     [_allArr addObjectsFromArray:_addArr];
     [_allArr addObjectsFromArray:_noAddArr];
     self.title = @"定制个性化首页";
@@ -42,7 +33,7 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"返回按钮"] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
     self.navigationItem.leftBarButtonItem = backItem;
     self.view.backgroundColor = [UIColor yellowColor];
-    _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight + 49)];
     _tableView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_tableView];
     _tableView.delegate = self;

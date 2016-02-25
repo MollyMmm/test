@@ -36,13 +36,14 @@
     
     UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 40 * H)];
     searchBar.placeholder = @"搜索";
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight + 49)];
     _tableView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:_tableView];
     _tableView.tableHeaderView = searchBar;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.rowHeight = 250 * H;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 
 }
 - (void)getNumber:(int)number {

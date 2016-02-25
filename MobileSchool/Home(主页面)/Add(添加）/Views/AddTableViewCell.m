@@ -35,6 +35,7 @@
     _headerImageView.frame = CGRectMake(10 * W, 5 * H, 30 * H, 30 * H);
     _headerImageView.layer.cornerRadius = 15;
     _headerImageView.layer.masksToBounds = YES;
+    _headerImageView.backgroundColor = [UIColor yellowColor];
     
     _addButton.frame = CGRectMake(kScreenWidth - 60 * W, 5 * H, 50 * W, 30 * H);
     _titleLabel.frame = CGRectMake(20 * W + 30 * H, 0, 100, 40);

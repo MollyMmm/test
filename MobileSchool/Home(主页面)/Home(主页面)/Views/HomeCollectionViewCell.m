@@ -19,6 +19,7 @@
         _titleImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60 * W, 60 * H)];
         _titleImageView.layer.cornerRadius = 30 * H;
         _titleImageView.layer.masksToBounds = YES;
+        _titleImageView.backgroundColor = [UIColor yellowColor];
         [backView addSubview:_titleImageView];
         _titleImageView.center = CGPointMake(backView.frame.size.width / 2, backView.frame.size.height / 2);
         self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, _titleImageView.frame.size.height + 35 * H, kScreenWidth / 3, 40 * H)];
