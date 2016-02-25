@@ -18,6 +18,8 @@
 #import "GetFriendListOperator.h"
 #import "UserModel.h"
 
+#import "AddFriendsViewController.h"
+
 @interface ContactsViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UIGestureRecognizerDelegate,leftSideDrawerValueDelegate>{
     UISearchBar* mSearchBar;
     int groupIndex;
@@ -188,7 +190,8 @@
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 - (void)pressAddBtn:(id)sender{
-    
+    AddFriendsViewController *add = [[AddFriendsViewController alloc] init];
+    [self.navigationController pushViewController:add animated:YES];
 
 }
 - (void)pressCancleBtn:(id)sender{

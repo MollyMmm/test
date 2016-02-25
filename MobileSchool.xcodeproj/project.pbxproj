@@ -37,6 +37,15 @@
 		180CD11C1C7EEBE0000BE5B3 /* 4 in Resources */ = {isa = PBXBuildFile; fileRef = 180CD1161C7EEBE0000BE5B3 /* 4 */; };
 		180CD11D1C7EEBE0000BE5B3 /* CHLeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD1181C7EEBE0000BE5B3 /* CHLeadViewController.m */; };
 		180CD1201C7EEBF5000BE5B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD11F1C7EEBF5000BE5B3 /* AppDelegate.m */; };
+		180CD1271C7EED0F000BE5B3 /* FriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD1241C7EED0F000BE5B3 /* FriendsListViewController.m */; };
+		180CD1281C7EED0F000BE5B3 /* FriendsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180CD1251C7EED0F000BE5B3 /* FriendsListViewController.xib */; };
+		180CD12C1C7EED53000BE5B3 /* GroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD12A1C7EED53000BE5B3 /* GroupListViewController.m */; };
+		180CD12D1C7EED53000BE5B3 /* GroupListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180CD12B1C7EED53000BE5B3 /* GroupListViewController.xib */; };
+		180CD1301C7EED91000BE5B3 /* OtherPeopleDetailRecodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD12F1C7EED91000BE5B3 /* OtherPeopleDetailRecodesViewController.m */; };
+		180CD1361C7EEE04000BE5B3 /* AddFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD1321C7EEE03000BE5B3 /* AddFriendsViewController.m */; };
+		180CD1371C7EEE04000BE5B3 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD1341C7EEE03000BE5B3 /* ContactsViewController.m */; };
+		180CD1381C7EEE04000BE5B3 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180CD1351C7EEE04000BE5B3 /* ContactsViewController.xib */; };
+		180CD13B1C7EEE2D000BE5B3 /* AddFriendsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD13A1C7EEE2D000BE5B3 /* AddFriendsTableViewCell.m */; };
 		184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE21C744FB00003AD39 /* HeaderView.m */; };
 		184EEDE61C7464740003AD39 /* HeaderDailyRecodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE51C7464740003AD39 /* HeaderDailyRecodView.m */; };
 		184EEDE91C75547D0003AD39 /* RelayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184EEDE81C75547D0003AD39 /* RelayTableViewCell.m */; };
@@ -96,8 +105,6 @@
 		E544CFA21C744094003B22BC /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E544CF9C1C744094003B22BC /* MessageViewController.xib */; };
 		E544CFA31C744094003B22BC /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CF9F1C744094003B22BC /* MessageTableViewCell.m */; };
 		E544CFA41C744094003B22BC /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E544CFA01C744094003B22BC /* MessageTableViewCell.xib */; };
-		E544CFB71C744099003B22BC /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CFA91C744099003B22BC /* ContactsViewController.m */; };
-		E544CFB81C744099003B22BC /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E544CFAA1C744099003B22BC /* ContactsViewController.xib */; };
 		E544CFB91C744099003B22BC /* LeftSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CFAC1C744099003B22BC /* LeftSideDrawerViewController.m */; };
 		E544CFBA1C744099003B22BC /* LeftSideDrawerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E544CFAD1C744099003B22BC /* LeftSideDrawerViewController.xib */; };
 		E544CFBB1C744099003B22BC /* BottomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CFB01C744099003B22BC /* BottomTableView.m */; };
@@ -259,6 +266,21 @@
 		180CD1181C7EEBE0000BE5B3 /* CHLeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLeadViewController.m; sourceTree = "<group>"; };
 		180CD11E1C7EEBF5000BE5B3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		180CD11F1C7EEBF5000BE5B3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		180CD1231C7EED0F000BE5B3 /* FriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsListViewController.h; sourceTree = "<group>"; };
+		180CD1241C7EED0F000BE5B3 /* FriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsListViewController.m; sourceTree = "<group>"; };
+		180CD1251C7EED0F000BE5B3 /* FriendsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsListViewController.xib; sourceTree = "<group>"; };
+		180CD1291C7EED53000BE5B3 /* GroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupListViewController.h; sourceTree = "<group>"; };
+		180CD12A1C7EED53000BE5B3 /* GroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupListViewController.m; sourceTree = "<group>"; };
+		180CD12B1C7EED53000BE5B3 /* GroupListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupListViewController.xib; sourceTree = "<group>"; };
+		180CD12E1C7EED91000BE5B3 /* OtherPeopleDetailRecodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherPeopleDetailRecodesViewController.h; sourceTree = "<group>"; };
+		180CD12F1C7EED91000BE5B3 /* OtherPeopleDetailRecodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherPeopleDetailRecodesViewController.m; sourceTree = "<group>"; };
+		180CD1311C7EEE03000BE5B3 /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsViewController.h; sourceTree = "<group>"; };
+		180CD1321C7EEE03000BE5B3 /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsViewController.m; sourceTree = "<group>"; };
+		180CD1331C7EEE03000BE5B3 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		180CD1341C7EEE03000BE5B3 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		180CD1351C7EEE04000BE5B3 /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		180CD1391C7EEE2D000BE5B3 /* AddFriendsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsTableViewCell.h; sourceTree = "<group>"; };
+		180CD13A1C7EEE2D000BE5B3 /* AddFriendsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsTableViewCell.m; sourceTree = "<group>"; };
 		184EEDE11C744FB00003AD39 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		184EEDE21C744FB00003AD39 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		184EEDE41C7464740003AD39 /* HeaderDailyRecodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderDailyRecodView.h; sourceTree = "<group>"; };
@@ -375,9 +397,6 @@
 		E544CF9E1C744094003B22BC /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
 		E544CF9F1C744094003B22BC /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
 		E544CFA01C744094003B22BC /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
-		E544CFA81C744099003B22BC /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
-		E544CFA91C744099003B22BC /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
-		E544CFAA1C744099003B22BC /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
 		E544CFAB1C744099003B22BC /* LeftSideDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSideDrawerViewController.h; sourceTree = "<group>"; };
 		E544CFAC1C744099003B22BC /* LeftSideDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSideDrawerViewController.m; sourceTree = "<group>"; };
 		E544CFAD1C744099003B22BC /* LeftSideDrawerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftSideDrawerViewController.xib; sourceTree = "<group>"; };
@@ -1132,6 +1151,8 @@
 				E544CF2D1C744087003B22BC /* DetailRecodesViewController.m */,
 				E544CF2E1C744087003B22BC /* RecodesViewController.h */,
 				E544CF2F1C744087003B22BC /* RecodesViewController.m */,
+				180CD12E1C7EED91000BE5B3 /* OtherPeopleDetailRecodesViewController.h */,
+				180CD12F1C7EED91000BE5B3 /* OtherPeopleDetailRecodesViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1384,12 +1405,20 @@
 		E544CFA71C744099003B22BC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E544CFA81C744099003B22BC /* ContactsViewController.h */,
-				E544CFA91C744099003B22BC /* ContactsViewController.m */,
-				E544CFAA1C744099003B22BC /* ContactsViewController.xib */,
+				180CD1311C7EEE03000BE5B3 /* AddFriendsViewController.h */,
+				180CD1321C7EEE03000BE5B3 /* AddFriendsViewController.m */,
+				180CD1331C7EEE03000BE5B3 /* ContactsViewController.h */,
+				180CD1341C7EEE03000BE5B3 /* ContactsViewController.m */,
+				180CD1351C7EEE04000BE5B3 /* ContactsViewController.xib */,
 				E544CFAB1C744099003B22BC /* LeftSideDrawerViewController.h */,
 				E544CFAC1C744099003B22BC /* LeftSideDrawerViewController.m */,
 				E544CFAD1C744099003B22BC /* LeftSideDrawerViewController.xib */,
+				180CD1231C7EED0F000BE5B3 /* FriendsListViewController.h */,
+				180CD1241C7EED0F000BE5B3 /* FriendsListViewController.m */,
+				180CD1251C7EED0F000BE5B3 /* FriendsListViewController.xib */,
+				180CD1291C7EED53000BE5B3 /* GroupListViewController.h */,
+				180CD12A1C7EED53000BE5B3 /* GroupListViewController.m */,
+				180CD12B1C7EED53000BE5B3 /* GroupListViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1397,6 +1426,8 @@
 		E544CFAE1C744099003B22BC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				180CD1391C7EEE2D000BE5B3 /* AddFriendsTableViewCell.h */,
+				180CD13A1C7EEE2D000BE5B3 /* AddFriendsTableViewCell.m */,
 				E544CFAF1C744099003B22BC /* BottomTableView.h */,
 				E544CFB01C744099003B22BC /* BottomTableView.m */,
 				E544CFB11C744099003B22BC /* BottomTableView.xib */,
@@ -2098,6 +2129,7 @@
 				E544CFFA1C7441FA003B22BC /* IQKeyboardManager.bundle in Resources */,
 				E528E56A1C759420003C18BC /* ChatViewController.xib in Resources */,
 				0A6779391C7C0BCE00253BD8 /* BlackListViewController.xib in Resources */,
+				180CD12D1C7EED53000BE5B3 /* GroupListViewController.xib in Resources */,
 				E5D1611F1C7D857A0079C05E /* GroupMemberViewController.xib in Resources */,
 				E5D161251C7D90120079C05E /* GroupMemberCollectionViewCell.xib in Resources */,
 				E544D0571C744345003B22BC /* HotViewCell.xib in Resources */,
@@ -2116,7 +2148,6 @@
 				E544D04D1C744345003B22BC /* FoundViewController.xib in Resources */,
 				0A6779341C7C0B4300253BD8 /* SendQueueViewController.xib in Resources */,
 				0A6779481C7C477400253BD8 /* SignInViewController.xib in Resources */,
-				E544CFB81C744099003B22BC /* ContactsViewController.xib in Resources */,
 				E544D04F1C744345003B22BC /* FriendsCircleViewController.xib in Resources */,
 				E544D0631C744345003B22BC /* ReadingViewController.xib in Resources */,
 				E544D0091C74430D003B22BC /* DailyViewController.xib in Resources */,
@@ -2125,11 +2156,13 @@
 				E544D0511C744345003B22BC /* RecommendedViewController.xib in Resources */,
 				180CD11A1C7EEBE0000BE5B3 /* 2 in Resources */,
 				0A0373C81C7ECEAC00D5E706 /* SearchGroupViewController.xib in Resources */,
+				180CD1381C7EEE04000BE5B3 /* ContactsViewController.xib in Resources */,
 				0A67792F1C7C077400253BD8 /* SettingViewController.xib in Resources */,
 				E544D05F1C744345003B22BC /* LongInterviewCell.xib in Resources */,
 				E544D05B1C744345003B22BC /* InterviewViewController.xib in Resources */,
 				E544CFA41C744094003B22BC /* MessageTableViewCell.xib in Resources */,
 				0A67793E1C7C2DAB00253BD8 /* BarcodeViewController.xib in Resources */,
+				180CD1281C7EED0F000BE5B3 /* FriendsListViewController.xib in Resources */,
 				E58DFB2C1C7AA21000B57170 /* AddChatViewController.xib in Resources */,
 				E544CFA21C744094003B22BC /* MessageViewController.xib in Resources */,
 				0A67794D1C7C479400253BD8 /* RegisterViewController.xib in Resources */,
@@ -2226,12 +2259,13 @@
 				E544CFF31C7441FA003B22BC /* IQKeyboardReturnKeyHandler.m in Sources */,
 				184EEDFB1C75B04D0003AD39 /* DetailInformationViewController.m in Sources */,
 				0A0373C71C7ECEAC00D5E706 /* SearchGroupViewController.m in Sources */,
-				E544CFB71C744099003B22BC /* ContactsViewController.m in Sources */,
 				E544CF7E1C744087003B22BC /* PhoneViewController.m in Sources */,
+				180CD1361C7EEE04000BE5B3 /* AddFriendsViewController.m in Sources */,
 				E544D0581C744345003B22BC /* MoreTableViewCell.m in Sources */,
 				E566C5A11C7C0EFE00464659 /* AFHTTPRequestOperationManager.m in Sources */,
 				E566C5A71C7C0EFE00464659 /* AFURLResponseSerialization.m in Sources */,
 				E566C5841C7C0EF900464659 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				180CD1371C7EEE04000BE5B3 /* ContactsViewController.m in Sources */,
 				E544D0641C744345003B22BC /* LongReadingCell.m in Sources */,
 				E544CFEF1C7441FA003B22BC /* IQUIView+Hierarchy.m in Sources */,
 				E5D161281C7EB2A10079C05E /* Node.m in Sources */,
@@ -2262,6 +2296,7 @@
 				184EEDE91C75547D0003AD39 /* RelayTableViewCell.m in Sources */,
 				E566C5851C7C0EF900464659 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				E566C5AB1C7C0FCD00464659 /* UserModel.m in Sources */,
+				180CD12C1C7EED53000BE5B3 /* GroupListViewController.m in Sources */,
 				E544CF651C744087003B22BC /* AddViewController.m in Sources */,
 				E566C56F1C7C0E1500464659 /* BaseOperator.m in Sources */,
 				E544CFF21C7441FA003B22BC /* IQKeyboardManager.m in Sources */,
@@ -2279,6 +2314,7 @@
 				E544CF751C744087003B22BC /* RecodesTableViewCell.m in Sources */,
 				E544CFF51C7441FA003B22BC /* IQTextView.m in Sources */,
 				E544CF741C744087003B22BC /* RecodesViewController.m in Sources */,
+				180CD1271C7EED0F000BE5B3 /* FriendsListViewController.m in Sources */,
 				E544CF631C744087003B22BC /* AchievementViewController.m in Sources */,
 				E544CFF11C7441FA003B22BC /* IQUIWindow+Hierarchy.m in Sources */,
 				0A6320631C759D5C00907B71 /* MyViewTableViewCell.m in Sources */,
@@ -2330,6 +2366,7 @@
 				E58DFB301C7AA83B00B57170 /* AddChatTableViewCell.m in Sources */,
 				E544D04E1C744345003B22BC /* FriendsCircleViewController.m in Sources */,
 				E5D1612E1C7EC6200079C05E /* OrganizeViewController.m in Sources */,
+				180CD13B1C7EEE2D000BE5B3 /* AddFriendsTableViewCell.m in Sources */,
 				184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */,
 				180CD1201C7EEBF5000BE5B3 /* AppDelegate.m in Sources */,
 				E544CF951C74408E003B22BC /* NavigationViewController.m in Sources */,
@@ -2350,6 +2387,7 @@
 				E544D0561C744345003B22BC /* HotViewCell.m in Sources */,
 				E544D0521C744345003B22BC /* HelpViewController.m in Sources */,
 				E566C5A21C7C0EFE00464659 /* AFHTTPSessionManager.m in Sources */,
+				180CD1301C7EED91000BE5B3 /* OtherPeopleDetailRecodesViewController.m in Sources */,
 				E544CFB91C744099003B22BC /* LeftSideDrawerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
