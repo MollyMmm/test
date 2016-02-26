@@ -22,6 +22,7 @@
 - (void)parseJson:(BaseModel*) baseModel{
 
     NSArray *friendArr =[baseModel.data objectForKey:@"result"];
+    
     for (NSDictionary *dataDict in friendArr) {
         UserModel *userModel = [[UserModel alloc] init];
         userModel.username = [dataDict objectForKey:@"username"];
@@ -31,6 +32,8 @@
         userModel.password = [dataDict objectForKey:@"password"];
         userModel.name = [dataDict objectForKey:@"name"];
         userModel.phone = [dataDict objectForKey:@"phone"];
+        
+        [self.friendArr addObject:userModel];
     }
     
 }

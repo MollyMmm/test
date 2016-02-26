@@ -23,6 +23,9 @@
     
     [manager asyncTaskWithOperator:signOperator withSuccessCallBack:^(BaseModel *model) {
         
+        UserModel *userModel = [[UserModel alloc] init];
+        userModel = signOperator.userModel;
+        
         _tokenId = signOperator.userModel.tokenid;
         NSLog(@"正确");
     

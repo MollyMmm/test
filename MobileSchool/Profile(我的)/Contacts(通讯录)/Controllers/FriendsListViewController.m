@@ -11,6 +11,7 @@
 #import "GroupListViewController.h"
 #import "NavigationViewController.h"
 
+#import "UIImageView+AFNetworking.h"
 #import "UserModel.h"
 #import "GetFriendListOperator.h"
 #import "NetworkingManager.h"
@@ -70,6 +71,7 @@
     
     _tableView.separatorInset = UIEdgeInsetsZero;
     _tableView.tableFooterView = [[UIView alloc] init];
+    [self requestFriendList];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -82,7 +84,7 @@
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [_nameData count];
+    return [_friendArr count];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 44.f;
@@ -94,11 +96,13 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
-    UserModel *user = [_friendArr objectAtIndex:indexPath.row];
-    cell.accessoryType = UITableViewCellStyleDefault;
-    UIImage *img = [UIImage imageNamed:user.img];
-    [cell.imageView setImage:img];
-    cell.textLabel.text = user.name;
+    if (_friendArr) {
+        
+        UserModel *user = [_friendArr objectAtIndex:indexPath.row];
+        cell.accessoryType = UITableViewCellStyleDefault;
+        [cell.imageView setImageWithURL:[NSURL URLWithString:user.img]];
+        cell.textLabel.text = user.name;
+    }
     
     return cell;
 }
@@ -117,10 +121,11 @@
 //
 - (void)requestFriendList{
     
-    TokenIdTool *tool = [[TokenIdTool alloc] init];
-    [tool requestTokenId];
+//    TokenIdTool *tool = [[TokenIdTool alloc] init];
+//    [tool requestTokenId];
     
-    GetFriendListOperator *friendListOperator = [[GetFriendListOperator alloc] initWithParamsDic:@{@"tokenid":tool.tokenId}];
+//    GetFriendListOperator *friendListOperator = [[GetFriendListOperator alloc] initWithParamsDic:@{@"tokenid":tool.tokenId}];
+    GetFriendListOperator *friendListOperator = [[GetFriendListOperator alloc] initWithParamsDic:@{@"tokenid":[[NSUserDefaults standardUserDefaults] objectForKey:@"tokenid"]}];
     NetworkingManager *manager = [NetworkingManager sharedInstance];
     
     [manager asyncTaskWithOperator:friendListOperator withSuccessCallBack:^(BaseModel *model) {
