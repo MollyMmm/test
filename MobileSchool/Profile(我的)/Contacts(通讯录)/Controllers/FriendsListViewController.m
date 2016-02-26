@@ -11,8 +11,11 @@
 #import "GroupListViewController.h"
 #import "NavigationViewController.h"
 
+#import "UserModel.h"
 #import "GetFriendListOperator.h"
 #import "NetworkingManager.h"
+
+#import "TokenIdTool.h"
 
 @interface FriendsListViewController ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
 
@@ -91,10 +94,11 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
+    UserModel *user = [_friendArr objectAtIndex:indexPath.row];
     cell.accessoryType = UITableViewCellStyleDefault;
-    UIImage *img = [UIImage imageNamed:[_imgData objectAtIndex:indexPath.row]];
+    UIImage *img = [UIImage imageNamed:user.img];
     [cell.imageView setImage:img];
-    cell.textLabel.text = [_nameData objectAtIndex:indexPath.row];
+    cell.textLabel.text = user.name;
     
     return cell;
 }
@@ -108,12 +112,15 @@
 }
 /**
  *  请求好友列表
- *  http://123.56.17.198:8180/ms/api/user_ser?username=aaa
+ *  http://123.56.17.198:8180/ms/api/user_ser/friends?tokenid=081aeb639714e3f80161128bab5e8559
  */
 //
 - (void)requestFriendList{
     
-    GetFriendListOperator *friendListOperator = [[GetFriendListOperator alloc] initWithParamsDic:@{@"username":[[NSUserDefaults standardUserDefaults] objectForKey:@"username"]}];
+    TokenIdTool *tool = [[TokenIdTool alloc] init];
+    [tool requestTokenId];
+    
+    GetFriendListOperator *friendListOperator = [[GetFriendListOperator alloc] initWithParamsDic:@{@"tokenid":tool.tokenId}];
     NetworkingManager *manager = [NetworkingManager sharedInstance];
     
     [manager asyncTaskWithOperator:friendListOperator withSuccessCallBack:^(BaseModel *model) {
@@ -126,4 +133,5 @@
         
     }];
 }
+
 @end

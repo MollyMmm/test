@@ -60,6 +60,7 @@
         userModel = signOperator.userModel;
         
         [[NSUserDefaults standardUserDefaults] setValue:userModel.username forKey:@"username"];
+        [[NSUserDefaults standardUserDefaults] setValue:userModel.password forKey:@"password"];
         [[NSUserDefaults standardUserDefaults] setValue:userModel.tokenid forKey:@"tokenid"];
         
         FriendsListViewController *friendVC = [[FriendsListViewController alloc] init];

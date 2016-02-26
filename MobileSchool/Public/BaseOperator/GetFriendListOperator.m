@@ -14,7 +14,7 @@
 - (id)initWithParamsDic:(NSDictionary *)params{
 
     if (self = [super initWithParamsDic:params]) {
-        self.action = @"ms/api/user_ser";
+        self.action = @"ms/api/user_ser/friends";
         self.friendArr = [NSMutableArray array];
     }
     return self;

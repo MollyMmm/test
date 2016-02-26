@@ -203,6 +203,7 @@
 		E5D161251C7D90120079C05E /* GroupMemberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D161231C7D90120079C05E /* GroupMemberCollectionViewCell.xib */; };
 		E5D161281C7EB2A10079C05E /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D161271C7EB2A10079C05E /* Node.m */; };
 		E5D1612E1C7EC6200079C05E /* OrganizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1612C1C7EC6200079C05E /* OrganizeViewController.m */; };
+		E5D1613D1C7FF0570079C05E /* TokenIdTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1613C1C7FF0570079C05E /* TokenIdTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -577,6 +578,8 @@
 		E5D1612D1C7EC6200079C05E /* OrganizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrganizeViewController.xib; sourceTree = "<group>"; };
 		E5D161311C7EC9330079C05E /* TreeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeTableView.h; sourceTree = "<group>"; };
 		E5D161321C7EC9330079C05E /* TreeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTableView.m; sourceTree = "<group>"; };
+		E5D1613B1C7FF0570079C05E /* TokenIdTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenIdTool.h; sourceTree = "<group>"; };
+		E5D1613C1C7FF0570079C05E /* TokenIdTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenIdTool.m; sourceTree = "<group>"; };
 		FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileSchool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1852,6 +1855,7 @@
 		E566C5641C7C0E1500464659 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				E5D1613A1C7FF03A0079C05E /* Tools */,
 				E566C5651C7C0E1500464659 /* BaseOperator */,
 				E566C5681C7C0E1500464659 /* Model */,
 				E566C56B1C7C0E1500464659 /* NetworkingManager */,
@@ -2022,6 +2026,15 @@
 				E5D161321C7EC9330079C05E /* TreeTableView.m */,
 			);
 			name = subviews;
+			sourceTree = "<group>";
+		};
+		E5D1613A1C7FF03A0079C05E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E5D1613B1C7FF0570079C05E /* TokenIdTool.h */,
+				E5D1613C1C7FF0570079C05E /* TokenIdTool.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2259,6 +2272,7 @@
 				E566C5A61C7C0EFE00464659 /* AFURLRequestSerialization.m in Sources */,
 				E566C5881C7C0EF900464659 /* UIImageView+AFNetworking.m in Sources */,
 				E59D9AA91C785CF5002BD569 /* AddCollectionViewCell.m in Sources */,
+				E5D1613D1C7FF0570079C05E /* TokenIdTool.m in Sources */,
 				E58DFB2B1C7AA21000B57170 /* AddChatViewController.m in Sources */,
 				E544D05A1C744345003B22BC /* InterviewViewController.m in Sources */,
 				E544CFF31C7441FA003B22BC /* IQKeyboardReturnKeyHandler.m in Sources */,
