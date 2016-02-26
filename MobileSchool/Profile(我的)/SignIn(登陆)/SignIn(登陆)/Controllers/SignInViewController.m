@@ -8,11 +8,14 @@
 
 #import "SignInViewController.h"
 #import "RegisterViewController.h"
+
 #import "NetworkingManager.h"
 #import "SignOperator.h"
 #import "UserModel.h"
-#import "ContactsViewController.h"
+
 #import "NavigationViewController.h"
+#import "FriendsListViewController.h"
+
 #import "SearcheViewController.h"
 
 @interface SignInViewController ()
@@ -57,14 +60,13 @@
         userModel = signOperator.userModel;
         
         [[NSUserDefaults standardUserDefaults] setValue:userModel.username forKey:@"username"];
+        [[NSUserDefaults standardUserDefaults] setValue:userModel.tokenid forKey:@"tokenid"];
         
-        //-暂时先跳转到通讯录
-        ContactsViewController *conVC = [[ContactsViewController alloc] init];
-        NavigationViewController *conNav = [[NavigationViewController alloc] initWithRootViewController:conVC];
+        FriendsListViewController *friendVC = [[FriendsListViewController alloc] init];
+        NavigationViewController *friendNav = [[NavigationViewController alloc] initWithRootViewController:friendVC];
         
-        [self.navigationController presentViewController:conNav animated:YES completion:nil];
-        
-        
+        [self.navigationController presentViewController:friendNav animated:YES completion:nil];
+    
         NSLog(@"正确");
     } andFaildCallBack:^(id response) {
         

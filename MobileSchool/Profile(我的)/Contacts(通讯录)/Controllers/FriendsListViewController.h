@@ -10,4 +10,6 @@
 
 @interface FriendsListViewController : UIViewController
 
+@property (strong, nonatomic) NSString *tokenid;
+
 @end

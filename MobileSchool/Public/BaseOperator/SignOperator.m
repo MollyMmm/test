@@ -13,7 +13,7 @@
 - (id)initWithParamsDic:(NSDictionary *)params{
     
     if (self = [super initWithParamsDic:params]) {
-        self.action = @"ms/api/user_ser";
+        self.action = @"ms/api/user_ser/login";
     }
     
     return self;
@@ -32,6 +32,7 @@
         _userModel.password = [dataDict objectForKey:@"password"];
         _userModel.name = [dataDict objectForKey:@"name"];
         _userModel.phone = [dataDict objectForKey:@"phone"];
+        _userModel.tokenid = [dataDict objectForKey:@"tokenid"];
     }
 }
 

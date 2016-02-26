@@ -10,6 +10,10 @@
 
 #import "GroupListViewController.h"
 #import "NavigationViewController.h"
+
+#import "GetFriendListOperator.h"
+#import "NetworkingManager.h"
+
 @interface FriendsListViewController ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -18,6 +22,7 @@
 
 @property (strong, nonatomic) NSArray *imgData;
 @property (strong, nonatomic) NSArray *nameData;
+@property (strong, nonatomic) NSArray *friendArr;
 
 @end
 
@@ -100,5 +105,25 @@
     NavigationViewController *nav = [[NavigationViewController alloc] initWithRootViewController:groupVC];
     
     [self.navigationController presentViewController:nav animated:YES completion:nil];
+}
+/**
+ *  请求好友列表
+ *  http://123.56.17.198:8180/ms/api/user_ser?username=aaa
+ */
+//
+- (void)requestFriendList{
+    
+    GetFriendListOperator *friendListOperator = [[GetFriendListOperator alloc] initWithParamsDic:@{@"username":[[NSUserDefaults standardUserDefaults] objectForKey:@"username"]}];
+    NetworkingManager *manager = [NetworkingManager sharedInstance];
+    
+    [manager asyncTaskWithOperator:friendListOperator withSuccessCallBack:^(BaseModel *model) {
+        
+        _friendArr = [[NSArray alloc] init];
+        _friendArr = friendListOperator.friendArr;
+        
+        [_tableView reloadData];
+    } andFaildCallBack:^(id response) {
+        
+    }];
 }
 @end

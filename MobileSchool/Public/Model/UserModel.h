@@ -18,5 +18,6 @@
 @property (strong, nonatomic) NSString *password;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *phone;
+@property (strong, nonatomic) NSString *tokenid;
 
 @end
