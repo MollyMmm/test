@@ -204,6 +204,7 @@
 		E5D161281C7EB2A10079C05E /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D161271C7EB2A10079C05E /* Node.m */; };
 		E5D1612E1C7EC6200079C05E /* OrganizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1612C1C7EC6200079C05E /* OrganizeViewController.m */; };
 		E5D1613D1C7FF0570079C05E /* TokenIdTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1613C1C7FF0570079C05E /* TokenIdTool.m */; };
+		E5D161401C7FF2890079C05E /* GetGroupMemberOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1613F1C7FF2890079C05E /* GetGroupMemberOperator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -580,6 +581,8 @@
 		E5D161321C7EC9330079C05E /* TreeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTableView.m; sourceTree = "<group>"; };
 		E5D1613B1C7FF0570079C05E /* TokenIdTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenIdTool.h; sourceTree = "<group>"; };
 		E5D1613C1C7FF0570079C05E /* TokenIdTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenIdTool.m; sourceTree = "<group>"; };
+		E5D1613E1C7FF2890079C05E /* GetGroupMemberOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetGroupMemberOperator.h; sourceTree = "<group>"; };
+		E5D1613F1C7FF2890079C05E /* GetGroupMemberOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetGroupMemberOperator.m; sourceTree = "<group>"; };
 		FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileSchool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1856,14 +1859,14 @@
 			isa = PBXGroup;
 			children = (
 				E5D1613A1C7FF03A0079C05E /* Tools */,
-				E566C5651C7C0E1500464659 /* BaseOperator */,
+				E566C5651C7C0E1500464659 /* Operator */,
 				E566C5681C7C0E1500464659 /* Model */,
 				E566C56B1C7C0E1500464659 /* NetworkingManager */,
 			);
 			path = Public;
 			sourceTree = "<group>";
 		};
-		E566C5651C7C0E1500464659 /* BaseOperator */ = {
+		E566C5651C7C0E1500464659 /* Operator */ = {
 			isa = PBXGroup;
 			children = (
 				E566C5661C7C0E1500464659 /* BaseOperator.h */,
@@ -1872,7 +1875,10 @@
 				E566C5AD1C7C10D700464659 /* SignOperator.m */,
 				E566C5AF1C7C178300464659 /* GetFriendListOperator.h */,
 				E566C5B01C7C178300464659 /* GetFriendListOperator.m */,
+				E5D1613E1C7FF2890079C05E /* GetGroupMemberOperator.h */,
+				E5D1613F1C7FF2890079C05E /* GetGroupMemberOperator.m */,
 			);
+			name = Operator;
 			path = BaseOperator;
 			sourceTree = "<group>";
 		};
@@ -2366,6 +2372,7 @@
 				E544D06D1C744372003B22BC /* JSDropmenuView.m in Sources */,
 				E55BC9F41C74351B009A9AAA /* main.m in Sources */,
 				E544CFA11C744094003B22BC /* MessageViewController.m in Sources */,
+				E5D161401C7FF2890079C05E /* GetGroupMemberOperator.m in Sources */,
 				0A67794C1C7C479400253BD8 /* RegisterViewController.m in Sources */,
 				E544CF771C744087003B22BC /* DetailMyDailyRecodsViewController.m in Sources */,
 				184EEE011C75B7DC0003AD39 /* DetailOtherNotificationViewController.m in Sources */,

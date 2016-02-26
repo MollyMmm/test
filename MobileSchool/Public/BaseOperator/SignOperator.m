@@ -21,19 +21,18 @@
 
 - (void)parseJson:(BaseModel*) baseModel{
 
-    NSDictionary *dataDict = baseModel.data;
-    if([[dataDict objectForKey:@"result"] isEqualToString:@"1"]){
+    NSDictionary *dataDict = [baseModel.data objectForKey:@"result"];
     
-        _userModel = [[UserModel alloc] init];
-        _userModel.username = [dataDict objectForKey:@"username"];
-        _userModel.email = [dataDict objectForKey:@"email"];
-        //http://123.56.17.198:8180/ms/img/images.jpg
-        _userModel.img = [NSString stringWithFormat:@"http://123.56.17.198:8180/ms/%@",[dataDict objectForKey:@"img"]];
-        _userModel.password = [dataDict objectForKey:@"password"];
-        _userModel.name = [dataDict objectForKey:@"name"];
-        _userModel.phone = [dataDict objectForKey:@"phone"];
-        _userModel.tokenid = [dataDict objectForKey:@"tokenid"];
-    }
+    _userModel = [[UserModel alloc] init];
+    _userModel.username = [dataDict objectForKey:@"username"];
+    _userModel.email = [dataDict objectForKey:@"email"];
+    //http://123.56.17.198:8180/ms/img/images.jpg
+    _userModel.img = [NSString stringWithFormat:@"http://123.56.17.198:8180/ms/%@",[dataDict objectForKey:@"img"]];
+    _userModel.password = [dataDict objectForKey:@"password"];
+    _userModel.name = [dataDict objectForKey:@"name"];
+    _userModel.phone = [dataDict objectForKey:@"phone"];
+    _userModel.tokenid = [dataDict objectForKey:@"tokenid"];
+
 }
 
 @end
