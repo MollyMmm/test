@@ -98,9 +98,10 @@
     
     if (_friendArr) {
         
-        UserModel *user = [_friendArr objectAtIndex:indexPath.row];
         cell.accessoryType = UITableViewCellStyleDefault;
-        [cell.imageView setImageWithURL:[NSURL URLWithString:user.img]];
+
+        UserModel *user = [_friendArr objectAtIndex:indexPath.row];
+        [cell.imageView setImageWithURL:[NSURL URLWithString:user.img] placeholderImage:[UIImage imageNamed:@"myFan"]];
         cell.textLabel.text = user.name;
     }
     
