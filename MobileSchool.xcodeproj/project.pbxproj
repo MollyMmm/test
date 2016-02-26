@@ -266,16 +266,16 @@
 		180CD1181C7EEBE0000BE5B3 /* CHLeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLeadViewController.m; sourceTree = "<group>"; };
 		180CD11E1C7EEBF5000BE5B3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		180CD11F1C7EEBF5000BE5B3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		180CD1231C7EED0F000BE5B3 /* FriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsListViewController.h; sourceTree = "<group>"; };
-		180CD1241C7EED0F000BE5B3 /* FriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsListViewController.m; sourceTree = "<group>"; };
-		180CD1251C7EED0F000BE5B3 /* FriendsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsListViewController.xib; sourceTree = "<group>"; };
-		180CD1291C7EED53000BE5B3 /* GroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupListViewController.h; sourceTree = "<group>"; };
-		180CD12A1C7EED53000BE5B3 /* GroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupListViewController.m; sourceTree = "<group>"; };
-		180CD12B1C7EED53000BE5B3 /* GroupListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupListViewController.xib; sourceTree = "<group>"; };
+		180CD1231C7EED0F000BE5B3 /* FriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsListViewController.h; path = ../Controllers/FriendsListViewController.h; sourceTree = "<group>"; };
+		180CD1241C7EED0F000BE5B3 /* FriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendsListViewController.m; path = ../Controllers/FriendsListViewController.m; sourceTree = "<group>"; };
+		180CD1251C7EED0F000BE5B3 /* FriendsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FriendsListViewController.xib; path = ../Controllers/FriendsListViewController.xib; sourceTree = "<group>"; };
+		180CD1291C7EED53000BE5B3 /* GroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupListViewController.h; path = ../Controllers/GroupListViewController.h; sourceTree = "<group>"; };
+		180CD12A1C7EED53000BE5B3 /* GroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupListViewController.m; path = ../Controllers/GroupListViewController.m; sourceTree = "<group>"; };
+		180CD12B1C7EED53000BE5B3 /* GroupListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GroupListViewController.xib; path = ../Controllers/GroupListViewController.xib; sourceTree = "<group>"; };
 		180CD12E1C7EED91000BE5B3 /* OtherPeopleDetailRecodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherPeopleDetailRecodesViewController.h; sourceTree = "<group>"; };
 		180CD12F1C7EED91000BE5B3 /* OtherPeopleDetailRecodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherPeopleDetailRecodesViewController.m; sourceTree = "<group>"; };
-		180CD1311C7EEE03000BE5B3 /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsViewController.h; sourceTree = "<group>"; };
-		180CD1321C7EEE03000BE5B3 /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsViewController.m; sourceTree = "<group>"; };
+		180CD1311C7EEE03000BE5B3 /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddFriendsViewController.h; path = ../Controllers/AddFriendsViewController.h; sourceTree = "<group>"; };
+		180CD1321C7EEE03000BE5B3 /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddFriendsViewController.m; path = ../Controllers/AddFriendsViewController.m; sourceTree = "<group>"; };
 		180CD1331C7EEE03000BE5B3 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		180CD1341C7EEE03000BE5B3 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		180CD1351C7EEE04000BE5B3 /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
@@ -1405,20 +1405,12 @@
 		E544CFA71C744099003B22BC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				180CD1311C7EEE03000BE5B3 /* AddFriendsViewController.h */,
-				180CD1321C7EEE03000BE5B3 /* AddFriendsViewController.m */,
 				180CD1331C7EEE03000BE5B3 /* ContactsViewController.h */,
 				180CD1341C7EEE03000BE5B3 /* ContactsViewController.m */,
 				180CD1351C7EEE04000BE5B3 /* ContactsViewController.xib */,
 				E544CFAB1C744099003B22BC /* LeftSideDrawerViewController.h */,
 				E544CFAC1C744099003B22BC /* LeftSideDrawerViewController.m */,
 				E544CFAD1C744099003B22BC /* LeftSideDrawerViewController.xib */,
-				180CD1231C7EED0F000BE5B3 /* FriendsListViewController.h */,
-				180CD1241C7EED0F000BE5B3 /* FriendsListViewController.m */,
-				180CD1251C7EED0F000BE5B3 /* FriendsListViewController.xib */,
-				180CD1291C7EED53000BE5B3 /* GroupListViewController.h */,
-				180CD12A1C7EED53000BE5B3 /* GroupListViewController.m */,
-				180CD12B1C7EED53000BE5B3 /* GroupListViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1974,6 +1966,11 @@
 		E5D161191C7D5C7B0079C05E /* FriendList */ = {
 			isa = PBXGroup;
 			children = (
+				180CD1311C7EEE03000BE5B3 /* AddFriendsViewController.h */,
+				180CD1321C7EEE03000BE5B3 /* AddFriendsViewController.m */,
+				180CD1231C7EED0F000BE5B3 /* FriendsListViewController.h */,
+				180CD1241C7EED0F000BE5B3 /* FriendsListViewController.m */,
+				180CD1251C7EED0F000BE5B3 /* FriendsListViewController.xib */,
 			);
 			path = FriendList;
 			sourceTree = "<group>";
@@ -1981,6 +1978,9 @@
 		E5D1611A1C7D85430079C05E /* Group */ = {
 			isa = PBXGroup;
 			children = (
+				180CD1291C7EED53000BE5B3 /* GroupListViewController.h */,
+				180CD12A1C7EED53000BE5B3 /* GroupListViewController.m */,
+				180CD12B1C7EED53000BE5B3 /* GroupListViewController.xib */,
 				E5D1611B1C7D857A0079C05E /* GroupMemberViewController.h */,
 				E5D1611C1C7D857A0079C05E /* GroupMemberViewController.m */,
 				E5D1611D1C7D857A0079C05E /* GroupMemberViewController.xib */,
