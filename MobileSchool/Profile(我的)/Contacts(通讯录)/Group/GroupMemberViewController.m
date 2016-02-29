@@ -7,8 +7,12 @@
 //
 
 #import "GroupMemberViewController.h"
-
 #import "GroupMemberCollectionViewCell.h"
+
+#import "UserModel.h"
+#import "NetworkingManager.h"
+#import "GetGroupMemberOperator.h"
+#import "UIButton+AFNetworking.h"
 
 @interface GroupMemberViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UISearchBarDelegate>{
     NSString *_cellIndentify;
@@ -19,6 +23,8 @@
 
 @property (strong, nonatomic) NSArray *iconData;
 @property (strong, nonatomic) NSArray *nameData;
+
+@property (strong, nonatomic) NSArray *memberArr;
 
 @end
 
@@ -56,7 +62,8 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return ([_iconData count] + 1 );
+//    return ([_iconData count] + 1 );
+    return [_memberArr count] + 1;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(nonnull UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
@@ -85,9 +92,15 @@
     }
     else{
         
-        UIImage *icon = [UIImage imageNamed:[_iconData objectAtIndex:indexPath.row]];
-        [cell.iconBtn setImage:icon forState:UIControlStateNormal];
-        cell.nameLbl.text = [_nameData objectAtIndex:indexPath.row];
+        if (_memberArr) {
+            
+            UserModel *user = [_memberArr objectAtIndex:indexPath.row];
+            [cell.iconBtn setImageForState:UIControlStateNormal withURL:[NSURL URLWithString:user.img] placeholderImage:[UIImage imageNamed:@"myFan"]];
+            cell.nameLbl.text = user.name;
+        }
+//        UIImage *icon = [UIImage imageNamed:[_iconData objectAtIndex:indexPath.row]];
+//        [cell.iconBtn setImage:icon forState:UIControlStateNormal];
+//        cell.nameLbl.text = [_nameData objectAtIndex:indexPath.row];
     }
 
     return cell;
@@ -104,6 +117,16 @@
  */
 - (void)requestGroupMember{
     
+    GetGroupMemberOperator *getMemberOperator = [[GetGroupMemberOperator alloc] initWithParamsDic:@{@"tokenid":[[NSUserDefaults standardUserDefaults] objectForKey:@"tokenid"],@"groupname":@"all"}];
+    NetworkingManager *manager = [NetworkingManager sharedInstance];
+    
+    [manager asyncTaskWithOperator:getMemberOperator withSuccessCallBack:^(BaseModel *model) {
+        
+        _memberArr = [[NSArray alloc] init];
+        _memberArr = getMemberOperator.groupMemberArr;
+    } andFaildCallBack:^(id response) {
+        
+    }];
     
 }
 @end

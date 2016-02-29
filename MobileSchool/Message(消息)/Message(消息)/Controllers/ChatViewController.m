@@ -130,7 +130,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     //根据文字长度计算
     NSString *contentStr = [[[_chatArr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:@"content"];
-     UIFont *font = [UIFont systemFontOfSize:14.f];
+    UIFont *font = [UIFont systemFontOfSize:14.f];
     //CGSize size = [contentStr sizeWithFont:font constrainedToSize:CGSizeMake(180.0f, 20000.0f) lineBreakMode:NSLineBreakByWordWrapping];
     //ios7 及其以上版本
     NSDictionary* attribute = @{NSFontAttributeName:font};

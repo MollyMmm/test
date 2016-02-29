@@ -7,6 +7,7 @@
 //
 
 #import "TreeTableView.h"
+#import "TreeTableViewCell.h"
 
 #import "Node.h"
 
@@ -20,8 +21,8 @@
 
 @implementation TreeTableView
 
-
 -(instancetype)initWithFrame:(CGRect)frame withData : (NSArray *)data{
+    
     self = [super initWithFrame:frame style:UITableViewStyleGrouped];
     if (self) {
         self.dataSource = self;
@@ -58,12 +59,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *NODE_CELL_ID = @"node_cell_id";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NODE_CELL_ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NODE_CELL_ID];
+    if ([node.leaf isEqualsToString:@"1"]) {
+        TreeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NODE_CELL_ID forIndexPath:]
     }
-    
-    Node *node = [_tempData objectAtIndex:indexPath.row];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NODE_CELL_ID];
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NODE_CELL_ID];
+//    }
+
     
     // cell有缩进的方法
     cell.indentationLevel = node.deapth; // 缩进级别

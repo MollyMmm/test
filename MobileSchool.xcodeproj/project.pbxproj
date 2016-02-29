@@ -62,6 +62,7 @@
 		332D8AB724C974AA1031C258 /* libPods-MobileSchool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */; };
 		E528E5691C759420003C18BC /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E528E5671C759420003C18BC /* ChatViewController.m */; };
 		E528E56A1C759420003C18BC /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E528E5681C759420003C18BC /* ChatViewController.xib */; };
+		E53DB9441C8410F900302F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53DB9431C8410F900302F25 /* Assets.xcassets */; };
 		E544CF631C744087003B22BC /* AchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CEF41C744087003B22BC /* AchievementViewController.m */; };
 		E544CF641C744087003B22BC /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CEF81C744087003B22BC /* AboutMeViewController.m */; };
 		E544CF651C744087003B22BC /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E544CEFC1C744087003B22BC /* AddViewController.m */; };
@@ -194,7 +195,6 @@
 		E58DFB2C1C7AA21000B57170 /* AddChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E58DFB2A1C7AA21000B57170 /* AddChatViewController.xib */; };
 		E58DFB301C7AA83B00B57170 /* AddChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E58DFB2E1C7AA83B00B57170 /* AddChatTableViewCell.m */; };
 		E58DFB311C7AA83B00B57170 /* AddChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E58DFB2F1C7AA83B00B57170 /* AddChatTableViewCell.xib */; };
-		E58DFB331C7AE87D00B57170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58DFB321C7AE87D00B57170 /* Assets.xcassets */; };
 		E59D9AA91C785CF5002BD569 /* AddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E59D9AA71C785CF5002BD569 /* AddCollectionViewCell.m */; };
 		E59D9AAA1C785CF5002BD569 /* AddCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59D9AA81C785CF5002BD569 /* AddCollectionViewCell.xib */; };
 		E5D1611E1C7D857A0079C05E /* GroupMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1611C1C7D857A0079C05E /* GroupMemberViewController.m */; };
@@ -202,9 +202,13 @@
 		E5D161241C7D90120079C05E /* GroupMemberCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D161221C7D90120079C05E /* GroupMemberCollectionViewCell.m */; };
 		E5D161251C7D90120079C05E /* GroupMemberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D161231C7D90120079C05E /* GroupMemberCollectionViewCell.xib */; };
 		E5D161281C7EB2A10079C05E /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D161271C7EB2A10079C05E /* Node.m */; };
-		E5D1612E1C7EC6200079C05E /* OrganizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1612C1C7EC6200079C05E /* OrganizeViewController.m */; };
 		E5D1613D1C7FF0570079C05E /* TokenIdTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1613C1C7FF0570079C05E /* TokenIdTool.m */; };
 		E5D161401C7FF2890079C05E /* GetGroupMemberOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1613F1C7FF2890079C05E /* GetGroupMemberOperator.m */; };
+		E5D1614D1C80292D0079C05E /* TreeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D1614B1C80292D0079C05E /* TreeTableViewCell.m */; };
+		E5D1614E1C80292D0079C05E /* TreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D1614C1C80292D0079C05E /* TreeTableViewCell.xib */; };
+		E5D161521C803D730079C05E /* OrganizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D161501C803D730079C05E /* OrganizeViewController.m */; };
+		E5D161531C803D730079C05E /* OrganizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D161511C803D730079C05E /* OrganizeViewController.xib */; };
+		E5D161561C8049750079C05E /* GetOrganizeOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D161551C8049750079C05E /* GetOrganizeOperator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -315,6 +319,7 @@
 		E528E5661C759420003C18BC /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = ../Controllers/ChatViewController.h; sourceTree = "<group>"; };
 		E528E5671C759420003C18BC /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = ../Controllers/ChatViewController.m; sourceTree = "<group>"; };
 		E528E5681C759420003C18BC /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatViewController.xib; path = ../Controllers/ChatViewController.xib; sourceTree = "<group>"; };
+		E53DB9431C8410F900302F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E544CEA01C744055003B22BC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E544CEF31C744087003B22BC /* AchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementViewController.h; sourceTree = "<group>"; };
 		E544CEF41C744087003B22BC /* AchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementViewController.m; sourceTree = "<group>"; };
@@ -562,7 +567,6 @@
 		E58DFB2D1C7AA83B00B57170 /* AddChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddChatTableViewCell.h; sourceTree = "<group>"; };
 		E58DFB2E1C7AA83B00B57170 /* AddChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddChatTableViewCell.m; sourceTree = "<group>"; };
 		E58DFB2F1C7AA83B00B57170 /* AddChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddChatTableViewCell.xib; sourceTree = "<group>"; };
-		E58DFB321C7AE87D00B57170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E59D9AA61C785CF5002BD569 /* AddCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCollectionViewCell.h; sourceTree = "<group>"; };
 		E59D9AA71C785CF5002BD569 /* AddCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCollectionViewCell.m; sourceTree = "<group>"; };
 		E59D9AA81C785CF5002BD569 /* AddCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -574,15 +578,20 @@
 		E5D161231C7D90120079C05E /* GroupMemberCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupMemberCollectionViewCell.xib; sourceTree = "<group>"; };
 		E5D161261C7EB2A10079C05E /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		E5D161271C7EB2A10079C05E /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
-		E5D1612B1C7EC6200079C05E /* OrganizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeViewController.h; sourceTree = "<group>"; };
-		E5D1612C1C7EC6200079C05E /* OrganizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeViewController.m; sourceTree = "<group>"; };
-		E5D1612D1C7EC6200079C05E /* OrganizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrganizeViewController.xib; sourceTree = "<group>"; };
 		E5D161311C7EC9330079C05E /* TreeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeTableView.h; sourceTree = "<group>"; };
 		E5D161321C7EC9330079C05E /* TreeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTableView.m; sourceTree = "<group>"; };
 		E5D1613B1C7FF0570079C05E /* TokenIdTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenIdTool.h; sourceTree = "<group>"; };
 		E5D1613C1C7FF0570079C05E /* TokenIdTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenIdTool.m; sourceTree = "<group>"; };
 		E5D1613E1C7FF2890079C05E /* GetGroupMemberOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetGroupMemberOperator.h; sourceTree = "<group>"; };
 		E5D1613F1C7FF2890079C05E /* GetGroupMemberOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetGroupMemberOperator.m; sourceTree = "<group>"; };
+		E5D1614A1C80292D0079C05E /* TreeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeTableViewCell.h; sourceTree = "<group>"; };
+		E5D1614B1C80292D0079C05E /* TreeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTableViewCell.m; sourceTree = "<group>"; };
+		E5D1614C1C80292D0079C05E /* TreeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeTableViewCell.xib; sourceTree = "<group>"; };
+		E5D1614F1C803D730079C05E /* OrganizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeViewController.h; sourceTree = "<group>"; };
+		E5D161501C803D730079C05E /* OrganizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeViewController.m; sourceTree = "<group>"; };
+		E5D161511C803D730079C05E /* OrganizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrganizeViewController.xib; sourceTree = "<group>"; };
+		E5D161541C8049750079C05E /* GetOrganizeOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetOrganizeOperator.h; sourceTree = "<group>"; };
+		E5D161551C8049750079C05E /* GetOrganizeOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetOrganizeOperator.m; sourceTree = "<group>"; };
 		FE4C1EFE4D30F2E8DE0E88D6 /* libPods-MobileSchool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileSchool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1826,9 +1835,9 @@
 		E55BC9F21C74351B009A9AAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E53DB9431C8410F900302F25 /* Assets.xcassets */,
 				0AF208291C7D8D7C003AF80C /* friends.plist */,
 				E566C5B21C7C2D1400464659 /* path.plist */,
-				E58DFB321C7AE87D00B57170 /* Assets.xcassets */,
 				E55BCA001C74351B009A9AAA /* LaunchScreen.storyboard */,
 				E55BCA031C74351B009A9AAA /* Info.plist */,
 				E544CEA01C744055003B22BC /* PrefixHeader.pch */,
@@ -1877,6 +1886,8 @@
 				E566C5B01C7C178300464659 /* GetFriendListOperator.m */,
 				E5D1613E1C7FF2890079C05E /* GetGroupMemberOperator.h */,
 				E5D1613F1C7FF2890079C05E /* GetGroupMemberOperator.m */,
+				E5D161541C8049750079C05E /* GetOrganizeOperator.h */,
+				E5D161551C8049750079C05E /* GetOrganizeOperator.m */,
 			);
 			name = Operator;
 			path = BaseOperator;
@@ -2017,9 +2028,11 @@
 		E5D1612A1C7EC5FB0079C05E /* Organize */ = {
 			isa = PBXGroup;
 			children = (
-				E5D1612B1C7EC6200079C05E /* OrganizeViewController.h */,
-				E5D1612C1C7EC6200079C05E /* OrganizeViewController.m */,
-				E5D1612D1C7EC6200079C05E /* OrganizeViewController.xib */,
+				E5D161311C7EC9330079C05E /* TreeTableView.h */,
+				E5D161321C7EC9330079C05E /* TreeTableView.m */,
+				E5D1614F1C803D730079C05E /* OrganizeViewController.h */,
+				E5D161501C803D730079C05E /* OrganizeViewController.m */,
+				E5D161511C803D730079C05E /* OrganizeViewController.xib */,
 				E5D161301C7EC9020079C05E /* subviews */,
 			);
 			path = Organize;
@@ -2028,8 +2041,9 @@
 		E5D161301C7EC9020079C05E /* subviews */ = {
 			isa = PBXGroup;
 			children = (
-				E5D161311C7EC9330079C05E /* TreeTableView.h */,
-				E5D161321C7EC9330079C05E /* TreeTableView.m */,
+				E5D1614A1C80292D0079C05E /* TreeTableViewCell.h */,
+				E5D1614B1C80292D0079C05E /* TreeTableViewCell.m */,
+				E5D1614C1C80292D0079C05E /* TreeTableViewCell.xib */,
 			);
 			name = subviews;
 			sourceTree = "<group>";
@@ -2156,10 +2170,10 @@
 				180CD12D1C7EED53000BE5B3 /* GroupListViewController.xib in Resources */,
 				E5D1611F1C7D857A0079C05E /* GroupMemberViewController.xib in Resources */,
 				E5D161251C7D90120079C05E /* GroupMemberCollectionViewCell.xib in Resources */,
+				E5D161531C803D730079C05E /* OrganizeViewController.xib in Resources */,
 				E544D0571C744345003B22BC /* HotViewCell.xib in Resources */,
 				E544CFBA1C744099003B22BC /* LeftSideDrawerViewController.xib in Resources */,
 				0AAE67E81C78160400359F17 /* TrashViewController.xib in Resources */,
-				E58DFB331C7AE87D00B57170 /* Assets.xcassets in Resources */,
 				E544D0651C744345003B22BC /* LongReadingCell.xib in Resources */,
 				E544D0551C744345003B22BC /* HotViewController.xib in Resources */,
 				180CD11B1C7EEBE0000BE5B3 /* 3 in Resources */,
@@ -2178,8 +2192,10 @@
 				E544CFBC1C744099003B22BC /* BottomTableView.xib in Resources */,
 				E544D0671C744345003B22BC /* LongTableViewCell.xib in Resources */,
 				E544D0511C744345003B22BC /* RecommendedViewController.xib in Resources */,
+				E5D1614E1C80292D0079C05E /* TreeTableViewCell.xib in Resources */,
 				180CD11A1C7EEBE0000BE5B3 /* 2 in Resources */,
 				0A0373C81C7ECEAC00D5E706 /* SearchGroupViewController.xib in Resources */,
+				E53DB9441C8410F900302F25 /* Assets.xcassets in Resources */,
 				180CD1381C7EEE04000BE5B3 /* ContactsViewController.xib in Resources */,
 				0A67792F1C7C077400253BD8 /* SettingViewController.xib in Resources */,
 				E544D05F1C744345003B22BC /* LongInterviewCell.xib in Resources */,
@@ -2353,6 +2369,7 @@
 				E544D0621C744345003B22BC /* ReadingViewController.m in Sources */,
 				E544CF731C744087003B22BC /* DetailRecodesViewController.m in Sources */,
 				E544CF961C74408E003B22BC /* TabbarViewController.m in Sources */,
+				E5D1614D1C80292D0079C05E /* TreeTableViewCell.m in Sources */,
 				E544D05E1C744345003B22BC /* LongInterviewCell.m in Sources */,
 				E5D1611E1C7D857A0079C05E /* GroupMemberViewController.m in Sources */,
 				184EEDFE1C75B5D00003AD39 /* GroupInformationViewController.m in Sources */,
@@ -2361,6 +2378,7 @@
 				E544CFEE1C7441FA003B22BC /* IQUITextFieldView+Additions.m in Sources */,
 				E566C5711C7C0E1500464659 /* NetworkingManager.m in Sources */,
 				E544D0601C744345003B22BC /* LongInterviewTableViewCell.m in Sources */,
+				E5D161521C803D730079C05E /* OrganizeViewController.m in Sources */,
 				E544CF7A1C744087003B22BC /* EmailViewController.m in Sources */,
 				0AF208321C7D994F003AF80C /* SearcheViewController.m in Sources */,
 				0A67793D1C7C2DAB00253BD8 /* BarcodeViewController.m in Sources */,
@@ -2392,10 +2410,10 @@
 				E544CF811C744087003B22BC /* ReceivePeopleViewController.m in Sources */,
 				E58DFB301C7AA83B00B57170 /* AddChatTableViewCell.m in Sources */,
 				E544D04E1C744345003B22BC /* FriendsCircleViewController.m in Sources */,
-				E5D1612E1C7EC6200079C05E /* OrganizeViewController.m in Sources */,
 				180CD13B1C7EEE2D000BE5B3 /* AddFriendsTableViewCell.m in Sources */,
 				184EEDE31C744FB00003AD39 /* HeaderView.m in Sources */,
 				180CD1201C7EEBF5000BE5B3 /* AppDelegate.m in Sources */,
+				E5D161561C8049750079C05E /* GetOrganizeOperator.m in Sources */,
 				E544CF951C74408E003B22BC /* NavigationViewController.m in Sources */,
 				E566C5A51C7C0EFE00464659 /* AFURLConnectionOperation.m in Sources */,
 				E544CF671C744087003B22BC /* AddressBookViewController.m in Sources */,

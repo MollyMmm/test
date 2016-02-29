@@ -54,7 +54,7 @@
                 <outlet property="iconImg" destination="I1z-tT-TgU" id="R7t-dt-VVE"/>
                 <outlet property="nameLbl" destination="l4w-78-p9a" id="22q-Z8-NBo"/>
             </connections>
-            <point key="canvasLocation" x="280" y="358"/>
+            <point key="canvasLocation" x="210" y="300"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -13,7 +13,7 @@
 - (id)initWithParamsDic:(NSDictionary *)params{
     
     if (self = [self init]) {
-        self.action = @"";
+        self.action = @"ms/api/user_ser/groupmembers";
         self.groupMemberArr = [NSMutableArray array];
     }
     
@@ -33,7 +33,18 @@
     _headUser.tokenid = [groupheadDict objectForKey:@"tokenid"];
 
     NSArray *membersArr = [dataDict objectForKey:@"members"];
-    
+    for (NSDictionary *memberDict in membersArr) {
+        
+        UserModel *user = [[UserModel alloc] init];
+        user.username = [memberDict objectForKey:@"username"];
+        user.email = [memberDict objectForKey:@"email"];
+        user.img = [NSString stringWithFormat:@"http://123.56.17.198:8180/ms/%@",[memberDict objectForKey:@"img"]];
+        user.password = [memberDict objectForKey:@"password"];
+        user.name = [memberDict objectForKey:@"phone"];
+        user.tokenid = [memberDict objectForKey:@"tokenid"];
+
+        [_groupMemberArr addObject:user];
+    }
 }
 @end
 

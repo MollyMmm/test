@@ -10,12 +10,13 @@
 
 @interface Node : NSObject
 
-@property (assign, nonatomic) int parentId;
-@property (assign, nonatomic) int nodeId;
-@property (assign, nonatomic) int deapth;
+@property (strong, nonatomic) NSString *parentId;
+@property (strong, nonatomic) NSString *nodeId;
+@property (strong, nonatomic) NSString *leaf;//1叶子节点的用户,0 为机构
 @property (assign, nonatomic) BOOL expand;//1展开, 0 未展开
-@property (strong, nonatomic) NSString *name;
+@property (assign, nonatomic) int deepth;
+@property (strong, nonatomic) NSString *nodeName;
 
-- (instancetype)initWithParentId : (int)parentId nodeId : (int)nodeId name : (NSString *)name deapth : (int)depth expand : (BOOL)expand;
 
 @end
+//"node_id":"4","node_name":"??4","parent_id":"2","leaf":"1","deep":"2"

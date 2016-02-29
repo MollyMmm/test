@@ -66,7 +66,7 @@
     Node *node = [_tempData objectAtIndex:indexPath.row];
     
     // cell有缩进的方法
-    cell.indentationLevel = node.deapth; // 缩进级别
+    cell.indentationLevel = node.deepth; // 缩进级别
     cell.indentationWidth = 30.f; // 每个缩进级别的距离
     
     
@@ -76,7 +76,7 @@
     //    }
     //    [name appendString:node.name];
     
-    cell.textLabel.text = node.name;
+    cell.textLabel.text = node.nodeName;
     
     return cell;
 }
@@ -152,7 +152,7 @@
     for (NSUInteger i=startPosition+1; i<_tempData.count; i++) {
         Node *node = [_tempData objectAtIndex:i];
         endPosition++;
-        if (node.deapth <= parentNode.deapth) {
+        if (node.deepth <= parentNode.deepth) {
             break;
         }
         if(endPosition == _tempData.count-1){
